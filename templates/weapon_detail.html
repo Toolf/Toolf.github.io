@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ item.name.rus }} — Деталі зброї</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
+        <header class="mb-6">
+            <h1 class="text-3xl font-bold mb-1">{{ item.name.rus }} ({{ item.name.eng }})</h1>
+            <p class="text-sm text-gray-600">Ціна: {{ item.price }}, Вага: {{ item.weight }} кг</p>
+        </header>
+
+        <section class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Тип</h2>
+            <p>{{ item.type.name }}</p>
+        </section>
+
+        <section class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Шкода</h2>
+            <p>{{ item.damage.dice }} {{ item.damage.type }}</p>
+        </section>
+
+        {% if item.description %}
+        <section class="mb-4 prose max-w-none">
+            <h2 class="text-xl font-semibold mb-2">Опис</h2>
+            {{ item.description | safe }}
+        </section>
+        {% endif %}
+
+        {% if item.special %}
+        <section class="mb-4 prose max-w-none bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+            <h2 class="text-xl font-semibold mb-2">Особливості</h2>
+            {{ item.special | safe }}
+        </section>
+        {% endif %}
+
+        {% if item.properties and item.properties|length > 0 %}
+        <section class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Властивості</h2>
+            <ul class="list-disc list-inside space-y-2">
+                {% for prop in item.properties %}
+                <li>
+                    <strong>{{ prop.name }}</strong>
+                    {% if prop.distance %} ({{ prop.distance }}){% endif %}
+                    <div class="prose max-w-none">{{ prop.description | safe }}</div>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Джерело</h2>
+            <p>{{ item.source.name }} ({{ item.source.shortName }})</p>
+        </section>
+
+        <footer class="mt-8 text-sm text-gray-500">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </footer>
+    </div>
+</body>
+
+</html>

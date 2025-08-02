@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Гит</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Гит
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Gith</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>История гитов уходит корнями в жесточайший поворот судьбы космоса. Вдохновлённые великим вождём, который и дал имя расе, гиты восстали, чтобы свергнуть поработивших их свежевателей разума. Однако, завоевав свободу, две фракции гитов не смогли прийти к согласию о том, какую цивилизацию они будут строить. Это разногласие быстро перешло в открытую враждебность, и две группы отдалились друг от друга, чтобы преследовать собственные цели. Сейчас они остаются жесточайшими врагами, и каждая сторона готова сражаться до смерти, если их пути пересекутся.</p><p>Гитъянки были движимы местью и убеждением,&nbsp;что имеют право забирать всё, что хотят, с миров, по которым пройдутся. Из титанического города Ту&rsquo;нарат, который находится на Астральном Плане, их рейдеры отправляются на разграбление Материального Плана и иных миров, принося сокровища и рабов в своё не подвластное времени государство. В то же время они охотятся на свежевателей разума, по возможности убивая их в качестве мести за то, что иллитиды сделали с ними в прошлом.</p><p>Гитцераи верят, что путь просвещённой цивилизации лежит в уединении, а не в конфликте. Их преданность принципам порядка настолько сильна, что они могут манипулировать хаосом используя его в своих интересах; так они вырезали себе полностью&nbsp;изолированные крепости на плане Лимбо. Несмотря на то, что гитцераи по своей натуре пацифисты, они разделяют расовую ненависть гитъянки к свежевателям разума и иногда отправляют отряды для уничтожения форпостов иллитидов.</p><p>Если эти две расы объединятся против иллитидов,&nbsp;объединённая сила гитов могла бы склонить чашу весов в их пользу. Но до тех пор, пока гитъянки и&nbsp;гитцераи не отпустят глотки друг друга, достижение окончательной победы над изначальным общим врагом не представляется возможным.</p>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

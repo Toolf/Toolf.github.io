@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Список рас</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
+        <h1 class="text-3xl font-bold mb-6">Список рас</h1>
+
+        <input type="text" placeholder="Пошук..." id="search"
+            class="w-full p-3 mb-6 border border-gray-300 rounded-md" />
+
+
+        <div id="race-list" class="grid gap-4">
+            {% for race in items %}
+            <a href="{{ race.filename }}" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    {{ race.name.ukr or race.name.rus or race.name.eng }}
+                </h2>
+                <p class="text-sm text-gray-500">{{ race.name.eng }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("search");
+        const items = [...document.querySelectorAll("#race-list > a")];
+
+        input.addEventListener("input", () => {
+            const q = input.value.toLowerCase();
+            items.forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(q) ? "" : "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

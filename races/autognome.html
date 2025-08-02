@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Автогном</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Автогном
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Autognome</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>Автогномы &mdash; это механические существа, созданные скальными гномами. Иногда, из-за неисправности или особенных обстоятельств, автогном и его создатель разделяются, и автогном действует сам по себе.</p><p>Автогном имеет сходство с создателем, и большинство автогномов запрограммированы так, чтобы говорить на Гномьем и понимать его. Внутренние компоненты, используемые при изготовлении автогнома, могут сильно различаться &mdash; у одного может быть настоящее бьющееся сердце в грудной клетке, другой может приводиться в действие звездной пылью или сложными часовыми механизмами.</p><p>Совершите бросок по таблице &laquo;История автогнома&raquo; или выберите понравившуюся строчку, чтобы определить, какое событие толкнуло вас на путь приключений. Если ничего из предложенного в таблице вам не нравится, поработайте с Мастером и придумайте свою историю для персонажа. Как и гномы, автогномы могут жить столетиями, обычно до 500 лет.</p><h4 style="text-align: center;">История Автогнома</h4><div class="table-responsive"><table class="table" style="height: 198px;"><thead><tr style="height: 18px;"><th style="text-align: center; height: 18px; width: 19.3594px;">к8</th><th style="text-align: left; height: 18px; width: 658.641px;">История</th></tr></thead><tbody><tr style="height: 18px;"><td style="text-align: center; height: 18px; width: 19.3594px;">1</td><td style="height: 18px; width: 658.641px;">Ваш создатель дал вам автономию и призвал вас следовать своей мечте.</td></tr><tr style="height: 18px;"><td style="text-align: center; height: 18px; width: 19.3594px;">2</td><td style="height: 18px; width: 658.641px;">Ваш создатель умер и оставил вас на произвол судьбы.</td></tr><tr style="height: 36px;"><td style="text-align: center; height: 36px; width: 19.3594px;">3</td><td style="height: 36px; width: 658.641px;">Сбой привел к тому, что ваш изначальный алгоритм исчез. Вы не помните откуда вы, и кто вас сделал.</td></tr><tr style="height: 18px;"><td style="text-align: center; height: 18px; width: 19.3594px;">4</td><td style="height: 18px; width: 658.641px;">Вам не понравилось, как с вами обращался создатель, и вы сбежали из дома.</td></tr><tr style="height: 18px;"><td style="text-align: center; height: 18px; width: 19.3594px;">5</td><td style="height: 18px; width: 658.641px;">Вы были созданы для выполнения особой миссии.</td></tr><tr style="height: 18px;"><td style="text-align: center; height: 18px; width: 19.3594px;">6</td><td style="height: 18px; width: 658.641px;">Вы почувствовали себя в ловушке той роли, для&nbsp;которой были созданы, и отказались от своего создателя, решив найти более великую цель.</td></tr></tbody></table></div>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Глючный</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Глючный
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Glitchling</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>Созданные силами планарного закона, глючные &mdash; это крылатые человекоподобные существа, сотворённые из слияния магии и машин. Эти исследователи стремятся узнать все, что могут, о мультивселенной и её существах. Некоторые глючные затем переносят то, что они узнают, обратно на законные планы, такие как Механус, чтобы информировать об упорядоченной работе мультивселенной. Другие увлекаются путешествиями и народами, с которыми они сталкиваются, и стремятся устроить собственную жизнь среди планов.</p><p>Глючные начинают своё существование с рудиментарных личностей. По мере того, как они впитывают информацию и опыт, их личности растут, но многие сохраняют причуды, связанные с их законным происхождением. Кроме того, обратитесь к таблице &laquo;Причуда порядка&raquo; и выберите или случайным образом определите свою причуду либо создайте свою собственную причуду.</p><p style="text-align: center;"><strong>Причуда порядка</strong></p><div class="table-responsive"><table><tbody><tr><th><span>к6</span></th><th style="text-align: left;">Причуда</th></tr><tr><td style="text-align: center;">1</td><td>Я собираю вещи, будь то предметы определённого вида или вещи, сделанные из определённого материала.</td></tr><tr><td style="text-align: center;">2</td><td>Мы думаем о себе как о части коллективных законных сил мультивселенной и не относимся к себе как к отдельному существу.</td></tr><tr><td style="text-align: center;">3</td><td><span>Я ищу новые впечатления, чтобы лучше понять свободу своего существования.</span></td></tr><tr><td style="text-align: center;">4</td><td>Я предваряю то, что говорю, кратким описанием, например: &laquo;наблюдение&raquo;, &laquo;междометие&raquo; или &laquo;вопрос&raquo;.</td></tr><tr><td style="text-align: center;">5</td><td>Я планирую тщательно продуманные ответы на все непредвиденные обстоятельства, готовые к исполнению в любой момент.</td></tr><tr><td style="text-align: center;">6</td><td>Я исследую намерения людей, стоящие за их действиями, пытаясь решить уравнение, которым они руководствуются.</td></tr></tbody></table></div>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

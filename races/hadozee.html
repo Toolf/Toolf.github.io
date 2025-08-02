@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Хадози</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Хадози
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Hadozee</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>Первые хадози были робкими млекопитающими размером не больше домашних кошек. Будучи целью охоты более крупных хищников, хадози пришлось забраться на деревья и развить похожие на крылья складки, позволившие им планировать с ветки на ветку.</p><p>Несколько сотен лет назад один волшебник посетил Язир, родной мир хадози, с небольшим флотом магических кораблей. Под руководством волшебника ученики расставили магические ловушки и поймали десятки хадози. Волшебник накормил пойманных экспериментальным эликсиром, который увеличил их и превратил в разумных двуногих.</p><p>Побочный эффект эликсира привел к тому, что панические реакции хадози усилились, сделав их более устойчивыми к повреждениям. План волшебника состоял в том, чтобы создать армию улучшенных воинов хадози и продать их тому, кто больше&nbsp;заплатит. Но вместо этого ученики волшебника полюбили хадози и помогли им сбежать. Ученики и хадози были вынуждены убить волшебника, после чего сбежали, забрав с собой все оставшиеся флаконы с экспериментальным эликсиром.</p><p>С помощью своих освободителей хадози вернулись в свой родной мир и использовали эликсир, чтобы создать больше себе подобных. Со временем все новорожденные хадози стали обладать особенностям улучшенных хадози. После этого, столетия назад, хадози отправились к звездам, оставив&nbsp;позади страшных хищников Язира.</p><p>Помимо того, что хадози прирожденные скалолазы, их ноги такие же ловкие, как и руки, у них даже есть отстоящие большие пальцы на ногах.&nbsp;Кожные складки свободно свисают с их рук и ног. Если складки туго натянуты, они позволяют хадози планировать. Они оборачивают эти крылья вокруг себя, чтобы согреться.</p>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

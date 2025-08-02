@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Сердце звезды — Star's Heart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
+        <h1 class="text-3xl font-bold mb-2">Сердце звезды</h1>
+        <h2 class="text-lg text-gray-500 mb-6">Star's Heart</h2>
+
+        <div class="grid grid-cols-2 gap-4 text-sm">
+            <p><strong>Рівень:</strong> 9</p>
+            <p><strong>Школа:</strong> преобразование</p>
+            <p><strong>Час накладання:</strong> 1 действие</p>
+            <p><strong>Дальність:</strong> 50 футов</p>
+            <p><strong>Тривалість:</strong> 1 минута</p>
+            <p><strong>Компоненти:</strong>
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                    В 
+                    С 
+                    <span title="камень Йоун соответствующей стоимости">М</span>
+                </span>
+            </p>
+            
+            
+        </div>
+
+        <div class="mt-6">
+            <h3 class="font-semibold mb-1">Класи</h3>
+            <div class="flex flex-wrap gap-2">
+                
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+                
+            </div>
+
+            
+            <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
+            <ul class="list-disc ml-6">
+                
+                <li>Иллюминация (Волшебник)</li>
+                
+            </ul>
+            
+        </div>
+
+        <div class="mt-6 prose prose-sm max-w-none">
+            <p>Это заклинание увеличивает гравитацию в пределах 50 футов от вас в десять раз.</p><p>Все существа, кроме вас, попавшие в эту область, роняют то, что держат в руках, <detail-tooltip type="screen"><a href="/screens/condition_prone">падают ничком</a></detail-tooltip>, становятся <detail-tooltip type="screen"><a href="/screens/Incapacitated">недееспособными</a></detail-tooltip> и не могут двигаться. Если какое-то из этих существ летало или левитировало и при падении встретилось с твёрдым объектом (например, с землёй), то оно получает тройной урон от этого падения.</p><p>Любое существо не считая вас, входящее в область заклинания или начинающее в ней свой ход, должно совершить успешный спасбросок <span class="saving_throw">Силы</span>, или попасть под все эффекты заклинания.</p><p>Существа уже попавшие под эффекты должны также совершить спасбросок <span class="saving_throw">Силы</span>, в случае провала оно получает <dice-roller formula="8к6">8к6</dice-roller> дробящего урона, а в случае успеха - <dice-roller formula="4к6">4к6</dice-roller> дробящего урона, а также перестаёт быть <detail-tooltip type="screen"><a href="/screens/Incapacitated">недееспособным</a></detail-tooltip> и может двигаться на половину от своей скорости.</p><p>Все <em>дальнобойный атаки</em> в зоне действия заклинания имеют обычную и максимальную дальность в 5 и 10 футов соответственно. Это правило относится и к заклинаниям, что создают снаряды с какой-либо массой (например, <detail-tooltip type="spell"><a href="/spells/Flaming_sphere">пылающий шар [flaming sphere]</a></detail-tooltip>).</p><p>Существа, находящиеся под эффектами заклинаний и магии схожих по описанию с заклинанием <detail-tooltip type="spell"><a href="/spells/Freedom_of_movement">свобода перемещения [freedom of movement]</a></detail-tooltip>, получают <span class="advantage">преимущество</span> на спасброски <span class="saving_throw">Силы</span>, их скорость остаётся прежней, и они не попадают под состояние <detail-tooltip type="screen"><a href="/screens/Incapacitated">недееспособности</a></detail-tooltip>.</p>
+        </div>
+
+        
+
+        <div class="mt-8 text-sm text-gray-500">
+            <p>Джерело: Мидгард Справочник героя (MHH)</p>
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+    </div>
+</body>
+
+</html>

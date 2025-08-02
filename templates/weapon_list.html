@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Список зброї</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
+        <h1 class="text-4xl font-bold mb-6">Зброя</h1>
+
+        <input id="search" type="search" placeholder="Пошук зброї..."
+            class="w-full p-3 border border-gray-300 rounded mb-6" />
+
+        <ul id="weapon-list" class="space-y-3">
+            {% for weapon in items %}
+            <li>
+                <a href="{{ weapon.filename }}" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
+                    <h2 class="text-xl font-semibold">{{ weapon.name.rus }} ({{ weapon.name.eng }})</h2>
+                    <p class="text-sm text-gray-600">{{ weapon.type.name }} — {{ weapon.damage.dice }} {{
+                        weapon.damage.type
+                        }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search');
+        const list = document.getElementById('weapon-list');
+        const items = list.getElementsByTagName('li');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            for (const item of items) {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(query) ? '' : 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

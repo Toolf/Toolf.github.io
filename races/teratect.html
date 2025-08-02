@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Тератект</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Тератект
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Teratect</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <blockquote><p>Жвала монстра щелкнули в сантиметре от лица Ша-Кри. Вязкая, ядовитая слюна капнула на пол рядом с его ботинком, послышалось шипение разъедаемого камня. &laquo;Зачем ты пришел сюда, Ша-Кри&hellip; ты давно покинул гнездо&hellip;&raquo;. Огромное бело-голубое тело паука нависло над путником, облаченным в длинный плащ странной формы. &laquo;Я пришел с плохими вестями, о Великая Мать, все больше кораблей приходят к берегам наших земель, забирая яйца в большой мир, скоро не один я буду таким&hellip;&raquo;, плащ путника сдвинулся и упал на камень обнажая восемь небольших лапок, что росли из спины путника. &laquo;Да будет благославенна Ша-Аянар, что дала нам жизнь&hellip;&raquo; - прощелкал монстр, &laquo;Ша-Кри, дитя мое, ты другой, но я люблю тебя так же, как всех моих детей, и если волей Великой Богини мы должны измениться, как меняется наш мир, пусть будет так&hellip;&raquo;</p>&mdash; Легенды Наймирии, Путешествие в большой мир</blockquote><p>Мир меняется быстро, и существа наполняющие его меняются вместе с ним. Повстречав своего возлюбленного Кир-Арака, Полубога-Полувеликана, сына Даори и Солиума, Повелительница зверей и птиц, Богиня Ша-Аянар последовала за судьбой и ушла в Серые Пустоши, покинув за любимым свою родину - Сумеречный город. Дочь Морты, Ша-Аянар в любви родила своих детей Тератектов &ndash; арахноподобных существ, что носят в себе кровь титанов, наследие своего отца Кир-Арака. Рожденные в землях вечного холода и мрака, сквозь щели пустот и проломы планов, тератекты выбрались в Мир древних, где и нашли свой уголок мира и покоя. Жёлтый лес Саритании стал первым домом для тератектов. Пески, скалы, пещеры, дали укрытие для первых семей и, построив гнезда, тератекты обосновались в материальном мире. Спустя века странники и искатели начали всё чаще наведываться на небольшой материк и, встречая подобных монстрам созданий, сперва пытались сражаться с ними, но осознав их разумность, нашли в себе силы взаимодействовать. Именно увезённые с согласия великих матерей и украденные яйца первых терратектов и позволили им развиться на абсолютно новую расу, что распространилась по всем мирам Наймирии.</p>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

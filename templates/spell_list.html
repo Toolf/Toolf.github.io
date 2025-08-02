@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Заклинання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
+        <h1 class="text-3xl font-bold mb-6">Список заклинань</h1>
+
+        <input type="text" placeholder="Пошук..." id="search"
+            class="w-full p-3 mb-6 border border-gray-300 rounded-md" />
+
+        <ul id="spell-list" class="space-y-3">
+            {% for spell in items %}
+            <li>
+                <a href="{{ spell.filename }}" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
+                    <h2 class="text-xl font-semibold flex items-center justify-between">
+                        {{ spell.name.rus }} <span class="text-gray-500 text-sm">({{ spell.name.eng }})</span>
+                    </h2>
+
+                    <p class="text-sm text-gray-600 mt-1">
+                        Рівень {{ spell.level }}, {{ spell.school }} • {{ spell.source.shortName }}
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mt-2 text-sm">
+                        {% if spell.concentration %}
+                        <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                        {% endif %}
+                        {% if spell.ritual %}
+                        <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">🕯️ Ритуал</span>
+                        {% endif %}
+                        {% if spell.components %}
+                        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                            {% if spell.components.v %}В {% endif %}
+                            {% if spell.components.s %}С {% endif %}
+                            {% if spell.components.m %}<span title="{{ spell.components.m }}">М</span>{% endif %}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    {% if spell.classes and spell.classes|length > 0 %}
+                    <div class="flex flex-wrap gap-2 mt-2 text-sm">
+                        {% for cls in spell.classes %}
+                        <span class="bg-gray-200 px-2 py-1 rounded">{{ cls.name }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search');
+        const list = document.getElementById('spell-list');
+        const items = list.getElementsByTagName('li');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            for (const item of items) {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(query) ? '' : 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

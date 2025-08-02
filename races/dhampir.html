@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Дампир</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Дампир
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Dhampir</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>Находясь между мирами живых и мёртвых, дампиры сохраняют свою власть над жизнью, но подвергаются бесконечным испытаниям жестоким голодом. Их связи с нежитью дают дампирам возможность ощутить удаль бессмертного вампира в виде повышенной скорости, тёмного зрения и истощающего жизнь укуса. Обладая уникальным пониманием природы нежити, многие дампиры становятся приключенцами и охотниками на монстров. Их причины часто очень личные.</p><p>Некоторые ищут опасности, представляя что монстры&nbsp;&mdash; это олицетворения их собственного голода. Другие мстят тому, что превратило их в дампира. А третьи принимают уединение охоты, стремясь дистанцироваться от тех, кто искушает свой голод.</p><h4 style="text-align: center;">Происхождения дампиров</h4><p>Дампиры часто возникают в результате встреч с вампирами, но всевозможные жуткие сделки, некромантские влияния и встречи с таинственными бессмертными могли изменить Вашего персонажа. В таблице &laquo;Происхождения дампиров&raquo; содержатся предположения о том, как Ваш персонаж получил своё наследие.</p><p style="text-align: center;"><strong>Происхождения дампиров</strong></p><div class="table-responsive"><table class="table"><thead><tr><th>к8</th><th style="text-align: left;">Происхождение</th></tr></thead><tbody><tr><td>1</td><td>Вы&nbsp;&mdash; реинкарнация предка, который был вампиром-тираном.</td></tr><tr><td>2</td><td>Ваш договор с хищным божеством, исчадием, феей или духом заставляет Вас разделять их голод.</td></tr><tr><td>3</td><td>Вы пережили нападение вампира, но навсегда изменились.</td></tr><tr><td>4</td><td>Внутри Вас живет паразит. Вы утоляете его голод.</td></tr><tr><td>5</td><td>Трагедия прервала Ваше превращение в бессмертного.</td></tr><tr><td>6</td><td>Вы&nbsp;&mdash; уменьшенная форма потустороннего существа. Утоление голода ускоряет ваше обновление.</td></tr><tr><td>7</td><td>Один из Ваших родителей был вампиром.</td></tr><tr><td>8</td><td>Радикальный эксперимент изменил Ваше тело, заставив полагаться на других в получении жизненно важных жидкостей.</td></tr></tbody></table></div><h4 style="text-align: center;">Голоды дампиров</h4><p>У каждого дампира есть жажда, которую могут утолить только живые. Те, кто злоупотребляет этим, рискуют потерять контроль и навсегда начать видеть в окружающих только добычу. Те же, кто сопротивляется, могут найти исключительные способы контролировать свои побуждения или подавлять их постоянным мучительным сдерживанием. В любом случае искушение преследует дампиров, и обстоятельства будто складываются так, чтобы дать им бесконечные поводы для насыщения.</p><p>Хотя многие дампиры жаждут крови, Ваш персонаж мог бы получать иное пропитание от живых. Определите Ваш голод по таблице &laquo;Голоды дампиров&raquo;, или же самостоятельно выберите то, что заставляет Вашего персонажа кормиться.</p><p style="text-align: center;"><strong>Голоды дампиров</strong></p><div class="table-responsive"><table class="table"><thead><tr><th>к6</th><th style="text-align: left;">Голод</th></tr></thead><tbody><tr><td>1</td><td>Кровь</td></tr><tr><td>2</td><td>Плоть или сырое мясо</td></tr><tr><td>3</td><td>Спинномозговая жидкость</td></tr><tr><td>4</td><td>Психическая энергия</td></tr><tr><td>5</td><td>Сны</td></tr><tr><td>6</td><td>Жизненная сила</td></tr></tbody></table></div><h4>Дампиры в Доменах Ужаса</h4><p>При создании дампира обсудите со своим Мастером, имеет ли смысл, чтобы ваш персонаж был связан с одним из следующих Доменов Ужаса (подробно описанных в главе 3):</p><ul><li><strong>Баровия.</strong> В тени замка Равенлофт процветают легенды о тех, кто влюблён в вампиров или происходит от них. Вы можете иметь подобную связь, но вы страшитесь того, что произойдёт, если другие в вашем замкнутом сообществе узнают об этом.</li><li><strong>Даркон.</strong> Каргат, тайная полиция этого разрушенного домена, предположительно знает секрет бессмертия. Возможно, вы присоединились к ним и прошли через их младшие чины, известные как Каргатан, и вас наградили, превратив в дампира.</li><li><strong>И'Кат.</strong> Ночью голодающий город И Кат наводняется вампирами <detail-tooltip type="creature"><a href="/bestiary/jiangshi">цзянши [jiangshi]</a></detail-tooltip> (описаны в главе 5). Вы очнулись с утолённым чувством голода после встречи с одним из этих беспокойных предков.</li></ul>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

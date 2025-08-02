@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Список рас</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
+        <h1 class="text-3xl font-bold mb-6">Список рас</h1>
+
+        <input type="text" placeholder="Пошук..." id="search"
+            class="w-full p-3 mb-6 border border-gray-300 rounded-md" />
+
+
+        <div id="race-list" class="grid gap-4">
+            
+            <a href="grung.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Грунг
+                </h2>
+                <p class="text-sm text-gray-500">Grung</p>
+            </a>
+            
+            <a href="kender.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кендер
+                </h2>
+                <p class="text-sm text-gray-500">Kender</p>
+            </a>
+            
+            <a href="aarakocra.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Ааракокра
+                </h2>
+                <p class="text-sm text-gray-500">Aarakocra</p>
+            </a>
+            
+            <a href="aven.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Авен
+                </h2>
+                <p class="text-sm text-gray-500">Aven</p>
+            </a>
+            
+            <a href="autognome.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Автогном
+                </h2>
+                <p class="text-sm text-gray-500">Autognome</p>
+            </a>
+            
+            <a href="aasimar-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Аасимар
+                </h2>
+                <p class="text-sm text-gray-500">Aasimar MPMM</p>
+            </a>
+            
+            <a href="bugbear.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Багбир
+                </h2>
+                <p class="text-sm text-gray-500">Bugbear</p>
+            </a>
+            
+            <a href="orc.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Орк
+                </h2>
+                <p class="text-sm text-gray-500">Orc</p>
+            </a>
+            
+            <a href="minotaur-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Минотавр
+                </h2>
+                <p class="text-sm text-gray-500">Minotaur MPMM</p>
+            </a>
+            
+            <a href="genasi-air-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дженази воздуха
+                </h2>
+                <p class="text-sm text-gray-500">Genasi Air MPMM</p>
+            </a>
+            
+            <a href="genasi-water-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дженази воды
+                </h2>
+                <p class="text-sm text-gray-500">Genasi Water MPMM</p>
+            </a>
+            
+            <a href="genasi.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дженази
+                </h2>
+                <p class="text-sm text-gray-500">Genasi</p>
+            </a>
+            
+            <a href="dhampir-midgard.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дампир (из Мидгарда)
+                </h2>
+                <p class="text-sm text-gray-500">Dhampir Midgard</p>
+            </a>
+            
+            <a href="dhampir.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дампир
+                </h2>
+                <p class="text-sm text-gray-500">Dhampir</p>
+            </a>
+            
+            <a href="mushroom.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Грибнит
+                </h2>
+                <p class="text-sm text-gray-500">Mushroom</p>
+            </a>
+            
+            <a href="kalashtar.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Калаштар
+                </h2>
+                <p class="text-sm text-gray-500">Kalashtar</p>
+            </a>
+            
+            <a href="changeling-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Изменяющийся
+                </h2>
+                <p class="text-sm text-gray-500">Changeling MPMM</p>
+            </a>
+            
+            <a href="changeling.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Изменяющиеся
+                </h2>
+                <p class="text-sm text-gray-500">Changeling</p>
+            </a>
+            
+            <a href="duergar-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дуэргар
+                </h2>
+                <p class="text-sm text-gray-500">Duergar MPMM</p>
+            </a>
+            
+            <a href="dwarf.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дварф
+                </h2>
+                <p class="text-sm text-gray-500">Dwarf</p>
+            </a>
+            
+            <a href="dragonborn.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Драконорождённый
+                </h2>
+                <p class="text-sm text-gray-500">Dragonborn</p>
+            </a>
+            
+            <a href="genasi-fair-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дженази огня
+                </h2>
+                <p class="text-sm text-gray-500">Genasi Fair MPMM</p>
+            </a>
+            
+            <a href="genasi-earthr-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Дженази земли
+                </h2>
+                <p class="text-sm text-gray-500">Genasi Earthr MPMM</p>
+            </a>
+            
+            <a href="bearfolk.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Бирфолк
+                </h2>
+                <p class="text-sm text-gray-500">Bearfolk</p>
+            </a>
+            
+            <a href="bugbear-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Багбир
+                </h2>
+                <p class="text-sm text-gray-500">Bugbear MPMM</p>
+            </a>
+            
+            <a href="hexblood.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Порчекровные
+                </h2>
+                <p class="text-sm text-gray-500">Hexblood</p>
+            </a>
+            
+            <a href="tabaxi-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Табакси
+                </h2>
+                <p class="text-sm text-gray-500">Tabaxi MPMM</p>
+            </a>
+            
+            <a href="owlin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Совлин
+                </h2>
+                <p class="text-sm text-gray-500">Owlin</p>
+            </a>
+            
+            <a href="giff.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гифф
+                </h2>
+                <p class="text-sm text-gray-500">Giff</p>
+            </a>
+            
+            <a href="githyanki-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гитъянки
+                </h2>
+                <p class="text-sm text-gray-500">Githyanki MPMM</p>
+            </a>
+            
+            <a href="githzerai-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гитцераи
+                </h2>
+                <p class="text-sm text-gray-500">Githzerai MPMM</p>
+            </a>
+            
+            <a href="gith.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гит
+                </h2>
+                <p class="text-sm text-gray-500">Gith</p>
+            </a>
+            
+            <a href="simic-hybrid.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гибрид Симиков
+                </h2>
+                <p class="text-sm text-gray-500">Simic Hybrid</p>
+            </a>
+            
+            <a href="reborn.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Возрождённый
+                </h2>
+                <p class="text-sm text-gray-500">Reborn</p>
+            </a>
+            
+            <a href="verdan.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Вердан
+                </h2>
+                <p class="text-sm text-gray-500">Verdan</p>
+            </a>
+            
+            <a href="vedalken.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Ведалкен
+                </h2>
+                <p class="text-sm text-gray-500">Vedalken</p>
+            </a>
+            
+            <a href="goliath-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Голиаф
+                </h2>
+                <p class="text-sm text-gray-500">Goliath MPMM</p>
+            </a>
+            
+            <a href="goliath.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Голиаф
+                </h2>
+                <p class="text-sm text-gray-500">Goliath</p>
+            </a>
+            
+            <a href="goblin-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гоблин
+                </h2>
+                <p class="text-sm text-gray-500">Goblin MPMM</p>
+            </a>
+            
+            <a href="goblin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гоблин
+                </h2>
+                <p class="text-sm text-gray-500">Goblin</p>
+            </a>
+            
+            <a href="gnome.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гном
+                </h2>
+                <p class="text-sm text-gray-500">Gnome</p>
+            </a>
+            
+            <a href="gnoll.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Гнолл
+                </h2>
+                <p class="text-sm text-gray-500">Gnoll</p>
+            </a>
+            
+            <a href="glitchling.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Глючный
+                </h2>
+                <p class="text-sm text-gray-500">Glitchling</p>
+            </a>
+            
+            <a href="deep-gnome-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Глубинный гном
+                </h2>
+                <p class="text-sm text-gray-500">Deep Gnome MPMM</p>
+            </a>
+            
+            <a href="kenku.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кенку
+                </h2>
+                <p class="text-sm text-gray-500">Kenku</p>
+            </a>
+            
+            <a href="locathah.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Локата
+                </h2>
+                <p class="text-sm text-gray-500">Locathah</p>
+            </a>
+            
+            <a href="leonin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Леонин
+                </h2>
+                <p class="text-sm text-gray-500">Leonin</p>
+            </a>
+            
+            <a href="warforged.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кованый
+                </h2>
+                <p class="text-sm text-gray-500">Warforged</p>
+            </a>
+            
+            <a href="kobold-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кобольд
+                </h2>
+                <p class="text-sm text-gray-500">Kobold MPMM</p>
+            </a>
+            
+            <a href="kobold.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кобольд
+                </h2>
+                <p class="text-sm text-gray-500">Kobold</p>
+            </a>
+            
+            <a href="centaur-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кентавр
+                </h2>
+                <p class="text-sm text-gray-500">Centaur MPMM</p>
+            </a>
+            
+            <a href="centaur.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кентавр
+                </h2>
+                <p class="text-sm text-gray-500">Centaur</p>
+            </a>
+            
+            <a href="kenku-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Кенку
+                </h2>
+                <p class="text-sm text-gray-500">Kenku MPMM</p>
+            </a>
+            
+            <a href="undead.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Нежить
+                </h2>
+                <p class="text-sm text-gray-500">Undead</p>
+            </a>
+            
+            <a href="naga.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Нага
+                </h2>
+                <p class="text-sm text-gray-500">Naga</p>
+            </a>
+            
+            <a href="sea-elf-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Морской эльф
+                </h2>
+                <p class="text-sm text-gray-500">Sea Elf MPMM</p>
+            </a>
+            
+            <a href="minotaur.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Минотавр
+                </h2>
+                <p class="text-sm text-gray-500">Minotaur</p>
+            </a>
+            
+            <a href="medusa.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Медуза
+                </h2>
+                <p class="text-sm text-gray-500">Medusa</p>
+            </a>
+            
+            <a href="lizardfolk-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Людоящер
+                </h2>
+                <p class="text-sm text-gray-500">Lizardfolk MPMM</p>
+            </a>
+            
+            <a href="lizardfolk.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Людоящер
+                </h2>
+                <p class="text-sm text-gray-500">Lizardfolk</p>
+            </a>
+            
+            <a href="loxodon.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Локсодон
+                </h2>
+                <p class="text-sm text-gray-500">Loxodon</p>
+            </a>
+            
+            <a href="ravenfolk.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Рэвенфолк
+                </h2>
+                <p class="text-sm text-gray-500">Ravenfolk</p>
+            </a>
+            
+            <a href="awakened.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Пробужденный
+                </h2>
+                <p class="text-sm text-gray-500">Awakened</p>
+            </a>
+            
+            <a href="half-elf.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Полуэльф
+                </h2>
+                <p class="text-sm text-gray-500">Half-Elf</p>
+            </a>
+            
+            <a href="halfling.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Полурослик
+                </h2>
+                <p class="text-sm text-gray-500">Halfling</p>
+            </a>
+            
+            <a href="half-orc.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Полуорк
+                </h2>
+                <p class="text-sm text-gray-500">Half-Orc</p>
+            </a>
+            
+            <a href="plasmoid.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Плазмоид
+                </h2>
+                <p class="text-sm text-gray-500">Plasmoid</p>
+            </a>
+            
+            <a href="orc-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Орк
+                </h2>
+                <p class="text-sm text-gray-500">Orc MPMM</p>
+            </a>
+            
+            <a href="nymph.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Нимфа
+                </h2>
+                <p class="text-sm text-gray-500">Nymph</p>
+            </a>
+            
+            <a href="siren.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Сирена
+                </h2>
+                <p class="text-sm text-gray-500">Siren</p>
+            </a>
+            
+            <a href="silva.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Сильва
+                </h2>
+                <p class="text-sm text-gray-500">Silva</p>
+            </a>
+            
+            <a href="your-origin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Своё происхождение
+                </h2>
+                <p class="text-sm text-gray-500">Your Origin</p>
+            </a>
+            
+            <a href="mindflayer.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Свежеватель разума
+                </h2>
+                <p class="text-sm text-gray-500">Mindflayer</p>
+            </a>
+            
+            <a href="satyr-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Сатир
+                </h2>
+                <p class="text-sm text-gray-500">Satyr MPMM</p>
+            </a>
+            
+            <a href="satyr.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Сатир
+                </h2>
+                <p class="text-sm text-gray-500">Satyr</p>
+            </a>
+            
+            <a href="satyr-odl.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Сатир
+                </h2>
+                <p class="text-sm text-gray-500">Satyr ODL</p>
+            </a>
+            
+            <a href="ratfolk.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Рэтфолк
+                </h2>
+                <p class="text-sm text-gray-500">Ratfolk</p>
+            </a>
+            
+            <a href="thri-kreen.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Три-крин
+                </h2>
+                <p class="text-sm text-gray-500">Thri-kreen</p>
+            </a>
+            
+            <a href="tortle-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тортл
+                </h2>
+                <p class="text-sm text-gray-500">Tortle MPMM</p>
+            </a>
+            
+            <a href="tortle.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тортл
+                </h2>
+                <p class="text-sm text-gray-500">Tortle</p>
+            </a>
+            
+            <a href="smoldering.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тлеющий
+                </h2>
+                <p class="text-sm text-gray-500">Smoldering</p>
+            </a>
+            
+            <a href="tiefling.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тифлинг
+                </h2>
+                <p class="text-sm text-gray-500">Tiefling</p>
+            </a>
+            
+            <a href="teratect.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тератект
+                </h2>
+                <p class="text-sm text-gray-500">Teratect</p>
+            </a>
+            
+            <a href="shadow-fey.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Теневая фея
+                </h2>
+                <p class="text-sm text-gray-500">Shadow fey</p>
+            </a>
+            
+            <a href="tabaxi.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Табакси
+                </h2>
+                <p class="text-sm text-gray-500">Tabaxi</p>
+            </a>
+            
+            <a href="fairy-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Фэйри
+                </h2>
+                <p class="text-sm text-gray-500">Fairy MPMM</p>
+            </a>
+            
+            <a href="fairy.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Фэйри
+                </h2>
+                <p class="text-sm text-gray-500">Fairy</p>
+            </a>
+            
+            <a href="firbolg-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Фирболг
+                </h2>
+                <p class="text-sm text-gray-500">Firbolg MPMM</p>
+            </a>
+            
+            <a href="firbolg.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Фирболг
+                </h2>
+                <p class="text-sm text-gray-500">Firbolg</p>
+            </a>
+            
+            <a href="fairyblood.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Феекровные
+                </h2>
+                <p class="text-sm text-gray-500">Fairyblood</p>
+            </a>
+            
+            <a href="trollkin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Троллкин
+                </h2>
+                <p class="text-sm text-gray-500">Trollkin</p>
+            </a>
+            
+            <a href="triton-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тритон
+                </h2>
+                <p class="text-sm text-gray-500">Triton MPMM</p>
+            </a>
+            
+            <a href="triton.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Тритон
+                </h2>
+                <p class="text-sm text-gray-500">Triton</p>
+            </a>
+            
+            <a href="shadar-kai-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Шадар-кай
+                </h2>
+                <p class="text-sm text-gray-500">Shadar-Kai MPMM</p>
+            </a>
+            
+            <a href="hobgoblin-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Хобгоблин
+                </h2>
+                <p class="text-sm text-gray-500">Hobgoblin MPMM</p>
+            </a>
+            
+            <a href="hobgoblin.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Хобгоблин
+                </h2>
+                <p class="text-sm text-gray-500">Hobgoblin</p>
+            </a>
+            
+            <a href="khenra.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Хенра
+                </h2>
+                <p class="text-sm text-gray-500">Khenra</p>
+            </a>
+            
+            <a href="harengon-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Харенгон
+                </h2>
+                <p class="text-sm text-gray-500">Harengon MPMM</p>
+            </a>
+            
+            <a href="harengon.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Харенгон
+                </h2>
+                <p class="text-sm text-gray-500">Harengon</p>
+            </a>
+            
+            <a href="hadozee.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Хадози
+                </h2>
+                <p class="text-sm text-gray-500">Hadozee</p>
+            </a>
+            
+            <a href="yuan-ti-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Юань-ти
+                </h2>
+                <p class="text-sm text-gray-500">Yuan-Ti MPMM</p>
+            </a>
+            
+            <a href="yuan-ti.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Юань-ти
+                </h2>
+                <p class="text-sm text-gray-500">Yuan-ti</p>
+            </a>
+            
+            <a href="astral-elf.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Эльф (Астральный)
+                </h2>
+                <p class="text-sm text-gray-500">Astral Elf</p>
+            </a>
+            
+            <a href="eladrin-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Эладрин
+                </h2>
+                <p class="text-sm text-gray-500">Eladrin MPMM</p>
+            </a>
+            
+            <a href="shifter-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Шифтер
+                </h2>
+                <p class="text-sm text-gray-500">Shifter MPMM</p>
+            </a>
+            
+            <a href="shifter.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Шифтер
+                </h2>
+                <p class="text-sm text-gray-500">Shifter</p>
+            </a>
+            
+            <a href="aasimar.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Аасимар
+                </h2>
+                <p class="text-sm text-gray-500">Aasimar</p>
+            </a>
+            
+            <a href="aarakocra-mpmm.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Ааракокра
+                </h2>
+                <p class="text-sm text-gray-500">Aarakocra MPMM</p>
+            </a>
+            
+            <a href="elf.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Эльф
+                </h2>
+                <p class="text-sm text-gray-500">Elf</p>
+            </a>
+            
+            <a href="human.html" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
+                <h2 class="text-xl font-semibold">
+                    Человек
+                </h2>
+                <p class="text-sm text-gray-500">Human</p>
+            </a>
+            
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("search");
+        const items = [...document.querySelectorAll("#race-list > a")];
+
+        input.addEventListener("input", () => {
+            const q = input.value.toLowerCase();
+            items.forEach(el => {
+                el.style.display = el.textContent.toLowerCase().includes(q) ? "" : "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

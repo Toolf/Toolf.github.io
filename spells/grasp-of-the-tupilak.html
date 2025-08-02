@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Хватка Тьюпилака — Grasp of the Tupilak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
+        <h1 class="text-3xl font-bold mb-2">Хватка Тьюпилака</h1>
+        <h2 class="text-lg text-gray-500 mb-6">Grasp of the Tupilak</h2>
+
+        <div class="grid grid-cols-2 gap-4 text-sm">
+            <p><strong>Рівень:</strong> 5</p>
+            <p><strong>Школа:</strong> некромантия</p>
+            <p><strong>Час накладання:</strong> 1 действие</p>
+            <p><strong>Дальність:</strong> На себя</p>
+            <p><strong>Тривалість:</strong> 1 час или до срабатывания</p>
+            <p><strong>Компоненти:</strong>
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                    В 
+                    С 
+                    <span title="идол тьюпилака">М</span>
+                </span>
+            </p>
+            
+            
+        </div>
+
+        <div class="mt-6">
+            <h3 class="font-semibold mb-1">Класи</h3>
+            <div class="flex flex-wrap gap-2">
+                
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+                
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+                
+            </div>
+
+            
+        </div>
+
+        <div class="mt-6 prose prose-sm max-w-none">
+            <p>Это заклинание печально известно тем, что его используют враждующие волшебники или ведьмы, поскольку оно позволяет заклинателю украсть одну или несколько ячеек заклинаний у своей цели. Хватка тьюпилака остаётся активной вплоть до 1 часа или пока не сработает. Когда вы попадает атакой ближнего боя, помимо обычного урона от атаки цель получает <dice-roller formula="2к4">2к4</dice-roller> некротического урона, и 1 или более ячейка заклинаний цели переходит к вам.</p><p><strong> Бросьте <dice-roller formula="к6">к6</dice-roller>:</strong> результат равен суммарному уровню переданных ячеек. Сначала передаются ячейки максимально возможно уровня, а затем те, что ниже их по уровню.</p><p>Например, если у вас выпало 5 и у цели есть ячейка 5 уровня, то вы похитите только 1 ячейку 5 уровня. Если максимальная доступная ячейка у цели только 3 уровня, то вы получите ячейку 3 уровня плюс ячейку 2 уровня или ячейку 3 уровня и две ячейки 1 уровня, если у цели нет ячеек 2 уровня (и доступны две ячейки первого). Вы можете по своему выбору украсть мистические или сакральные ячейки заклинаний.</p><p>Важно заметить, что ячейки заклинаний могут быть украдены только у заклинателей, которые готовят заклинания заранее. Если у цели нет доступных ячеек заклинаний подходящего уровня - например, если у вас выпало 2, а цель потратила все свои ячейки 1 и 2 уровня - то хватка тьюпилака ничего не делает, в том числе не наносит некротический урон. Если уровень украденной ячейки выше того, которую вы можете использовать, то считайте её ячейкой максимального доступного вам уровня.</p><p>Тот, у которого украли ячейки заклинаний, не может восстановить их до тех пор, пока вы не потратите их, завершите <detail-tooltip type="screen"><a href="/screens/Long_Rest">продолжительный отдых</a></detail-tooltip> или пока на цель не наложат <detail-tooltip type="spell"><a href="/spells/remove_curse">снятие проклятья [remove curse]</a></detail-tooltip>, <detail-tooltip type="spell"><a href="/spells/greater_restoration">высшее восстановление [greater restoration]</a></detail-tooltip> или подобное заклинание.</p><p>Неиспользованные похищенные ячейки пропадают, когда вы завершаете <detail-tooltip type="screen"><a href="/screens/Long_Rest">продолжительный отдых</a></detail-tooltip> или, когда существо, у которого они были украдены, становится целью указанных выше заклинаний.</p>
+        </div>
+
+        
+
+        <div class="mt-8 text-sm text-gray-500">
+            <p>Джерело: Мидгард Справочник героя (MHH)</p>
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+    </div>
+</body>
+
+</html>

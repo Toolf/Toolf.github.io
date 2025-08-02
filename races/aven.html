@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Авен</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .prose p {
+            text-indent: 1.5rem;
+            /* відступ першої строки */
+        }
+
+        .prose {
+            max-width: 100%;
+            /* max-w-none */
+            margin-bottom: 1.5rem;
+            /* mb-6 */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .prose strong {
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            /* трохи більший шрифт */
+            margin: 1.5rem 0 0.5rem 0;
+            cursor: pointer;
+            color: #2563eb;
+            /* синій */
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .prose strong:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+
+        .prose p {
+            margin: 0.5rem 0 1rem 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Приховані параграфи */
+        .prose p[style*="display: none"] {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Відкриті параграфи */
+        .prose p:not([style*="display: none"]) {
+            max-height: 1000px;
+            /* достатньо для тексту */
+            opacity: 1;
+        }
+
+        /* Опціонально: роздільник між блоками */
+        .prose strong+p {
+            border-top: 1px solid #e5e7eb;
+            /* світло-сірий роздільник */
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+        <h1 class="text-3xl font-bold mb-4">
+            Авен
+        </h1>
+
+        <p class="text-sm text-gray-500 mb-4">Aven</p>
+
+        
+        <div class="prose max-w-none mb-6">
+            <p>У авенов человеческие тела, руки и ноги, а также птичьи крылья и головы. В Нактамуне можно найти две различные разновидности авенов. У одних голова ястреба или подобной хищной птицы с короткими крыльями, позволяющими быстро летать. У другой разновидности есть голова ибиса на длинной шее с широкими угловатыми крыльями, которые лучше подходят для парения. У всех авенов худощавое тело с перьями, простирающимися от головы до плеч.</p><p>Авены наслаждаются полётом над своими врагами, используя свою превосходную мобильность, чтобы сбивать с толку и опережать своих противников. Они также любят парить в небе, хотя Хекма ограничивает их высоту. Как и все жители Нактамуна, они, конечно же, благодарны за защитную магию Хекмы. Но они чутко ожидают часа, когда Бог-Фараон вернётся и рассеет завесу, позволив им безгранично летать в загробной жизни.</p><h4 style="text-align: center;">Боевые классы</h4><p>Заклинатели обычны среди ибисоголовых авенов, привлечённых к следованию учениям Кефнета. Их физическое сходство с богом знания отражается в металлической дисциплине, сосредоточенности и уверенности, которыми известны заклинатели авенов. Они владеют магией воздуха, ветра, а иногда и воды, чтобы поразить своих врагов, улучшить свой полёт и отразить вражеские атаки. Авены с головой ястреба, которые следуют пути мага, с большей вероятностью изучат основанную на песочную магию, которая может затуманивать воздух, взрывать своих врагов или закапывать их в живые дюны.</p><p>Ястребоголовых авенов часто привлекает овладение приёмами дальнего боя, например дротиком, предпочитаемое многими оружие, луком или другим метательным оружием. Какое бы оружие они ни использовали, авены парят и пикируют в воздухе над схваткой, выискивая подходящий момент, чтобы нанести точный удар в нужное место. В соответствии с учением бога солидарности, они часто летают плотным строем с другими авенами, поддерживая и защищая друг друга. Авены очень гордятся точностью своих атак, полагаясь на их острое зрение и превосходные точки обзора. Они рассматривают острый наконечник копья или стрелы как символ своей любви к точности, а некоторые посвященные хранят тщательно ухоженные коллекции наконечников копий или стрел.</p><p>Относительно небольшое количество авенов обоих видов сосредотачивается на рукопашном бою. Даже там они используют свою способность летать с большим преимуществом, часто пикируя на своих врагов с большой высоты. Скорость и сила удара пикирующего авена могут быть совершенно разрушительными, но такой удар представляет огромный риск как для цели, так и для самого авена. Авен, не сумевший вовремя выйти из штопора, может получить ещё более серьёзные травмы, чем цель атаки. Авены часто минимизируют этот риск, бросая дротики, когда они пикируют, а затем набирают высоту после успешного броска.</p>
+        </div>
+        
+
+        
+
+        
+
+        <div class="mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку рас</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prose = document.querySelector(".prose");
+            if (!prose) return;
+
+            const paragraphs = Array.from(prose.querySelectorAll("p"));
+
+            paragraphs.forEach(p => {
+                const strong = p.querySelector("strong");
+                if (strong) {
+                    // Витягуємо <strong> з <p>
+                    strong.remove();
+
+                    // Вставляємо <strong> перед <p>
+                    p.parentNode.insertBefore(strong, p);
+                }
+            });
+
+            // Знайдемо всі strong всередині prose
+            const strongs = Array.from(prose.querySelectorAll("strong"));
+
+            strongs.forEach((strong, index) => {
+                // Зробимо strong клікабельним стилем
+                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
+                let nextStrong = strongs[index + 1];
+                let elemsToHide = [];
+
+                // Починаємо з наступного елемента після strong
+                let sibling = strong.nextElementSibling;
+
+                while (sibling && sibling !== nextStrong) {
+                    // Перевіряємо чи це <p>
+                    if (sibling.tagName.toLowerCase() !== "strong") {
+                        elemsToHide.push(sibling);
+                    }
+                    sibling = sibling.nextElementSibling;
+                }
+
+                // Ховаємо всі знайдені <p>
+                elemsToHide.forEach(p => p.style.display = "none");
+
+                // Додаємо поведінку клику: переключаємо видимість
+                strong.addEventListener("click", () => {
+                    elemsToHide.forEach(p => {
+                        if (p.style.display === "none") {
+                            p.style.display = "";
+                        } else {
+                            p.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
