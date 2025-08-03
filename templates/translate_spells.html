@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Переклад заклять</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+  <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 p-6">
+
+  <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl p-6 space-y-6">
+    <h1 class="text-2xl font-bold">Переклад заклять: <span id="spell-title" class="text-blue-600"></span></h1>
+
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label class="block text-sm font-medium">Назва:</label>
+        <div class="flex items-center space-x-">
+          <input id="name-rus" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-name-rus" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Назва (англ):</label>
+        <input id="name-eng" class="mt-1 block w-full rounded border-gray-300" disabled />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Рівень:</label>
+        <div class="flex items-center space-x-">
+          <input id="level" type="number" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-level" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Школа:</label>
+        <div class="flex items-center space-x-">
+          <input id="school" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-school" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div class="col-span-2">
+        <label class="block text-sm font-medium">Тип (додатковий):</label>
+        <div class="flex items-center space-x-">
+          <input id="additional-type" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-additional-type" -2 text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Компоненти (матеріальні):</label>
+        <div class="flex items-center space-x-">
+          <input id="components-m" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-components-m" class2 text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Дальність:</label>
+        <div class="flex items-center space-x-">
+          <input id="range" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-range" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Час накладання:</label>
+        <div class="flex items-center space-x-">
+          <input id="duration" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-duration" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Тривалість:</label>
+        <div class="flex items-center space-x-">
+          <input id="time" class="mt-1 block w-full rounded border-gray-300 pr-8" />
+          <span id="check-time" class="text-green-500 hidden">✅</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-2">Опис:</label>
+      <textarea id="description" class="hidden"></textarea>
+    </div>
+
+    <div class="flex justify-between items-center mt-4">
+      <button id="prev-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">← Назад</button>
+      <button id="save-btn" class="px-6 py-2 bg-green-500 text-white hover:bg-green-600 rounded">💾 Зберегти
+        JSON</button>
+      <button id="next-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">Вперед →</button>
+    </div>
+
+    <p id="load-status" class="text-sm text-gray-600 mt-4"></p>
+  </div>
+
+  <script>
+    let spells = [];
+    let index = 0;
+    let editor;
+
+    const fields = {
+      nameRus: document.getElementById("name-rus"),
+      nameEng: document.getElementById("name-eng"),
+      level: document.getElementById("level"),
+      school: document.getElementById("school"),
+      additionalType: document.getElementById("additional-type"),
+      componentsM: document.getElementById("components-m"),
+      range: document.getElementById("range"),
+      duration: document.getElementById("duration"),
+      time: document.getElementById("time"),
+      title: document.getElementById("spell-title")
+    };
+
+    const status = document.getElementById("load-status");
+
+    function updateCheckmarks(spell) {
+      // Приховати всі
+      document.querySelectorAll("[id^='check-']").forEach(el => el.classList.add("hidden"));
+
+      // Показати лише ті, що в _changed
+      console.dir(spell._changed)
+      for (field in spell._changed) {
+        if (spell._changed[field]) {
+          const el = document.getElementById("check-" + field);
+          if (el) el.classList.remove("hidden");
+        }
+      }
+    }
+
+
+    function loadSpell() {
+      const spell = spells[index];
+      if (!spell) return;
+
+      fields.nameRus.value = spell.name?.rus || "";
+      fields.nameEng.value = spell.name?.eng || "";
+      fields.level.value = spell.level ?? "";
+      fields.school.value = spell.school || "";
+      fields.additionalType.value = spell.additionalType || "";
+      fields.componentsM.value = spell.components?.m || "";
+      fields.range.value = spell.range || "";
+      fields.duration.value = spell.duration || "";
+      fields.time.value = spell.time || "";
+      editor.value(spell.description || "");
+      fields.title.textContent = spell.name?.eng || "???";
+
+      updateCheckmarks(spell); // <--- додай сюди
+    }
+
+
+    function saveToFile() {
+      const blob = new Blob([JSON.stringify(spells, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "spells.json";
+      a.click();
+    }
+
+    document.getElementById("prev-btn").onclick = () => {
+      if (index > 0) index--;
+      loadSpell();
+    };
+
+    document.getElementById("next-btn").onclick = () => {
+      if (index < spells.length - 1) index++;
+      loadSpell();
+    };
+
+    document.getElementById("save-btn").onclick = saveToFile;
+
+    // Markdown editor
+    editor = new EasyMDE({
+      element: document.getElementById("description"),
+    });
+
+    editor.codemirror.on("change", () => {
+      const current = editor.value();
+      const original = spells[index].description || "";
+      const changed = current !== original;
+
+      if (!spells[index]._changed) spells[index]._changed = {};
+      spells[index]._changed["description"] = changed;
+
+      let icon = document.getElementById("check-description");
+      if (!icon) {
+        icon = document.createElement("span");
+        icon.id = "check-description";
+        icon.className = "ml-2 text-green-500";
+        icon.textContent = "✅";
+        editor.codemirror.getWrapperElement().parentElement.insertAdjacentElement("beforeend", icon);
+      }
+      icon.classList.toggle("hidden", !changed);
+    });
+
+    // Track changes
+    function trackChanges(fieldId, getOriginal, setValue) {
+      const input = document.getElementById(fieldId);
+      const check = document.getElementById("check-" + fieldId);
+      input.addEventListener("input", () => {
+        const current = input.value;
+        const original = getOriginal();
+        const changed = current !== original;
+
+        check.classList.toggle("hidden", !changed);
+
+        if (!spells[index]._changed) spells[index]._changed = {};
+        spells[index]._changed[fieldId] = changed;
+
+        if (setValue) setValue(current);
+      });
+    }
+
+    function setupTracking() {
+      trackChanges("name-rus", () => spells[index].name?.rus, val => spells[index].name.rus = val);
+      trackChanges("level", () => String(spells[index].level ?? ""), val => spells[index].level = parseInt(val) || 0);
+      trackChanges("school", () => spells[index].school || "", val => spells[index].school = val);
+      trackChanges("additional-type", () => spells[index].additionalType || "", val => spells[index].additionalType = val);
+      trackChanges("components-m", () => spells[index].components?.m || "", val => spells[index].components.m = val);
+      trackChanges("range", () => spells[index].range || "", val => spells[index].range = val);
+      trackChanges("duration", () => spells[index].duration || "", val => spells[index].duration = val);
+      trackChanges("time", () => spells[index].time || "", val => spells[index].time = val);
+    }
+
+    // Load spells.json
+    async function loadSpells() {
+      try {
+        status.textContent = "Завантаження /data/spells.json...";
+        const res = await fetch("/templates/data/spells.json");
+        if (!res.ok) throw new Error("Не вдалося завантажити spells.json");
+        spells = await res.json();
+        if (!Array.isArray(spells)) throw new Error("Невірний формат JSON");
+        status.textContent = `Завантажено ${spells.length} заклять.`;
+        loadSpell();
+        setupTracking();
+      } catch (err) {
+        status.textContent = "❌ Помилка: " + err.message;
+        console.error(err);
+      }
+    }
+
+    loadSpells();
+  </script>
+</body>
+
+</html>
