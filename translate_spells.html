@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Переклад заклять</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
-  <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 p-6">
@@ -37,7 +37,7 @@
       <div>
         <label class="block text-sm font-medium">Рівень:</label>
         <div class="flex items-center space-x-">
-          <input id="level" type="number" class="mt-1 block w-full rounded border-gray-300 pr-8"  disabled/>
+          <input id="level" type="number" class="mt-1 block w-full rounded border-gray-300 pr-8" disabled />
           <span id="check-level" class="text-green-500 hidden">✅</span>
         </div>
       </div>
@@ -86,8 +86,8 @@
     </div>
 
     <div>
-      <label class="block text-sm font-medium mb-2">Опис:</label>
-      <textarea id="description" class="hidden"></textarea>
+      <label id="description-label" class="block text-sm font-medium mb-2">Опис:</label>
+      <div id="description-editor" class="bg-white border border-gray-300 rounded" style="min-height: 200px;"></div>
     </div>
 
     <div class="flex justify-between items-center mt-4">
@@ -139,7 +139,7 @@
 
     let spells = [];
     let index = 0;
-    let editor;
+    let quill;
 
     const fields = {
       nameRus: document.getElementById("name-rus"),
@@ -184,15 +184,19 @@
       fields.range.value = spell.range || "";
       fields.duration.value = spell.duration || "";
       fields.time.value = spell.time || "";
-      editor.value(spell.description || "");
+      quill.root.innerHTML = spell.description || "";
       fields.title.textContent = spell.name?.eng || "???";
 
       updateCheckmarks(spell);
       updateSpellSelect();
     }
 
+    function saveSpell() {
+      spells[index].description = quill.root.innerHTML;
+    }
 
     function saveToFile() {
+      saveSpell();
       const blob = new Blob([JSON.stringify(spells, null, 2)], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
@@ -201,27 +205,29 @@
     }
 
     document.getElementById("prev-btn").onclick = () => {
+      saveSpell();
       if (index > 0) index--;
       loadSpell();
     };
 
     document.getElementById("next-btn").onclick = () => {
+      saveSpell();
       if (index < spells.length - 1) index++;
       loadSpell();
     };
 
     document.getElementById("save-btn").onclick = saveToFile;
 
-    // Markdown editor
-    editor = new EasyMDE({
-      element: document.getElementById("description"),
-      spellChecker: false,  // disable spell checking
+    // Initialize Quill
+    quill = new Quill("#description-editor", {
+      theme: "snow"
     });
 
-    editor.codemirror.on("change", () => {
-      const current = editor.value();
+    // Track changes
+    quill.on('text-change', () => {
+      const current = quill.root.innerHTML;
       const original = spells[index].description || "";
-      const changed = current !== original;
+      const changed = current.trim() !== original.trim();
 
       if (!spells[index]._changed) spells[index]._changed = {};
       spells[index]._changed["description"] = changed;
@@ -232,7 +238,8 @@
         icon.id = "check-description";
         icon.className = "ml-2 text-green-500";
         icon.textContent = "✅";
-        editor.codemirror.getWrapperElement().parentElement.insertAdjacentElement("beforeend", icon);
+        const label = document.getElementById("description-label");
+        label.appendChild(icon);
       }
       icon.classList.toggle("hidden", !changed);
     });
