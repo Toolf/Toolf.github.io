@@ -15,6 +15,13 @@
   <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl p-6 space-y-6">
     <h1 class="text-2xl font-bold">Переклад заклять: <span id="spell-title" class="text-blue-600"></span></h1>
 
+    <!-- Add this dropdown below your <h1> or wherever you want -->
+    <div class="mb-4">
+      <label for="spell-select" class="block text-sm font-medium mb-1">Оберіть закляття:</label>
+      <select id="spell-select" class="w-full rounded border border-gray-300 p-2"></select>
+    </div>
+
+
     <div class="grid grid-cols-2 gap-4">
       <div>
         <label class="block text-sm font-medium">Назва:</label>
@@ -94,6 +101,42 @@
   </div>
 
   <script>
+    const spellSelect = document.getElementById("spell-select");
+
+    function updateSpellSelect() {
+      // Save current selected index to restore after update
+      const prevIndex = index;
+
+      spellSelect.innerHTML = ""; // Clear
+
+      spells.forEach((spell, i) => {
+        // Check if any _changed field is true
+        let changed = false;
+        if (spell._changed) {
+          changed = Object.values(spell._changed).some(ch => ch === true);
+        }
+
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = spell.name?.rus || `Закляття ${i + 1}`;
+        if (changed) option.textContent += " ✅";
+
+        spellSelect.appendChild(option);
+      });
+
+      // Set selected option to current index
+      spellSelect.value = prevIndex;
+    }
+
+    // When user selects from dropdown
+    spellSelect.addEventListener("change", (e) => {
+      const selectedIndex = parseInt(e.target.value);
+      if (!isNaN(selectedIndex)) {
+        index = selectedIndex;
+        loadSpell();
+      }
+    });
+
     let spells = [];
     let index = 0;
     let editor;
@@ -144,7 +187,8 @@
       editor.value(spell.description || "");
       fields.title.textContent = spell.name?.eng || "???";
 
-      updateCheckmarks(spell); // <--- додай сюди
+      updateCheckmarks(spell);
+      updateSpellSelect();
     }
 
 
@@ -171,6 +215,7 @@
     // Markdown editor
     editor = new EasyMDE({
       element: document.getElementById("description"),
+      spellChecker: false,  // disable spell checking
     });
 
     editor.codemirror.on("change", () => {
