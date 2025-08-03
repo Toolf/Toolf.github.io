@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тёмное таинство — Dark Sacrament</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Тёмное таинство</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Dark Sacrament</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+            <p><strong>Рівень:</strong> 4</p>
+            <p><strong>Школа:</strong> воплощение</p>
+            <p><strong>Час накладання:</strong> 1 действие</p>
+            <p><strong>Дальність:</strong> На себя</p>
+            <p><strong>Тривалість:</strong> Мгновенная</p>
+            <p><strong>Компоненти:</strong>
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+                    В 
+                    С 
+                    <span title="кинжал украшенный самоцветами, стоимостью не менее 100 зм.">М</span>
+                </span>
+            </p>
+            
+            
+        </div>
+
+        <div class="mt-6">
+            <h3 class="font-semibold mb-1">Класи</h3>
+            <div class="flex flex-wrap gap-2">
+                
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+                
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
+                
+            </div>
+
+            
+            <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
+            <ul class="list-disc ml-6">
+                
+                <li>Круг Крови (Друид)</li>
+                
+            </ul>
+            
+        </div>
+
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
+            <p>Как часть накладывания заклинания, вы должны потратить четыре кости хитов или заклинание автоматически проваливается. Если вы это делаете, то совершите <em>рукопашную атаку заклинанием</em> по существу в 5 футах от вас, используя в качестве оружия материальный компонент заклинания. При попадании, бросьте потраченные кости хитов и ещё <dice-roller formula="4к8">4к8</dice-roller> и нанесите существу урон некротической энергией равный результату броска. Если из-за получения урона от этого заклинания хиты существа опускаются до <span class="dice_text">0</span> оно моментально умирает и вы получаете одно из следующих тёмных благословений:</p><ul><li><strong>Неприступность.</strong> Вы совершаете все спасброски с <span class="advantage">преимуществом</span>.</li><li><strong>Несокрушимость.</strong> Ваш размер увеличивается на одну категорию (напримео от&nbsp;<em>Среднего</em> до <em>Большого</em>). Также, вы получаете <detail-tooltip type="screen"><a href="/screens/temporary_hit_points">временные хиты</a></detail-tooltip> в количестве равном вашему модификатору <strong>Телосложения</strong> (минимум 1) в начале каждого вашего следующего хода, также ваши атаки оружием наносят дополнительно <dice-roller formula="1к4">1к4</dice-roller> урона того же типа, что и урон оружия.</li><li><strong>Безупречность.</strong> Ваш бонус мастерства увеличен на 2.</li></ul><p>Тёмное благословение заканчивается через 10 минут или когда ваши хиты опускаются до 0. Получив урон излучением, пока на вас действует тёмное благословение, вы получаете дополнительно <dice-roller formula="1к4">1к4</dice-roller> урона излучением.</p>
+        </div>
+
+        
+        <div class="mt-4 border-t pt-4">
+            <h4 class="font-bold text-md">На вищих рівнях</h4>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 5 уровня или выше, урон от <em>рукопашной атаки заклинанием</em> увеличивается на <dice-roller formula="1к8">1к8</dice-roller> за каждый уровень ячейки выше четвертого.</div>
+        </div>
+        
+
+        <div class="mt-8 text-sm text-gray-500">
+            <p>Джерело: Руководство игрока в Мрачной лощине (GHtPG), стор. 6</p>
+        </div>
+    </div>
+</body>
+
+</html>
