@@ -3,9 +3,17 @@
 
 <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Головна сторінка</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+                /* Стиль для "заблокованих" посилань */
+                .disabled-link {
+                        pointer-events: none;
+                        opacity: 0.5;
+                        cursor: default;
+                }
+        </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans min-h-screen flex flex-col">
@@ -17,41 +25,36 @@
                 <nav>
                         <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                                 <li><a href="architypes/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Архетипи</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Архетипи</a>
                                 </li>
                                 <li><a href="armors/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Обладунки</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Обладунки</a>
                                 </li>
                                 <li><a href="backgrounds/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Походження</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Походження</a>
                                 </li>
                                 <li><a href="bestiary/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Бестіарій</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Бестіарій</a>
                                 </li>
                                 <li><a href="classes/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Класи</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Класи</a>
                                 </li>
                                 <li><a href="fears/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Страхи</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Особливості</a>
                                 </li>
                                 <li><a href="items/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Предмети</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Предмети</a>
                                 </li>
                                 <li><a href="items_magic/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Магічні
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold disabled-link">Магічні
                                                 предмети</a></li>
                                 <li><a href="options/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Особливості</a>
+                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Особливості
+                                                класів</a>
                                 </li>
                                 <li><a href="races/index.html"
                                                 class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Раси</a>
                                 </li>
-                                <li><a href="screens/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Екрани</a>
-                                </li>
-                                <li><a href="screens_childs/index.html"
-                                                class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Дочірні
-                                                екрани</a></li>
                                 <li><a href="spells/index.html"
                                                 class="block p-4 bg-white rounded shadow hover:bg-blue-50 text-center font-semibold">Заклинання</a>
                                 </li>
@@ -62,9 +65,25 @@
                 </nav>
         </main>
 
-        <footer class="bg-white shadow p-4 text-center text-gray-500 text-sm">
-                © 2025 D&D App
-        </footer>
+        <footer class="bg-white shadow p-4 text-center text-gray-500 text-sm">© 2025 D&D App</footer>
+
+        <script>
+                // Масив дозволених href
+                const allowedLinks = [
+                        'spells/index.html',
+                        'weapons/index.html',
+                        'races/index.html',
+                        'options/index.html',
+                ];
+
+                document.querySelectorAll('nav a').forEach(link => {
+                        if (!allowedLinks.includes(link.getAttribute('href'))) {
+                                link.classList.add('disabled-link');
+                                // Вимикаємо клік (на всяк випадок)
+                                link.addEventListener('click', e => e.preventDefault());
+                        }
+                });
+        </script>
 </body>
 
 </html>
