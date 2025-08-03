@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Перегрузка — Overclock</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Перегрузка</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Overclock</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Перегрузка</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Overclock</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> преобразование</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 30 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="часовой ключик">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -55,7 +59,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы заставляете выбранный механизм неконтролируемо ускориться на время действия заклинания. Целевой механизм не может накладывать заклинания с вербальным компонентом или сколько-нибудь внятно общаться (все его фразы звучат как грохочущие шестерни).</p><p>В начале каждого своего хода цель должна совершить спасбросок <span class="saving_throw">Мудрости</span>. При провале механизм движется с утроенной скоростью в случайном направлении, после чего его ход оканчивается, он <strong>не может</strong> предпринимать никаких действий. Если спасбросок успешен, то до конца хода скорость механизма удвоена, и он получает дополнительное действие, которое должно быть действием <em>Атака</em> (только одна атака оружием), <detail-tooltip type="screen"><a href="/screens/dash">Рывок</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/disengage">Отход</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/hide">Засада</a></detail-tooltip> или <detail-tooltip type="screen"><a href="/screens/use_an_object">Использование предмета</a></detail-tooltip>. Когда заклинание оканчивается, механизм получает <dice-roller formula="2к8">2к8</dice-roller> урона силовым полем.</p>
         </div>
 
@@ -63,7 +67,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Мидгард Справочник героя (MHH)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

@@ -3,36 +3,42 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особливості — Список</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
-        <h1 class="text-3xl font-bold mb-6">Особливості</h1>
+    <main class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="/index.html" class="text-blue-600 hover:underline text-sm">← Головне меню</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Особливості</h1>
 
+        <label for="search" class="sr-only">Пошук</label>
         <input type="text" placeholder="Пошук..." id="search"
-            class="w-full p-3 mb-6 border border-gray-300 rounded-md" />
+            class="w-full p-3 mb-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            aria-label="Пошук" />
 
         <ul id="option-list" class="grid gap-4">
             {% for option in items %}
             <li>
-                <a href="{{ option.filename }}" class="block p-4 bg-white rounded shadow hover:bg-gray-50">
-                    <div class="text-xl font-semibold" title="{{ option.name }}">
+                <a href="{{ option.filename }}" class="block p-4 bg-white rounded shadow hover:bg-gray-50 transition">
+                    <div class="text-lg sm:text-xl font-semibold truncate" title="{{ option.name.rus }}">
                         {{ option.name.rus }}
                     </div>
-                    <div class="source" title="{{ option.source.name }}">
+                    <div class="text-sm text-gray-600 truncate" title="{{ option.source.name }}">
                         {{ option.source.shortName or '' }}
                         {% if option.homebrew %}
-                        <sup title="Homebrew">HB</sup>
+                        <sup class="text-yellow-600 font-semibold" title="Homebrew">HB</sup>
                         {% endif %}
                     </div>
-                    <p class="text-sm text-gray-500">{{ option.name.eng }}</p>
+                    <p class="text-sm text-gray-500 truncate">{{ option.name.eng }}</p>
                 </a>
             </li>
             {% endfor %}
         </ul>
-    </div>
+    </main>
 
     <script>
         const searchInput = document.getElementById('search');
@@ -40,11 +46,11 @@
         const items = list.getElementsByTagName('li');
 
         searchInput.addEventListener('input', () => {
-            const query = searchInput.value.toLowerCase();
-            for (const item of items) {
+            const query = searchInput.value.toLowerCase().trim();
+            Array.from(items).forEach(item => {
                 const text = item.textContent.toLowerCase();
-                item.style.display = text.includes(query) ? '' : 'none';
-            }
+                item.hidden = !text.includes(query);
+            });
         });
     </script>
 </body>

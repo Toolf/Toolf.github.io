@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Подмога — Aid</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Подмога</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Aid</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Подмога</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Aid</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 2</p>
             <p><strong>Школа:</strong> ограждение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 30 футов</p>
             <p><strong>Тривалість:</strong> 8 часов</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="полоска белой ткани">М</span>
@@ -65,20 +69,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Ваше заклинание наделяет союзников стойкостью и решимостью.</p><p>Выберите до трёх существ в пределах дистанции. На время длительности максимум хитов и текущие хиты всех целей увеличиваются на <span class="dice_text">5</span>.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы накладываете это заклинание, используя ячейку 3 уровня или выше, хиты целей увеличиваются ещё на <span class="dice_text">5</span> за каждый уровень ячейки выше второго.</div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 3 уровня или выше, хиты целей увеличиваются ещё на <span class="dice_text">5</span> за каждый уровень ячейки выше второго.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

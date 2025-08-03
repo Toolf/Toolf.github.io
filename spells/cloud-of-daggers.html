@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Облако кинжалов — Cloud of Daggers</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Облако кинжалов</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Cloud of Daggers</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Облако кинжалов</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Cloud of Daggers</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 2</p>
             <p><strong>Школа:</strong> вызов</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 60 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="осколок стекла">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -59,20 +63,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы заполняете воздух крутящимися кинжалами в кубе с длиной ребра 5 футов, с центром на точке, выбранной вами в пределах дистанции. Существо получает <dice-roller formula="4к4">4к4</dice-roller> рубящего урона, когда впервые за ход входит в область заклинания или начинает там ход.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы накладываете это заклинание, используя ячейку 3 уровня или выше, урон увеличивается на <dice-roller formula="2к4">2к4</dice-roller> за каждый уровень ячейки выше второго.</div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 3 уровня или выше, урон увеличивается на <dice-roller formula="2к4">2к4</dice-roller> за каждый уровень ячейки выше второго.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB), стор. 245</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

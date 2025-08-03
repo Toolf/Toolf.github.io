@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Метель — Sleet Storm</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Метель</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Sleet Storm</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Метель</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Sleet Storm</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> вызов</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 150 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="щепотка пыли и несколько капель воды">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -65,7 +69,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Пока заклинание активно, в цилиндре высотой 20 футов и радиусом 40 футов с центром на точке, выбранной вами в пределах дистанции, идёт мокрый снег. Это <detail-tooltip type="screen"><a href="/screens/heavily_obscured">сильно заслонённая местность</a></detail-tooltip>, и открытые источники огня в ней тухнут. Пол в этой местности покрывается скользким льдом, что делает его <detail-tooltip type="screen"><a href="/screens/difficult_terrain_move">труднопроходимой местностью</a></detail-tooltip>.</p><p>Когда существо впервые за ход входит в область заклинания или начинает там ход, оно должно совершить спасбросок <span class="saving_throw">Ловкости</span>. При провале оно <detail-tooltip type="screen"><a href="/screens/condition_prone">падает ничком</a></detail-tooltip>.</p><p><span>Если существо начинает свой ход в области заклинания и концентрируется<sup><a href="/rules/Errata_(PHB)" title="изменено Эрратой">1</a></sup>, оно должно совершить</span>&nbsp;успешный спасбросок <span class="saving_throw">Телосложения</span> против Сл ваших заклинаний, иначе оно потеряет <detail-tooltip type="screen"><a href="/screens/concentration">концентрацию</a></detail-tooltip>.</p>
         </div>
 
@@ -73,7 +77,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB), стор. 239</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

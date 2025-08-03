@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ужас — Fear</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Ужас</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Fear</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Ужас</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Fear</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> иллюзия</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> На себя (30-футовый конус)</p>
             <p><strong>Тривалість:</strong> Концентрация, до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="белое перо или сердце курицы">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -83,7 +87,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы проецируете призрачное изображение худших кошмаров других существ. Все существа в 30-футовом конусе должны преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе они бросают всё, что держат в руках, и становятся <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> на время действия заклинания.</p><p>Будучи <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> этим заклинанием, существо должно каждый свой ход совершать действие <detail-tooltip type="screen"><a href="/screens/dash">Рывок</a></detail-tooltip>, и перемещаться прочь от вас по самому безопасному маршруту, пока у неё есть куда перемещаться.</p><p>Если существо оканчивает ход в месте, откуда у него нет линии обзора до вас, оно может совершить спасбросок <span class="saving_throw">Мудрости</span>. В случае спасения заклинание перестаёт действовать на это существо.</p>
         </div>
 
@@ -91,7 +95,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

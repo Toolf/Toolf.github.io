@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Рассеивание магии — Dispel Magic</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Рассеивание магии</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Dispel Magic</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Рассеивание магии</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Dispel Magic</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> ограждение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 120 футов</p>
             <p><strong>Тривалість:</strong> Мгновенная</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -77,20 +81,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Выберите одно существо, предмет или магический эффект в пределах дистанции. Все&nbsp;заклинания&nbsp;3&nbsp;уровня и ниже на цели оканчиваются.</p><p>Для каждого заклинания с уровнем 4 или выше совершите проверку базовой характеристики. Сл равна 10 + уровень заклинания.</p><p>В случае успеха это заклинание оканчивается.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, вы автоматически заканчиваете эффекты заклинаний на цели, чей уровень не превышает уровень использованной ячейки заклинаний.</div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, вы автоматически заканчиваете эффекты заклинаний на цели, чей уровень не превышает уровень использованной ячейки заклинаний.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

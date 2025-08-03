@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Осколки кристаллов — Jeweled Fissure</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Осколки кристаллов</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Jeweled Fissure</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Осколки кристаллов</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Jeweled Fissure</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> воплощение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 100 футов</p>
             <p><strong>Тривалість:</strong> Мгновенная</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="осколок яшмы">М</span>
@@ -40,7 +44,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Широким жестом вы заставляете зазубренные кристаллы вырваться из земли и устремиться в воздух. Выберите точку в пределах досягаемости заклинания. Линия, длинной в 30 футов, с началом на этой точке, покрывается кристаллами. Все существа, находящиеся на этой линии и до 100 футов над ней получают <dice-roller formula="2к8">2к8</dice-roller> урона звуком и <dice-roller formula="2к8">2к8</dice-roller> колющего урона, если же существо преуспеет в спасброске <span class="saving_throw">Ловкости</span>, то колющего урона оно не получает.</p><p>Существо, провалившее спасбросок, пронзается куском кристалла, который вдвое снижает его скорость, и если существо находилось в воздухе &ndash; то полёт прерывается, и оно падает. Чтобы вытащить кристалл из тела, существо, или его союзник в пределах 5 футов от него должны <em>Действием</em> совершить проверку <strong>Силы</strong> Сл 13. Если проверка успешна, то существо получает <dice-roller formula="1к8">1к8</dice-roller> колющего урона, а его скорость и способность летать восстанавливается до стандартного состояния.</p>
         </div>
 
@@ -48,7 +52,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Мидгард Справочник героя (MHH)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

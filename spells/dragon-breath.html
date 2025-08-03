@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дыхание могучего дракона — Dragon Breath</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Дыхание могучего дракона</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Dragon Breath</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Дыхание могучего дракона</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Dragon Breath</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 5</p>
             <p><strong>Школа:</strong> воплощение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> На себя (15-футовый конус или 30-футовая линия)</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -51,20 +55,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы вызываете силу дракона, чтобы обрести дыхательное оружие. Когда вы накладываете это заклинание, вы можете немедленно выдохнуть конус или линию стихийной энергии, в зависимости от выбранного вами типа дракона. Пока заклинание активно, бросьте <dice-roller formula="к6">к6</dice-roller> в начале своего хода. На броске 5 или 6 вы можете совершить <em>бонусное действие</em>, чтобы снова использовать дыхательное оружие. Когда вы накладываете заклинание, выберите один из перечисленных ниже типов драконов.</p><p>Ваш выбор определяет дистанцию и урон атаки дыханием на время действия заклинания.</p><div claass="table-responsive"><table><thead><tr><th style="text-align: left;">Тип дракона</th><th style="text-align: left;">Дистанция атаки дыханием</th><th style="text-align: left;">Урон</th></tr></thead><tbody><tr><td>Чёрный</td><td>30-футовая линия шириной 5 футов</td><td><span class="dice_text">6к6</span> урона кислотой</td></tr><tr><td>Синий</td><td>30-футовая линия шириной 5 футов</td><td><span class="dice_text">6к6</span> урона электричеством</td></tr><tr><td>Зелёный</td><td>15-футовый конус</td><td><span class="dice_text">6к6</span> урона ядом</td></tr><tr><td>Красный</td><td>15-футовый конус</td><td><span class="dice_text">6к6</span> урона огнем</td></tr><tr><td>Белый</td><td>15-футовый конус</td><td><span class="dice_text">6к6</span> урона холодом</td></tr></tbody></table></div>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">При накладывании заклинания 6 уровнем ячейки или выше, урон увеличивается на <dice-roller formula="2к6">2к6</dice-roller> за каждый уровень ячейки выше 5.</div>
+            <div class="prose prose-sm sm:prose max-w-none">При накладывании заклинания 6 уровнем ячейки или выше, урон увеличивается на <dice-roller formula="2к6">2к6</dice-roller> за каждый уровень ячейки выше 5.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Мидгард Справочник героя (MHH)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

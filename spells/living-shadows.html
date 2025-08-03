@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Живые тени — Living Shadows</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Живые тени</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Living Shadows</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Живые тени</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Living Shadows</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 5</p>
             <p><strong>Школа:</strong> очарование</p>
             <p><strong>Час накладання:</strong> </p>
             <p><strong>Дальність:</strong> 120 футов</p>
             <p><strong>Тривалість:</strong> 1 минута</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -45,7 +49,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы шепчете свистящие слова Пустоты, которые заставляют тени корчиться от нечестивой жизни.</p><p>Выберите точку, которую вы можете видеть в пределах диапазона. Извивающиеся тени расползаются по сфере радиусом 15 футов с центром в этой точке, цепляясь за существ в этом районе. Существо, которое начинает свой ход в этой области или входит в эту область впервые в свой ход, должно совершить успешный спасбросок <span class="saving_throw">Силы</span> иначе оно будет <detail-tooltip type="screen"><a href="/screens/restrained">схвачено</a></detail-tooltip> тенями.</p><p>Существо, которое начинает свой ход, захваченым тенями тенями, должно совершить успешный спасбросок <span class="saving_throw">Телосложения</span> или получить один <detail-tooltip type="screen"><a href="/screens/exhaustion">уровень истощения</a></detail-tooltip>.</p>
         </div>
 
@@ -53,7 +57,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Углубленная Магия для 5 редакции (DMf5E)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

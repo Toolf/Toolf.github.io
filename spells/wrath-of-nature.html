@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гнев природы — Wrath of Nature</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Гнев природы</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Wrath of Nature</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Гнев природы</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Wrath of Nature</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 5</p>
             <p><strong>Школа:</strong> воплощение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 120 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -48,7 +52,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы взываете к духам природы, чтобы обратить их против ваших врагов. Выберите точку, которую вы можете видеть в пределах дистанции. Духи оживляют деревья, камни и травы в 60-футовом кубе с центром в этой точке на всё время действия заклинания.</p><p><strong>Травы и подлесок.</strong> Любая область земли в кубе, покрытая травой или подлеском, является <detail-tooltip type="screen"><a href="/screens/difficult_terrain_move">труднопроходимой местностью</a></detail-tooltip> для ваших врагов.</p><p><strong>Деревья.</strong> В начале каждого вашего хода каждый из ваших врагов в пределах 10 футов от любого дерева внутри куба должен преуспеть в спасброске <span class="saving_throw">Ловкости</span> или получить <dice-roller formula="4к6">4к6</dice-roller> рубящего урона от хлещущих его ветвей.</p><p><strong>Корни и лозы.</strong> В конце каждого вашего хода одно существо по вашему выбору, которое находится на земле внутри куба, должно преуспеть в спасброске <span class="saving_throw">Силы</span> или становится <detail-tooltip type="screen"><a href="/screens/Grappled">удерживаемым</a></detail-tooltip> до тех пор, пока заклинание не закончится. <detail-tooltip type="screen"><a href="/screens/Grappled">Удерживаемое</a></detail-tooltip> существо может <em>Действием</em> совершить проверку <detail-tooltip type="screen"><a href="/screens/athletics"><em>Силы (Атлетика)</em></a></detail-tooltip> против Сл вашего заклинания. При успехе эффект для него оканчивается.</p><p><strong>Камни.</strong> <em>Бонусным действием</em> в свой ход вы можете призвать камень внутри куба, чтобы запустить его в существо, которое вы можете видеть в границах куба. Совершите <em>дальнобойную атаку заклинанием</em> против этой цели. При попадании цель получает <dice-roller formula="3к8">3к8</dice-roller> немагического дробящего урона и должна преуспеть в спасброске <span class="saving_throw">Силы</span> или упасть <detail-tooltip type="screen"><a href="/screens/Condition_Prone">ничком</a></detail-tooltip>.</p>
         </div>
 
@@ -56,7 +60,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

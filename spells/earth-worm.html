@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Земляной червь — Earth Worm</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Земляной червь</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Earth Worm</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Земляной червь</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Earth Worm</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 6</p>
             <p><strong>Школа:</strong> преобразование</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 60 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -46,7 +50,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы превращаете почву в червеобразную пасть в незанятой точке на земле в пределах дистанции.</p><p>Наложив заклинание, вы можете совершить <em>рукопашную атаку заклинанием</em> по существу в 5 футах от созданной пасти. При попадании, цель получает <dice-roller formula="3d8">3к8</dice-roller> + модификатор вашей базовой характеристики колющего урона. Если цель &mdash; это существо Большого или меньшего размера, то оно должно совершить спасбросок <span class="saving_throw">Ловкости</span> или будет поглощено червём. Поглощенное существо <detail-tooltip type="screen"><a href="/screens/blinded">ослеплено</a></detail-tooltip> и <detail-tooltip type="screen"><a href="/screens/restrained">опутано</a></detail-tooltip>, а также имеет <detail-tooltip type="screen"><a href="/screens/full_cover">полное укрытие</a></detail-tooltip> от атак и других эффектов вне червя и получает <dice-roller formula="6d6">6к6</dice-roller> дробящего урона в начале каждого своего хода.</p><p>Каждый ход, существо, пойманное червём может <em>Действием</em> совершить спасбросок <span class="saving_throw">Ловкости</span> чтобы выбраться. В случае успеха, червь отрыгнёт существо, которое падает ничком в пространстве в пределах 10 футов от червя.</p><p>В свой ход, <em>бонусным действием</em> вы можете переместить червя на 20 футов и повторить атаку против существа в 5 футах от него.</p>
         </div>
 
@@ -54,7 +58,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Руководство игрока в Мрачной лощине (GHtPG), стор. 7</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

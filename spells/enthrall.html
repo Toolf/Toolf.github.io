@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Речь златоуста — Enthrall</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Речь златоуста</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Enthrall</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Речь златоуста</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Enthrall</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 2</p>
             <p><strong>Школа:</strong> очарование</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 60 футов</p>
             <p><strong>Тривалість:</strong> 1 минута</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -53,7 +57,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы произносите отвлекающую речь, заставляя выбранных вами существ, которых вы видите в пределах дистанции, и которые при этом могут слышать вас, совершить спасбросок <span class="saving_throw">Мудрости</span>.</p><p>Существа, которые не могут быть <detail-tooltip type="screen"><a href="/screens/charmed">очарованными</a></detail-tooltip>, автоматически преуспевают в спасброске, и если вы или ваши спутники сражаетесь с существом, оно совершает спасбросок с <span class="advantage">преимуществом</span>. При провале цель получает <span class="disadvantage">помеху</span> к проверкам <detail-tooltip type="screen"><a href="/screens/perception"><em>Мудрости (Внимательность)</em></a></detail-tooltip>, совершённым для обнаружения других существ кроме вас, пока заклинание активно или пока цель не перестанет вас слышать.</p><p>Заклинание оканчивается, если вы становитесь <detail-tooltip type="screen"><a href="/screens/incapacitated">недееспособны</a></detail-tooltip> или теряете возможность говорить.</p>
         </div>
 
@@ -61,7 +65,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

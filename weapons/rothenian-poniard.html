@@ -3,56 +3,60 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ротхенианский поньерд — Деталі зброї</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <header class="mb-6">
-            <h1 class="text-3xl font-bold mb-1">Ротхенианский поньерд (Rothenian Poniard)</h1>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <header class="mb-4 sm:mb-6">
+            <div class="mb-4">
+                <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold mb-1">Ротхенианский поньерд (Rothenian Poniard)</h1>
             <p class="text-sm text-gray-600">Ціна: 100 зм., Вага: 4 кг</p>
         </header>
 
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Тип</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Тип</h2>
             <p>Військове рукопашне</p>
         </section>
 
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Шкода</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Шкода</h2>
             <p>1к8 колющий</p>
         </section>
 
         
-        <section class="mb-4 prose max-w-none">
-            <h2 class="text-xl font-semibold mb-2">Опис</h2>
+        <section class="mb-4 prose prose-sm sm:prose max-w-none">
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Опис</h2>
             <p>Этот длинный меч имеет спрятанный в рукояти поньерд, выпрыгивающий при нажатии на пружину. Его особенно любят плуты, так как его скрытый клинок помогает им незаметно атаковать им ничего не подозревающего противника. Воины Карива жестоки в обращении с ним и известны тем, что смазывают второй клинок меча ядом.</p><p><strong>Скрытый поньерд.</strong> Если поньерд всё ещё спрятан внутри рукояти, то вы можете совершить проверку <em><detail-tooltip type="screen"><a href="/screens/sleight_of_hand">Ловкости (Ловкость рук)</a></detail-tooltip></em> против проверки <detail-tooltip type="screen"><a href="/screens/perception"><em>Мудрости (Внимательности)</em></a></detail-tooltip> существа. В случае успеха вы можете с <span class="advantage">преимуществом</span> совершить одну <detail-tooltip type="screen"><a href="/screens/melee_attack">рукопашную атаку</a></detail-tooltip> по этому существу.</p><p>Урон поньерда: <dice-roller formula="1к4">1к4</dice-roller> колющий</p>
         </section>
         
 
         
-        <section class="mb-4 prose max-w-none bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-            <h2 class="text-xl font-semibold mb-2">Особливості</h2>
+        <section class="mb-4 prose prose-sm sm:prose max-w-none bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Особливості</h2>
             <p>Длинный меч считается универсальным, а вторичный клинок &ndash; лёгким оружием.</p><p><em>Бонусным действием</em> вы можете активировать скрытой клинок и совершать им атаку будто вы сражаетесь двумя оружиями. <em>Действием</em> вы можете убрать его обратно в рукоять.</p>
         </section>
         
 
         
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Властивості</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Властивості</h2>
             <ul class="list-disc list-inside space-y-2">
                 
                 <li>
                     <strong>Универсальное</strong>
                     
-                    <div class="prose max-w-none"><p>Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками.</p></div>
+                    <div class="prose prose-sm sm:prose max-w-none mt-1"><p>Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками.</p></div>
                 </li>
                 
                 <li>
                     <strong>Особое</strong>
                     
-                    <div class="prose max-w-none"><p>Оружие со свойством <a href="#">Особое</a> используется по специальным правилам, указанным в описании этого оружия.</p></div>
+                    <div class="prose prose-sm sm:prose max-w-none mt-1"><p>Оружие со свойством <a href="#">Особое</a> используется по специальным правилам, указанным в описании этого оружия.</p></div>
                 </li>
                 
             </ul>
@@ -60,13 +64,9 @@
         
 
         <section>
-            <h2 class="text-xl font-semibold mb-2">Джерело</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Джерело</h2>
             <p>Мидгард Справочник героя (MHH)</p>
         </section>
-
-        <footer class="mt-8 text-sm text-gray-500">
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
-        </footer>
     </div>
 </body>
 

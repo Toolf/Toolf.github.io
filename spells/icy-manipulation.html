@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Управление льдом — Icy Manipulation</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Управление льдом</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Icy Manipulation</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Управление льдом</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Icy Manipulation</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 6</p>
             <p><strong>Школа:</strong> преобразование</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 60 футов</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="кусок льда со стихийного плана льда">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -44,7 +48,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Существо, ставшее целью заклинания, должно совершить спасбросок <span class="saving_throw">Телосложения</span>. В случае провала оно замораживается (считается состоянием <detail-tooltip type="screen"><a href="/screens/Petrified">окаменевший</a></detail-tooltip>). Замороженное существо может повторять спасброски в конце своего каждого хода &ndash; второй успешный оканчивает действие заклинания.</p><p>Если существо дважды проваливает данные спасброски (не считая первоначальный), то оцепенение становится постоянным. Заморозка может стать постоянным и в том случае, если вы в течение всей минуты сохраняете концентрацию на заклинании.</p><p>Замороженное на постоянной основе существо может быть возвращено к прежней форме лишь <detail-tooltip type="spell"><a href="/spells/greater_restoration">высшим восстановлением [greater restoration]</a></detail-tooltip> или схожим по действию заклинанием, либо если на него снова наложат <detail-tooltip type="spell"><a href="/spells/Icy_manipulation">управление льдом [icy manipulation]</a></detail-tooltip> и в течение минуты буду поддерживать концентрацию.</p><p>Если замороженное существо было сломано пока оно находилось в оцепенении, то аналогичная травма возникнет и в его нормального состояния.</p>
         </div>
 
@@ -52,7 +56,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Мидгард Справочник героя (MHH)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

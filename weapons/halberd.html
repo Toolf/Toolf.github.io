@@ -3,30 +3,34 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Алебарда — Деталі зброї</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <header class="mb-6">
-            <h1 class="text-3xl font-bold mb-1">Алебарда (Halberd)</h1>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <header class="mb-4 sm:mb-6">
+            <div class="mb-4">
+                <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold mb-1">Алебарда (Halberd)</h1>
             <p class="text-sm text-gray-600">Ціна: 20 зм., Вага: 6 кг</p>
         </header>
 
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Тип</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Тип</h2>
             <p>Військове рукопашне</p>
         </section>
 
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Шкода</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Шкода</h2>
             <p>1к10 рубаючий</p>
         </section>
 
         
-        <section class="mb-4 prose max-w-none">
-            <h2 class="text-xl font-semibold mb-2">Опис</h2>
+        <section class="mb-4 prose prose-sm sm:prose max-w-none">
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Опис</h2>
             <p>Древковое оружие состоит из рукояти, обычно деревянной, и металлического острия или лезвия на её конце. Это классическое военное оружие, чей широкий радиус действия делает его отличным выбором против крупных противников.</p>
         </section>
         
@@ -35,25 +39,25 @@
 
         
         <section class="mb-4">
-            <h2 class="text-xl font-semibold mb-2">Властивості</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Властивості</h2>
             <ul class="list-disc list-inside space-y-2">
                 
                 <li>
                     <strong>Двуручное</strong>
                     
-                    <div class="prose max-w-none"><p>Это оружие нужно держать двумя руками, когда вы атакуете им.</p></div>
+                    <div class="prose prose-sm sm:prose max-w-none mt-1"><p>Это оружие нужно держать двумя руками, когда вы атакуете им.</p></div>
                 </li>
                 
                 <li>
                     <strong>Досягаемость</strong>
                     
-                    <div class="prose max-w-none"><p>Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием <detail-tooltip type="screen"><a href="/screens/attack">атаки</a></detail-tooltip> и <detail-tooltip type="screen"><a href="/screens/opportunity_attack">провоцированные атаки</a></detail-tooltip>.</p></div>
+                    <div class="prose prose-sm sm:prose max-w-none mt-1"><p>Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием <detail-tooltip type="screen"><a href="/screens/attack">атаки</a></detail-tooltip> и <detail-tooltip type="screen"><a href="/screens/opportunity_attack">провоцированные атаки</a></detail-tooltip>.</p></div>
                 </li>
                 
                 <li>
                     <strong>Важке</strong>
                     
-                    <div class="prose max-w-none"><p>Существа <span><em>Маленького</em> или <em>Крошечного</em> размера<a href="/rules/Errata_(PHB)" title="изменено Эрратой"><sup>1</sup></a></span>&nbsp;совершают броски атаки тяжёлым оружием с <span class="disadvantage">помехой</span>. Из-за размера и веса <em>Маленькие</em> <span>или <em>Крошечные</em><a href="/rules/Errata_(PHB)" title="изменено Эрратой"><sup>2</sup></a>&nbsp;</span>существа не могут использовать такое оружие эффективно.</p></div>
+                    <div class="prose prose-sm sm:prose max-w-none mt-1"><p>Существа <span><em>Маленького</em> или <em>Крошечного</em> размера<a href="/rules/Errata_(PHB)" title="изменено Эрратой"><sup>1</sup></a></span>&nbsp;совершают броски атаки тяжёлым оружием с <span class="disadvantage">помехой</span>. Из-за размера и веса <em>Маленькие</em> <span>или <em>Крошечные</em><a href="/rules/Errata_(PHB)" title="изменено Эрратой"><sup>2</sup></a>&nbsp;</span>существа не могут использовать такое оружие эффективно.</p></div>
                 </li>
                 
             </ul>
@@ -61,13 +65,9 @@
         
 
         <section>
-            <h2 class="text-xl font-semibold mb-2">Джерело</h2>
+            <h2 class="text-lg sm:text-xl font-semibold mb-2">Джерело</h2>
             <p>Книга игрока (PHB)</p>
         </section>
-
-        <footer class="mt-8 text-sm text-gray-500">
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
-        </footer>
     </div>
 </body>
 

@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Реанимация — Reanimate</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Реанимация</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Reanimate</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Реанимация</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Reanimate</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> воплощение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> Касание</p>
             <p><strong>Тривалість:</strong> Мгновенная</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="смесь увядших ромашек и другие травяные порошки стоимостью не менее 300 зм, расходуемые заклинанием">М</span>
@@ -40,7 +44,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Как часть накладывания заклинания, вы должны потратить три кости хитов иначе заклинание автоматически проваливается. Если вы это делаете, коснитесь существа, которое умерло не позднее чем 10 минут назад и верните его к жизни с 1 хитом. Также, бросьте потраченные на накладывание заклинания кости хитов и существо получит временные хиты в количестве равном выпавшему значению.</p><p>В начале каждого последующего хода существа оно теряет 1 временный хит из тех, что получены от этого заклинания. Пока у существа есть временные хиты от этого заклинания оно движется с невероятной оживлённостью, добавляя бонус <strong>+2</strong> ко всем проверкам навыков, броскам атаки и спасброскам. Как только существо теряет все временные хиты от этого заклинания, оно получает одну <detail-tooltip type="screen"><a href="/screens/Exhaustion">степень истощения</a></detail-tooltip>.</p><p>Это заклинание не возвращает к жизни тех, кто умер от старости и не восстанавливает отсутствующие конечности.</p>
         </div>
 
@@ -48,7 +52,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Руководство игрока в Мрачной лощине (GHtPG), стор. 4</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

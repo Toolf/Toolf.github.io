@@ -3,786 +3,900 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Список зброї</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 mt-10 bg-white shadow-xl rounded-2xl">
-        <h1 class="text-4xl font-bold mb-6">Зброя</h1>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="/index.html" class="text-blue-600 hover:underline text-sm">← Головне меню</a>
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6 text-center sm:text-left">Зброя</h1>
 
         <input id="search" type="search" placeholder="Пошук зброї..."
             class="w-full p-3 border border-gray-300 rounded mb-6" />
 
-        <ul id="weapon-list" class="space-y-3">
+        <ul id="weapon-list" class="space-y-4">
             
             <li>
-                <a href="full-blade.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Повноцінний клинок (Full Blade)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к8 рубаючий</p>
+                <a href="full-blade.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Повноцінний клинок (Full Blade)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="bastard-sword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Полуторный меч (Bastard Sword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к10 рубаючий</p>
+                <a href="bastard-sword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Полуторный меч (Bastard Sword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к10 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="hoopak.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Хупак (Hoopak)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="hoopak.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Хупак (Hoopak)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="joining-dirks.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Соединённые клинки (Joining Dirks)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="joining-dirks.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Соединённые клинки (Joining Dirks)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="chakram.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Шакрам (Chakram)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="chakram.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Шакрам (Chakram)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="climbing-adze.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Скалолазное тесло (Climbing Adze)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="climbing-adze.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Скалолазное тесло (Climbing Adze)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="halberd.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Алебарда (Halberd)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к10 рубаючий</p>
+                <a href="halberd.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Алебарда (Halberd)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к10 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="temple-sword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Храмовый меч (Temple Sword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="temple-sword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Храмовый меч (Temple Sword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="rapier.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Рапира (Rapier)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 колющий</p>
+                <a href="rapier.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Рапира (Rapier)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="bladed-scarf.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Шарф с лезвиями (Bladed Scarf)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 рубаючий</p>
+                <a href="bladed-scarf.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Шарф с лезвиями (Bladed Scarf)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="flail.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Цеп (Flail)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 дробящий</p>
+                <a href="flail.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Цеп (Flail)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="net.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Сеть (Net)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное —  без урона</p>
+                <a href="net.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Сеть (Net)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное —  без урона</p>
                 </a>
             </li>
             
             <li>
-                <a href="chain-hook.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Цепной крюк (Chain Hook)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="chain-hook.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Цепной крюк (Chain Hook)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="chakram-exotic.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Чакрам (Chakram Exotic)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое рукопашное оружие — 1к6 рубаючий</p>
+                <a href="chakram-exotic.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Чакрам (Chakram Exotic)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое рукопашное оружие — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="scorpion-stiletto.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Стилет скорпиона (Scorpion Stiletto)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="scorpion-stiletto.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Стилет скорпиона (Scorpion Stiletto)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="khopesh-toh.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Хопеш (Khopesh ToH)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="khopesh-toh.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Хопеш (Khopesh ToH)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="axespear.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Топоркопье (Axespear)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="axespear.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Топоркопье (Axespear)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="jian-sword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Цзянь, меч (Jian, sword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="jian-sword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Цзянь, меч (Jian, sword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="chain-with-spikes.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Цепь, с шипами (Chain with Spikes)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое рукопашное оружие — 2к4 колющий</p>
+                <a href="chain-with-spikes.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Цепь, с шипами (Chain with Spikes)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое рукопашное оружие — 2к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="sling.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Праща (Sling)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к4 дробящий</p>
+                <a href="sling.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Праща (Sling)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="morningstar.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Моргенштерн (Morningstar)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 колющий</p>
+                <a href="morningstar.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Моргенштерн (Morningstar)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="double-bladed-scimitar.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Скимитар с двумя лезвиями (Double-Bladed Scimitar)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 рубаючий</p>
+                <a href="double-bladed-scimitar.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Скимитар с двумя лезвиями (Double-Bladed Scimitar)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="repeating-crossbow-heavy.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Многозарядный арбалет (тяжелый) (Repeating Crossbow (Heavy))</h2>
-                    <p class="text-sm text-gray-600">Экзотическое дальнобойное оружие — 1к10 колющий</p>
+                <a href="repeating-crossbow-heavy.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Многозарядный арбалет (тяжелый) (Repeating Crossbow (Heavy))</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое дальнобойное оружие — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="khopesh.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Хопеш (Khopesh)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 рубаючий</p>
+                <a href="khopesh.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Хопеш (Khopesh)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="tonfa.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Тонфа (Tonfa)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 дробящий</p>
+                <a href="tonfa.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Тонфа (Tonfa)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="shuriken.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Сюрикен (Shuriken)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к4 колющий</p>
+                <a href="shuriken.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Сюрикен (Shuriken)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="scimitar.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Скимитар (Scimitar)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="scimitar.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Скимитар (Scimitar)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="whipsaw.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Хлыстовая пила (Whipsaw)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="whipsaw.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Хлыстовая пила (Whipsaw)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="maul.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Молот (Maul)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к6 дробящий</p>
+                <a href="maul.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Молот (Maul)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к6 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="multi-shot-crossbow-manual.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Многозарядный арбалет (ручной) (Multi-shot Crossbow (manual))</h2>
-                    <p class="text-sm text-gray-600">Экзотическое дальнобойное оружие — 1к6 колющий</p>
+                <a href="multi-shot-crossbow-manual.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Многозарядный арбалет (ручной) (Multi-shot Crossbow (manual))</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое дальнобойное оружие — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="pneumatic-war-pick.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Пневматическая боевая кирка (Pneumatic War Pick)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 колющий</p>
+                <a href="pneumatic-war-pick.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Пневматическая боевая кирка (Pneumatic War Pick)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="pistol-toh.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Пистоль (Pistol ToH)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к8 колющий</p>
+                <a href="pistol-toh.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Пистоль (Pistol ToH)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="pistol.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Пистоль (Pistol)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к10 колющий</p>
+                <a href="pistol.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Пистоль (Pistol)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="pistol-automatic.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Пистолет, автоматический (Pistol, automatic)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 2к6 колющий</p>
+                <a href="pistol-automatic.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Пистолет, автоматический (Pistol, automatic)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 2к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="pike.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Пика (Pike)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к10 колющий</p>
+                <a href="pike.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Пика (Pike)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="sap-gloves.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Перчатки САП (SAP Gloves)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 дробящий</p>
+                <a href="sap-gloves.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Перчатки САП (SAP Gloves)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="greatclub.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Палица (Greatclub)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к8 дробящий</p>
+                <a href="greatclub.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Палица (Greatclub)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к8 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="nurian-hook.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Нурианский крюк (Nurian Hook)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 колющий</p>
+                <a href="nurian-hook.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Нурианский крюк (Nurian Hook)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="sickle.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Серп (Sickle)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 рубаючий</p>
+                <a href="sickle.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Серп (Sickle)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="greataxe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Секира (Greataxe)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к12 рубаючий</p>
+                <a href="greataxe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Секира (Greataxe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к12 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="handaxe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Ручной топор (Handaxe)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 рубаючий</p>
+                <a href="handaxe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Ручной топор (Handaxe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="rothenian-poniard.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Ротхенианский поньерд (Rothenian Poniard)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 колющий</p>
+                <a href="rothenian-poniard.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Ротхенианский поньерд (Rothenian Poniard)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="claws.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Когти (Claws)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="claws.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Когти (Claws)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="whip.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Кнут (Whip)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 рубаючий</p>
+                <a href="whip.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Кнут (Whip)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dagger-on-the-wrist.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Кинжал, на запястье (Dagger, on the wrist)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="dagger-on-the-wrist.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Кинжал, на запястье (Dagger, on the wrist)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dagger-in-the-toe-of-a-boot.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Кинжал, в носке ботинка (Dagger, in the toe of a boot)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="dagger-in-the-toe-of-a-boot.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Кинжал, в носке ботинка (Dagger, in the toe of a boot)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="qatar.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Катар (Qatar)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="qatar.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Катар (Qatar)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="push-knife.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Тычковый нож (Push Knife)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="push-knife.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Тычковый нож (Push Knife)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="sword-with-two-blades.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Меч, с двумя клинками (Sword, with Two Blades)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое рукопашное оружие — 1к8 рубаючий</p>
+                <a href="sword-with-two-blades.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Меч, с двумя клинками (Sword, with Two Blades)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое рукопашное оружие — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="javelin.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Метательное копьё (Javelin)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 колющий</p>
+                <a href="javelin.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Метательное копьё (Javelin)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="light-hammer.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Лёгкий молот (Light Hammer)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 дробящий</p>
+                <a href="light-hammer.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Лёгкий молот (Light Hammer)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="scythe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Коса (Scythe)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к10 рубаючий</p>
+                <a href="scythe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Коса (Scythe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к10 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="shortsword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Короткий меч (Shortsword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="shortsword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Короткий меч (Shortsword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="nunchucks.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Нунчаки (Nunchucks)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 дробящий</p>
+                <a href="nunchucks.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Нунчаки (Nunchucks)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="wrist-knife.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Нож на запястье (Wrist Knife)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 рубаючий</p>
+                <a href="wrist-knife.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Нож на запястье (Wrist Knife)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="musket.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Мушкет (Musket)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к12 колющий</p>
+                <a href="musket.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Мушкет (Musket)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к12 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="musket-toh.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Мушкет (Musket ToH)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к10 колющий</p>
+                <a href="musket-toh.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Мушкет (Musket ToH)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="elven-dueling-blade.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Эльфийский дуэльный клинок (Elven Dueling Blade)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 рубаючий</p>
+                <a href="elven-dueling-blade.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Эльфийский дуэльный клинок (Elven Dueling Blade)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="wormsilk-net.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Шелковая сеть (Wormsilk Net)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное —  без урона</p>
+                <a href="wormsilk-net.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Шелковая сеть (Wormsilk Net)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное —  без урона</p>
                 </a>
             </li>
             
             <li>
-                <a href="crossbow-light.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Арбалет, лёгкий (Crossbow, light)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к8 колющий</p>
+                <a href="crossbow-light.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Арбалет, лёгкий (Crossbow, light)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="sword-cane.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Меч, трость (Sword, cane)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="sword-cane.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Меч, трость (Sword, cane)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dagger.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Кинжал (Dagger)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="dagger.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Кинжал (Dagger)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="katana.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Катана (Katana)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="katana.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Катана (Katana)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="stone-rake.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Каменные грабли (Stone Rake)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к8 колющий</p>
+                <a href="stone-rake.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Каменные грабли (Stone Rake)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="shortbow.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Короткий лук (Shortbow)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к6 колющий</p>
+                <a href="shortbow.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Короткий лук (Shortbow)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="spear.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Копьё (Spear)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 колющий</p>
+                <a href="spear.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Копьё (Spear)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="trident.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Трезубец (Trident)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="trident.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Трезубец (Trident)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="falchion.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Фальшион (Falchion)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 рубаючий</p>
+                <a href="falchion.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Фальшион (Falchion)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="tomahawk.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Томагавк (Tomahawk)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 рубаючий</p>
+                <a href="tomahawk.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Томагавк (Tomahawk)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="heavy-flail.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Тяжёлый цеп (Heavy Flail)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к6 дробящий</p>
+                <a href="heavy-flail.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Тяжёлый цеп (Heavy Flail)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к6 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="composite-bow.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Композитный лук (Composite Bow)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к12 колющий</p>
+                <a href="composite-bow.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Композитный лук (Composite Bow)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к12 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="light-pick.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Легкая кирка (Light Pick)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 колющий</p>
+                <a href="light-pick.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Легкая кирка (Light Pick)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="kusarigama.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Кусаригама (Kusarigama)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое рукопашное оружие — 1к8 рубаючий</p>
+                <a href="kusarigama.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Кусаригама (Kusarigama)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое рукопашное оружие — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="shashka.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Шашка (Shashka)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="shashka.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Шашка (Shashka)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="northlands-estoc.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Эсток северянина (Northlands Estoc)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 колющий</p>
+                <a href="northlands-estoc.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Эсток северянина (Northlands Estoc)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="shotel.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Шотель (Shotel)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к6 рубаючий</p>
+                <a href="shotel.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Шотель (Shotel)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="crossbow-hand.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Арбалет, ручной (Crossbow, hand)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к6 колющий</p>
+                <a href="crossbow-hand.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Арбалет, ручной (Crossbow, hand)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="barge-pole.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Баржевое весло (Barge Pole)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 дробящий</p>
+                <a href="barge-pole.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Баржевое весло (Barge Pole)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="oversized-longbow.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Большой длинный лук (Oversized Longbow)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 2к6 колющий</p>
+                <a href="oversized-longbow.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Большой длинный лук (Oversized Longbow)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 2к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="mace.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Булава (Mace)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 дробящий</p>
+                <a href="mace.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Булава (Mace)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="boomerang.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Бумеранг (Boomerang)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к4 дробящий</p>
+                <a href="boomerang.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Бумеранг (Boomerang)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="quarterstaff.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Боевой посох (Quarterstaff)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к6 дробящий</p>
+                <a href="quarterstaff.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Боевой посох (Quarterstaff)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к6 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="battle-scythe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Боевая коса (Battle Scythe)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к8 рубаючий</p>
+                <a href="battle-scythe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Боевая коса (Battle Scythe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="crossbow-heavy.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Арбалет, тяжёлый (Crossbow, heavy)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к10 колющий</p>
+                <a href="crossbow-heavy.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Арбалет, тяжёлый (Crossbow, heavy)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="war-pick.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Боевая кирка (War Pick)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 колющий</p>
+                <a href="war-pick.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Боевая кирка (War Pick)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="warhammer.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Боевой молот (Warhammer)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 дробящий</p>
+                <a href="warhammer.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Боевой молот (Warhammer)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dwarven-tijino.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дварфийский тижино (Dwarven Tijino)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 колющий</p>
+                <a href="dwarven-tijino.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дварфийский тижино (Dwarven Tijino)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="granite-first.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Гранитная перчатка (Granite First)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 дробящий</p>
+                <a href="granite-first.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Гранитная перчатка (Granite First)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="glaive.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Глефа (Glaive)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к10 рубаючий</p>
+                <a href="glaive.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Глефа (Glaive)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к10 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="harpoon.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Гарпун (Harpoon)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое рукопашное оружие — 1к10 колющий</p>
+                <a href="harpoon.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Гарпун (Harpoon)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое рукопашное оружие — 1к10 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="battleaxe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Боевой топор (Battleaxe)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="battleaxe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Боевой топор (Battleaxe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="bola.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Бола (Bola)</h2>
-                    <p class="text-sm text-gray-600">Экзотическое дальнобойное оружие — 1к4 дробящий</p>
+                <a href="bola.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Бола (Bola)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Экзотическое дальнобойное оружие — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="club-shield.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дубинчатый щит (Club Shield)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 дробящий</p>
+                <a href="club-shield.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дубинчатый щит (Club Shield)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="bolas.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Болас (Bolas)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное —  без урона</p>
+                <a href="bolas.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Болас (Bolas)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное —  без урона</p>
                 </a>
             </li>
             
             <li>
-                <a href="nordmansch-greataxe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Двуручная Секира Норманш (Nordmansch Greataxe)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к12 рубаючий</p>
+                <a href="nordmansch-greataxe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Двуручная Секира Норманш (Nordmansch Greataxe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к12 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="wormsilk-whip.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Хлыст из шелка (Wormsilk Whip)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 рубаючий</p>
+                <a href="wormsilk-whip.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Хлыст из шелка (Wormsilk Whip)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="blowgun.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Духовая трубка (Blowgun)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1 колющий</p>
+                <a href="blowgun.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Духовая трубка (Blowgun)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="clockwork-crossbow.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Заводной арбалет (Clockwork Crossbow)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к8 колющий</p>
+                <a href="clockwork-crossbow.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Заводной арбалет (Clockwork Crossbow)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dwarven-axe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дворфийский топор (Dwarven Axe)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к4 рубаючий</p>
+                <a href="dwarven-axe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дворфийский топор (Dwarven Axe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dwarven-revolving-musket.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дворфийский револьверный мушкет (Dwarven Revolving Musket)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к8 колющий</p>
+                <a href="dwarven-revolving-musket.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дворфийский револьверный мушкет (Dwarven Revolving Musket)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dwarven-arquebus.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дворфийская аркебуза (Dwarven Arquebus)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 2к6 колющий</p>
+                <a href="dwarven-arquebus.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дворфийская аркебуза (Dwarven Arquebus)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 2к6 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="double-axe.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Двойной топор (Double Axe)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="double-axe.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Двойной топор (Double Axe)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="club.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дубинка (Club)</h2>
-                    <p class="text-sm text-gray-600">Простое рукопашное — 1к4 дробящий</p>
+                <a href="club.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дубинка (Club)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое рукопашное — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dart.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дротик (Dart)</h2>
-                    <p class="text-sm text-gray-600">Простое дальнобойное — 1к4 колющий</p>
+                <a href="dart.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дротик (Dart)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Простое дальнобойное — 1к4 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="longbow.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Длинный лук (Longbow)</h2>
-                    <p class="text-sm text-gray-600">Воинское дальнобойное — 1к8 колющий</p>
+                <a href="longbow.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Длинный лук (Longbow)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Воинское дальнобойное — 1к8 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="lance.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Длинное копьё (Lance)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к12 колющий</p>
+                <a href="lance.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Длинное копьё (Lance)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к12 колющий</p>
                 </a>
             </li>
             
             <li>
-                <a href="dikama-fang-blade.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Дикама (Dikama Fang Blade)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 рубаючий</p>
+                <a href="dikama-fang-blade.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Дикама (Dikama Fang Blade)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="jitte.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Джитте (Jitte)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к4 дробящий</p>
+                <a href="jitte.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Джитте (Jitte)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к4 дробящий</p>
                 </a>
             </li>
             
             <li>
-                <a href="greatsword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Двуручный меч (Greatsword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 2к6 рубаючий</p>
+                <a href="greatsword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Двуручный меч (Greatsword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 2к6 рубаючий</p>
                 </a>
             </li>
             
             <li>
-                <a href="longsword.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">
-                    <h2 class="text-xl font-semibold">Длинный меч (Longsword)</h2>
-                    <p class="text-sm text-gray-600">Військове рукопашне — 1к8 рубаючий</p>
+                <a href="longsword.html"
+                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+                    <h2 class="text-lg sm:text-xl font-semibold">Длинный меч (Longsword)</h2>
+                    <p class="text-sm text-gray-600 mt-1">Військове рукопашне — 1к8 рубаючий</p>
                 </a>
             </li>
             

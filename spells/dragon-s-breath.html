@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дыхание дракона — Dragon's Breath</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Дыхание дракона</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Dragon's Breath</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Дыхание дракона</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Dragon's Breath</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 2</p>
             <p><strong>Школа:</strong> преобразование</p>
             <p><strong>Час накладання:</strong> 1 бонусное действие</p>
             <p><strong>Дальність:</strong> Касание</p>
             <p><strong>Тривалість:</strong> Концентрация, до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="острый перец">М</span>
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -55,20 +59,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы касаетесь одного согласного существа и наделяете его силой изрыгать магическую энергию изо рта, при условии, что у существа есть рот. Выберите кислоту, холод, огонь, молнию или яд.</p><p>Пока заклинание не закончится, существо может использовать <em>Действие</em>, чтобы выдыхать энергию выбранного типа в 15-футовом конусе. Каждое существо в области должно совершить спасбросок <span class="saving_throw">Ловкости</span>, и получить <dice-roller formula="3к6">3к6</dice-roller> урона выбранного типа при неудачном спасброске или вдвое меньший урон при удачном.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы сотворяете это заклинание, используя ячейку заклинания 3 уровня или выше, урон увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше 2. </div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы сотворяете это заклинание, используя ячейку заклинания 3 уровня или выше, урон увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше 2. </div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Прогулка по извилистой тропе — Walk the Twisted Path</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Прогулка по извилистой тропе</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Walk the Twisted Path</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Прогулка по извилистой тропе</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Walk the Twisted Path</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 6</p>
             <p><strong>Школа:</strong> воплощение</p>
             <p><strong>Час накладання:</strong> 1 действие</p>
             <p><strong>Дальність:</strong> 100 миль</p>
             <p><strong>Тривалість:</strong> Особая</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="карта">М</span>
@@ -40,20 +44,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы и до пяти других существ видите вход в Большой Лабиринт - постоянно меняющийся ландшафт из бесконечных стен и коридоров, соединённый со многими местами по всему миру. Вы выбираете нужно вам место назначения в пределах 100 миль (160 км) от текущего (вы должны знать, что такое место наверняка есть, пускай даже не видели и не посещали его раньше) и входите в лабиринт.</p><p>Совершите успешную проверку <strong>Интеллекта</strong> Сл 20. Данная проверка проходится только вами, но не вашими товарищами. Если у вас есть способность отслеживать путь без проверок (как у Минотавров или у демонов Гористро), то вы автоматически проходите её. В случае провала, вы не способны отыскать нужный вам путь - вы и ваши товарищи получают <dice-roller formula="4к6">4к6</dice-roller> урона психической энергией, и вы продолжаете блуждать по лабиринту в поисках выхода.</p><p>Вы продолжаете совершать проверки <strong>Интеллекта</strong> в начале своего каждого хода до тех пор, пока одна из них не будет успешной, либо до момента вашей смерти - после этого заклинание заканчивается. Как только это происходит, вы и те, с кем вы путешествовали, оказываетесь в безопасном месте в пункте назначения.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы накладываете это заклинание, используя ячейку 7 уровня или выше, то вы можете взять с собой 2 дополнительных существа, или переместиться ещё на 100 миль (160 км) за каждый уровень ячейки выше 6.</div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 7 уровня или выше, то вы можете взять с собой 2 дополнительных существа, или переместиться ещё на 100 миль (160 км) за каждый уровень ячейки выше 6.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Мидгард Справочник героя (MHH)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

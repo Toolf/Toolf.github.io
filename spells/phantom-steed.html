@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Призрачный скакун — Phantom Steed</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Призрачный скакун</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Phantom Steed</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Призрачный скакун</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Phantom Steed</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 3</p>
             <p><strong>Школа:</strong> иллюзия</p>
             <p><strong>Час накладання:</strong> 1 минута</p>
             <p><strong>Дальність:</strong> 30 футов</p>
             <p><strong>Тривалість:</strong> 1 час</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -27,7 +31,7 @@
             </p>
             
             <p>
-                <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">🕯️ Ритуал</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full inline-block">🕯️ Ритуал</span>
             </p>
             
             
@@ -53,7 +57,7 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>На полу в свободном пространстве на ваш выбор в пределах дистанции появляется Большое полуреальное похожее на лошадь существо. Вы сами определяете его внешность, но у него есть седло, удила и уздечка.</p><p>Всё снаряжение, созданное этим заклинанием, исчезает в клубах дыма, если его отнести на 10 футов от скакуна.</p><p>Пока заклинание активно, вы или выбранное вами существо можете ехать на скакуне верхом. Используются характеристики <detail-tooltip type="creature"><a href="/bestiary/riding_horse">ездовой лошади [riding horse]</a></detail-tooltip>, за исключением того, что скорость существа 100 футов, и оно может проскакать 10 миль за час или 13 миль в <detail-tooltip type="screen"><a href="/screens/pace_of_movement">быстром темпе</a></detail-tooltip>.</p><p>Когда заклинание заканчивается, скакун медленно исчезает, давая ездоку 1 минуту на <detail-tooltip type="screen"><a href="/screens/mounting_and_dismounting">спешивание</a></detail-tooltip>.</p><p>Заклинание оканчивается, если вы окончите его <em>Действием</em> или если скакун получит какой-либо урон.</p>
         </div>
 
@@ -61,7 +65,6 @@
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

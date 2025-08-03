@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Теневой клинок — Shadow Blade</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Теневой клинок</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Shadow Blade</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Теневой клинок</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Shadow Blade</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 2</p>
             <p><strong>Школа:</strong> иллюзия</p>
             <p><strong>Час накладання:</strong> 1 бонусное действие</p>
             <p><strong>Дальність:</strong> На себя</p>
             <p><strong>Тривалість:</strong> Концентрация, вплоть до 1 минуты</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     
@@ -28,7 +32,7 @@
             
             
             <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
             </p>
             
         </div>
@@ -55,20 +59,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы сплетаете воедино нити тени, чтобы создать в ваших руках меч затвердевшего мрака. Этот волшебный меч существует до тех пор, пока заклинание активно. Он считается простым оружием ближнего боя, которым вы владеете.</p><p>Он наносит&nbsp;<dice-roller formula="2к8" label=" Урон психической энергией">2к8</dice-roller> урон психической энергией при попадании и обладает свойствами <detail-tooltip type="screen"><a href="/screens/finesse">Фехтовальное</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/light">Лёгкое</a></detail-tooltip> и <detail-tooltip type="screen"><a href="/screens/thrown">Метательное</a></detail-tooltip> (дистанция 20/60).</p><p>Кроме того, когда вы используете меч для атаки цели, которая находится в <detail-tooltip type="screen"><a href="/screens/dim_light">тусклом свете</a></detail-tooltip> или <detail-tooltip type="screen"><a href="/screens/darkness">темноте</a></detail-tooltip>, вы совершаете бросок атаки с <span class="advantage">преимуществом</span>.</p><p>Если вы роняете оружие или метаете его, оно рассеивается в конце хода. После этого, пока заклинание активно, вы можете использовать <em>бонусное действие</em>, чтобы снова вызвать меч в вашу руку.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Когда вы сотворяете это заклинание, используя ячейку заклинания 3 или 4 уровня, урон увеличивается до <dice-roller formula="3d8">3к8</dice-roller>. Когда вы сотворяете его с помощью ячейки заклинания 5 или 6 уровня, урон увеличивается до <dice-roller formula="4d8">4к8</dice-roller>. Когда вы сотворяете его с помощью ячейки заклинания 7 уровня или выше, урон увеличивается до <dice-roller formula="5d8">5к8</dice-roller>. </div>
+            <div class="prose prose-sm sm:prose max-w-none">Когда вы сотворяете это заклинание, используя ячейку заклинания 3 или 4 уровня, урон увеличивается до <dice-roller formula="3d8">3к8</dice-roller>. Когда вы сотворяете его с помощью ячейки заклинания 5 или 6 уровня, урон увеличивается до <dice-roller formula="4d8">4к8</dice-roller>. Когда вы сотворяете его с помощью ячейки заклинания 7 уровня или выше, урон увеличивается до <dice-roller formula="5d8">5к8</dice-roller>. </div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>

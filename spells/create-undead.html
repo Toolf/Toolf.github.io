@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сотворение нежити — Create Undead</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-6 bg-white shadow-xl mt-10 rounded-2xl">
-        <h1 class="text-3xl font-bold mb-2">Сотворение нежити</h1>
-        <h2 class="text-lg text-gray-500 mb-6">Create Undead</h2>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Сотворение нежити</h1>
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Create Undead</h2>
 
-        <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
             <p><strong>Рівень:</strong> 6</p>
             <p><strong>Школа:</strong> некромантия</p>
             <p><strong>Час накладання:</strong> 1 минута</p>
             <p><strong>Дальність:</strong> 10 футов</p>
             <p><strong>Тривалість:</strong> Мгновенная</p>
             <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
                     В 
                     С 
                     <span title="глиняный горшок с могильной землёй, глиняный горшок с солоноватой водой и по одному чёрному ониксу стоимостью 150 зм на каждый труп">М</span>
@@ -44,20 +48,19 @@
             
         </div>
 
-        <div class="mt-6 prose prose-sm max-w-none">
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
             <p>Вы можете накладывать это заклинание только ночью. Выберите до трёх трупов гуманоидов Среднего или Маленького размера в пределах дистанции. Все трупы становятся <detail-tooltip type="creature"><a href="/bestiary/Ghoul">упырями [ghoul]</a></detail-tooltip> под вашим контролем.</p><p>В каждом своём ходу вы можете <em>бонусным действием</em> мысленно приказать любому существу, оживлённому этим заклинанием, если оно находится в пределах 120 футов от вас (если вы контролируете сразу несколько существ, можете отдать одну и ту же команду сразу нескольким из них). Вы решаете, какое действие это существо совершит, и куда оно переместится в свой следующий ход, или же вы можете отдать общий приказ, например, охранять конкретную комнату или коридор. Если вы не отдадите команду, существо будет всего лишь защищаться от врагов. Получив приказ, существо продолжает его выполнять, пока задача не будет выполнена.</p><p>Существо находится под вашим контролем 24 часа, после чего перестаёт слушаться команд. Для поддержания контроля ещё на 24 часа вы должны активировать это заклинание на него ещё раз до окончания 24-часового периода. Такое использование заклинания только поддерживает контроль над уже созданными существами, количество которых не может быть больше трёх, и не оживляет новых.</p>
         </div>
 
         
         <div class="mt-4 border-t pt-4">
             <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm max-w-none">Если вы накладываете это заклинание, используя ячейку 7 уровня, вы оживляете или продлеваете контроль над четырьмя <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip>. Если вы накладываете это заклинание, используя ячейку 8 уровня, вы оживляете или продлеваете контроль над пятью <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip> или двумя <detail-tooltip type="creature"><a href="/bestiary/ghast">вурдалаками [ghast]</a></detail-tooltip> или <detail-tooltip type="creature"><a href="/bestiary/wight">умертвиями [wight]</a></detail-tooltip>. Если вы накладываете это заклинание, используя ячейку 9 уровня, вы оживляете или продлеваете контроль над шестью <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip>, тремя <detail-tooltip type="creature"><a href="/bestiary/ghast">вурдалаками [ghast]</a></detail-tooltip> или <detail-tooltip type="creature"><a href="/bestiary/wight">умертвиями [wight]</a></detail-tooltip>, или двумя <detail-tooltip type="creature"><a href="/bestiary/mummy">мумиями [mummy]</a></detail-tooltip>.</div>
+            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 7 уровня, вы оживляете или продлеваете контроль над четырьмя <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip>. Если вы накладываете это заклинание, используя ячейку 8 уровня, вы оживляете или продлеваете контроль над пятью <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip> или двумя <detail-tooltip type="creature"><a href="/bestiary/ghast">вурдалаками [ghast]</a></detail-tooltip> или <detail-tooltip type="creature"><a href="/bestiary/wight">умертвиями [wight]</a></detail-tooltip>. Если вы накладываете это заклинание, используя ячейку 9 уровня, вы оживляете или продлеваете контроль над шестью <detail-tooltip type="creature"><a href="/bestiary/ghoul">упырями [ghoul]</a></detail-tooltip>, тремя <detail-tooltip type="creature"><a href="/bestiary/ghast">вурдалаками [ghast]</a></detail-tooltip> или <detail-tooltip type="creature"><a href="/bestiary/wight">умертвиями [wight]</a></detail-tooltip>, или двумя <detail-tooltip type="creature"><a href="/bestiary/mummy">мумиями [mummy]</a></detail-tooltip>.</div>
         </div>
         
 
         <div class="mt-8 text-sm text-gray-500">
             <p>Джерело: Книга игрока (PHB)</p>
-            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
     </div>
 </body>
