@@ -161,7 +161,6 @@
       document.querySelectorAll("[id^='check-']").forEach(el => el.classList.add("hidden"));
 
       // Показати лише ті, що в _changed
-      console.dir(spell._changed)
       for (field in spell._changed) {
         if (spell._changed[field]) {
           const el = document.getElementById("check-" + field);
@@ -228,7 +227,6 @@
       const current = quill.root.innerHTML;
       const original = spells[index].description || "";
       const changed = current.trim() !== original.trim();
-      console.dir({current, original})
 
       if (!spells[index]._changed) spells[index]._changed = {};
       spells[index]._changed["description"] = changed;
