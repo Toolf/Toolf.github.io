@@ -6,7 +6,7 @@
         },
         "level": 0,
         "school": "пророцтво",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -58,7 +58,7 @@
         },
         "level": 0,
         "school": "оборони",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true
@@ -105,7 +105,7 @@
         },
         "level": 0,
         "school": "оборони",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true
@@ -328,7 +328,7 @@
         },
         "level": 0,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true
@@ -714,7 +714,7 @@
         },
         "level": 0,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true
         },
@@ -855,7 +855,7 @@
         },
         "level": 0,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -928,7 +928,7 @@
         },
         "level": 0,
         "school": "перетворення",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true
@@ -1026,7 +1026,7 @@
         },
         "level": 0,
         "school": "виклик",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -1053,7 +1053,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -1149,7 +1149,7 @@
         },
         "level": 0,
         "school": "втілення",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -1267,7 +1267,7 @@
         },
         "level": 0,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -1411,7 +1411,7 @@
         },
         "level": 0,
         "school": "виклик",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true
@@ -1445,7 +1445,7 @@
         },
         "level": 0,
         "school": "виклик",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true
@@ -2169,7 +2169,7 @@
         },
         "level": 0,
         "school": "ілюзія",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -2196,7 +2196,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -2210,7 +2210,7 @@
         },
         "level": 0,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true
         },
@@ -2635,7 +2635,7 @@
         },
         "level": 0,
         "school": "втілення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "s": true
         },
@@ -2888,7 +2888,7 @@
         },
         "level": 0,
         "school": "ілюзія",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -2916,7 +2916,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -3336,7 +3336,7 @@
         },
         "level": 0,
         "school": "ілюзія",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -3363,7 +3363,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -3862,7 +3862,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "s": true
         },
@@ -3902,7 +3902,7 @@
         },
         "level": 1,
         "school": "ілюзія",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true
@@ -4017,7 +4017,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true
         },
@@ -4245,7 +4245,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -4299,7 +4299,7 @@
         },
         "level": 1,
         "school": "оборони",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true
@@ -4466,7 +4466,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -4611,7 +4611,7 @@
         },
         "level": 1,
         "school": "оборони",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -4664,7 +4664,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true
         },
@@ -4831,7 +4831,7 @@
         },
         "level": 1,
         "school": "очарування",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true
@@ -5053,7 +5053,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true
         },
@@ -5226,7 +5226,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Магия лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true
         },
@@ -5265,7 +5265,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -5357,7 +5357,7 @@
         },
         "level": 1,
         "school": "очарування",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true
         },
@@ -5614,7 +5614,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true
         },
@@ -5835,7 +5835,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -5974,7 +5974,7 @@
         },
         "level": 1,
         "school": "некромантія",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true
@@ -6026,7 +6026,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -6295,7 +6295,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "Магия Хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true
         },
@@ -6559,7 +6559,7 @@
         },
         "level": 1,
         "school": "оборони",
-        "additionalType": "Магия колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -6610,7 +6610,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -6662,7 +6662,7 @@
         },
         "level": 1,
         "school": "некромантія",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -6702,7 +6702,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true
         },
@@ -7251,7 +7251,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -7302,7 +7302,7 @@
         },
         "level": 1,
         "school": "очарування",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -7480,7 +7480,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -7526,7 +7526,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -8038,7 +8038,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -8504,7 +8504,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -8733,7 +8733,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -8915,7 +8915,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -9125,7 +9125,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true
         },
@@ -9163,7 +9163,7 @@
         },
         "level": 1,
         "school": "ілюзія",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true
         },
@@ -9190,7 +9190,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -9204,7 +9204,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -9699,7 +9699,7 @@
         },
         "level": 1,
         "school": "очарування",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "m": "кольцо-печатка стоимостью 25 зм"
@@ -9983,7 +9983,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "s": true
         },
@@ -10265,7 +10265,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -10293,7 +10293,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -10488,7 +10488,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -10601,7 +10601,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "Магия Хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true
         },
@@ -10639,7 +10639,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true,
@@ -10905,7 +10905,7 @@
         },
         "level": 1,
         "school": "оборони",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -11164,7 +11164,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -11356,7 +11356,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -11408,7 +11408,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -11629,7 +11629,7 @@
         },
         "level": 1,
         "school": "пророцтво",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -12316,7 +12316,7 @@
         },
         "level": 1,
         "school": "оборони",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -12358,7 +12358,7 @@
         },
         "level": 1,
         "school": "перетворення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -12412,7 +12412,7 @@
         },
         "level": 1,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -12593,7 +12593,7 @@
         },
         "level": 2,
         "school": "виклик",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -12668,7 +12668,7 @@
         },
         "level": 2,
         "school": "виклик",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true
@@ -12803,7 +12803,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -12912,7 +12912,7 @@
         },
         "level": 2,
         "school": "некромантія",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -13333,7 +13333,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -13790,7 +13790,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Магия лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true
         },
@@ -13874,7 +13874,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -13978,7 +13978,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -14163,7 +14163,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Ротхенианская магия",
+        "additionalType": "Ротхеніанська магія",
         "components": {
             "v": true,
             "s": true
@@ -14418,7 +14418,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "m": "украшенный орнаментом серебряный ключ стоимостью 50 зм"
@@ -14544,7 +14544,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -14762,7 +14762,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -14911,7 +14911,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -14988,7 +14988,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true,
@@ -15083,7 +15083,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Магия лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true,
             "s": true,
@@ -15197,7 +15197,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true
@@ -15238,7 +15238,7 @@
         },
         "level": 2,
         "school": "оборони",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true
@@ -15326,7 +15326,7 @@
         },
         "level": 2,
         "school": "очарування",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -15781,7 +15781,7 @@
         },
         "level": 2,
         "school": "виклик",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -16061,7 +16061,7 @@
         },
         "level": 2,
         "school": "очарування",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -16109,7 +16109,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -16150,7 +16150,7 @@
         },
         "level": 2,
         "school": "виклик",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true
@@ -16554,7 +16554,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true
@@ -16776,7 +16776,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true
@@ -17336,7 +17336,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true
@@ -18862,7 +18862,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true,
@@ -19372,7 +19372,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -19761,7 +19761,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true
@@ -19823,7 +19823,7 @@
         },
         "level": 2,
         "school": "оборони",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true
@@ -20305,7 +20305,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Магия Хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true
         },
@@ -20510,7 +20510,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true
         },
@@ -20545,7 +20545,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -20982,7 +20982,7 @@
         },
         "level": 2,
         "school": "перетворення",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "m": "пепел от деревянной статуи, изображающей вас и чернила, которыми рисовали ваш портрет стоимостью не менее 50 зм."
@@ -21010,7 +21010,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -21025,7 +21025,7 @@
         },
         "level": 2,
         "school": "втілення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -21102,7 +21102,7 @@
         },
         "level": 2,
         "school": "оборони",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -21148,7 +21148,7 @@
         },
         "level": 2,
         "school": "очарування",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true
         },
@@ -21187,7 +21187,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "s": true
         },
@@ -21240,7 +21240,7 @@
         },
         "level": 2,
         "school": "пророцтво",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -21289,7 +21289,7 @@
         },
         "level": 2,
         "school": "виклик",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -21316,7 +21316,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -21604,7 +21604,7 @@
         },
         "level": 3,
         "school": "ілюзія",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -21700,7 +21700,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -22048,7 +22048,7 @@
         },
         "level": 3,
         "school": "очарування",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true
@@ -22316,7 +22316,7 @@
         },
         "level": 3,
         "school": "оборони",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -22448,7 +22448,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Ротхенианская магия",
+        "additionalType": "Ротхеніанська магія",
         "components": {
             "v": true,
             "s": true,
@@ -22537,7 +22537,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -22996,7 +22996,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -23050,7 +23050,7 @@
         },
         "level": 3,
         "school": "оборони",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -23253,7 +23253,7 @@
         },
         "level": 3,
         "school": "некромантія",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -23524,7 +23524,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Ротхенианская магия",
+        "additionalType": "Ротхеніанська магія",
         "components": {
             "v": true,
             "s": true
@@ -23614,7 +23614,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true,
@@ -23678,7 +23678,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true,
@@ -23900,7 +23900,7 @@
         },
         "level": 3,
         "school": "некромантія",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -23950,7 +23950,7 @@
         },
         "level": 3,
         "school": "очарування",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -24040,7 +24040,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true
@@ -24091,7 +24091,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true,
@@ -24154,7 +24154,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -24343,7 +24343,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Магия лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true,
             "s": true
@@ -24765,7 +24765,7 @@
         },
         "level": 3,
         "school": "некромантія",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -25090,7 +25090,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -25430,7 +25430,7 @@
         },
         "level": 3,
         "school": "ілюзія",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -25614,7 +25614,7 @@
         },
         "level": 3,
         "school": "пророцтво",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -25726,7 +25726,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -25823,7 +25823,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -26181,7 +26181,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true
         },
@@ -26566,7 +26566,7 @@
         },
         "level": 3,
         "school": "ілюзія",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -27107,7 +27107,7 @@
         },
         "level": 3,
         "school": "пророцтво",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "m": "посыпка из серебряной пыли, стоимостью не менее 200 зм"
@@ -27134,7 +27134,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -27925,7 +27925,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -28169,7 +28169,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -28244,7 +28244,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -28571,7 +28571,7 @@
         },
         "level": 3,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -28823,7 +28823,7 @@
         },
         "level": 3,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -29197,7 +29197,7 @@
         },
         "level": 3,
         "school": "оборони",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true,
@@ -29300,7 +29300,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -29386,7 +29386,7 @@
         },
         "level": 3,
         "school": "оборони",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true,
@@ -29414,7 +29414,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -29428,7 +29428,7 @@
         },
         "level": 3,
         "school": "втілення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true,
@@ -29552,7 +29552,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -29596,7 +29596,7 @@
         },
         "level": 4,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -29871,7 +29871,7 @@
         },
         "level": 4,
         "school": "пророцтво",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -29931,7 +29931,7 @@
         },
         "level": 4,
         "school": "очарування",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true
         },
@@ -30177,7 +30177,7 @@
         },
         "level": 4,
         "school": "виклик",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -30313,7 +30313,7 @@
         },
         "level": 4,
         "school": "втілення",
-        "additionalType": "Магия колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true,
@@ -30771,7 +30771,7 @@
         },
         "level": 4,
         "school": "оборони",
-        "additionalType": "Магия Лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true,
             "s": true,
@@ -30929,7 +30929,7 @@
         },
         "level": 4,
         "school": "втілення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -30973,7 +30973,7 @@
         },
         "level": 4,
         "school": "втілення",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -31071,7 +31071,7 @@
         },
         "level": 4,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -31252,7 +31252,7 @@
         },
         "level": 4,
         "school": "некромантія",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {},
         "concentration": true,
         "url": "/spells/scale_rot",
@@ -31357,7 +31357,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -31787,7 +31787,7 @@
         },
         "level": 4,
         "school": "виклик",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true,
@@ -32009,7 +32009,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -32055,7 +32055,7 @@
         },
         "level": 4,
         "school": "очарування",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -32095,7 +32095,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true,
@@ -32235,7 +32235,7 @@
         },
         "level": 4,
         "school": "некромантія",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -32380,7 +32380,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true,
@@ -32570,7 +32570,7 @@
         },
         "level": 4,
         "school": "оборони",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -33171,7 +33171,7 @@
         },
         "level": 4,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -34139,7 +34139,7 @@
         },
         "level": 4,
         "school": "оборони",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -34460,7 +34460,7 @@
         },
         "level": 4,
         "school": "некромантія",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -34554,7 +34554,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true,
@@ -34601,7 +34601,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -34790,7 +34790,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -34948,7 +34948,7 @@
         },
         "level": 4,
         "school": "оборони",
-        "additionalType": "Магия Хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -35073,7 +35073,7 @@
         },
         "level": 4,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -35122,7 +35122,7 @@
         },
         "level": 4,
         "school": "некромантія",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -35214,7 +35214,7 @@
         },
         "level": 4,
         "school": "пророцтво",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -35241,7 +35241,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -35443,7 +35443,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -35609,7 +35609,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -35623,7 +35623,7 @@
         },
         "level": 4,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -35675,7 +35675,7 @@
         },
         "level": 4,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -35819,7 +35819,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {},
         "concentration": true,
         "url": "/spells/thunderstorm",
@@ -36026,7 +36026,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "s": true,
             "m": "сделанная особым образом шестерёнка, стоящая 100 зм за каждый уровень заклинания"
@@ -36114,7 +36114,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true,
@@ -36377,7 +36377,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true
@@ -36641,7 +36641,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -36745,7 +36745,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true,
@@ -36887,7 +36887,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true
@@ -36964,7 +36964,7 @@
         },
         "level": 5,
         "school": "ілюзія",
-        "additionalType": "Магия Лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true,
             "s": true,
@@ -37076,7 +37076,7 @@
         },
         "level": 5,
         "school": "виклик",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -37103,7 +37103,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -37498,7 +37498,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -37542,7 +37542,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true
         },
@@ -37686,7 +37686,7 @@
         },
         "level": 5,
         "school": "некромантія",
-        "additionalType": "Ротхенианская магия",
+        "additionalType": "Ротхеніанська магія",
         "components": {
             "v": true,
             "s": true,
@@ -37875,7 +37875,7 @@
         },
         "level": 5,
         "school": "виклик",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -37988,7 +37988,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -38036,7 +38036,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true,
@@ -38131,7 +38131,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -38237,7 +38237,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -38284,7 +38284,7 @@
         },
         "level": 5,
         "school": "оборони",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true
@@ -38583,7 +38583,7 @@
         },
         "level": 5,
         "school": "оборони",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -38994,7 +38994,7 @@
         },
         "level": 5,
         "school": "пророцтво",
-        "additionalType": "техномагия",
+        "additionalType": "Техномагія",
         "components": {
             "v": true,
             "s": true
@@ -39261,7 +39261,7 @@
         },
         "level": 5,
         "school": "некромантія",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -39425,7 +39425,7 @@
         },
         "level": 5,
         "school": "оборони",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -39840,7 +39840,7 @@
         },
         "level": 5,
         "school": "виклик",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -40104,7 +40104,7 @@
         },
         "level": 5,
         "school": "некромантія",
-        "additionalType": "Магия колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -40201,7 +40201,7 @@
         },
         "level": 5,
         "school": "виклик",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -40517,7 +40517,7 @@
         },
         "level": 5,
         "school": "очарування",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true
@@ -40942,7 +40942,7 @@
         },
         "level": 5,
         "school": "перетворення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -41553,7 +41553,7 @@
         },
         "level": 5,
         "school": "втілення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -41890,7 +41890,7 @@
         },
         "level": 6,
         "school": "втілення",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true,
@@ -42239,7 +42239,7 @@
         },
         "level": 6,
         "school": "некромантія",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true,
@@ -42285,7 +42285,7 @@
         },
         "level": 6,
         "school": "втілення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true
@@ -42420,7 +42420,7 @@
         },
         "level": 6,
         "school": "очарування",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -42549,7 +42549,7 @@
         },
         "level": 6,
         "school": "некромантія",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true,
@@ -42667,7 +42667,7 @@
         },
         "level": 6,
         "school": "виклик",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -42701,7 +42701,7 @@
         },
         "level": 6,
         "school": "некромантія",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -42891,7 +42891,7 @@
         },
         "level": 6,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -43214,7 +43214,7 @@
         },
         "level": 6,
         "school": "оборони",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -43583,7 +43583,7 @@
         },
         "level": 6,
         "school": "перетворення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -43948,7 +43948,7 @@
         },
         "level": 6,
         "school": "виклик",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -44732,7 +44732,7 @@
         },
         "level": 6,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -44775,7 +44775,7 @@
         },
         "level": 6,
         "school": "ілюзія",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "m": "семь неровных кусков цветной ткани, которые вы бросаете в воздух"
@@ -44815,7 +44815,7 @@
         },
         "level": 6,
         "school": "виклик",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -44895,7 +44895,7 @@
         },
         "level": 6,
         "school": "некромантія",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -44923,7 +44923,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -44937,7 +44937,7 @@
         },
         "level": 7,
         "school": "некромантія",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -44985,7 +44985,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -45021,7 +45021,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -45110,7 +45110,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -45347,7 +45347,7 @@
         },
         "level": 7,
         "school": "втілення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -45389,7 +45389,7 @@
         },
         "level": 7,
         "school": "оборони",
-        "additionalType": "Магия лей-линий",
+        "additionalType": "Магія лей-ліній",
         "components": {
             "s": true
         },
@@ -45435,7 +45435,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true,
@@ -45559,7 +45559,7 @@
         },
         "level": 7,
         "school": "пророцтво",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "m": "кусочки золота стоимостью не менее 400 зм."
@@ -45587,7 +45587,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -45837,7 +45837,7 @@
         },
         "level": 7,
         "school": "виклик",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -45865,7 +45865,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -45920,7 +45920,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true,
@@ -46006,7 +46006,7 @@
         },
         "level": 7,
         "school": "втілення",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -46057,7 +46057,7 @@
         },
         "level": 7,
         "school": "оборони",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true,
@@ -46224,7 +46224,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true,
             "s": true,
@@ -46266,7 +46266,7 @@
         },
         "level": 7,
         "school": "втілення",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -46293,7 +46293,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -46836,7 +46836,7 @@
         },
         "level": 7,
         "school": "очарування",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -46885,7 +46885,7 @@
         },
         "level": 7,
         "school": "перетворення",
-        "additionalType": "Рунная магия",
+        "additionalType": "Рунна магія",
         "components": {
             "v": true,
             "s": true
@@ -46925,7 +46925,7 @@
         },
         "level": 7,
         "school": "пророцтво",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -47159,7 +47159,7 @@
         },
         "level": 8,
         "school": "оборони",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -47403,7 +47403,7 @@
         },
         "level": 8,
         "school": "оборони",
-        "additionalType": "Магия Тени",
+        "additionalType": "Магія Тіні",
         "components": {
             "v": true,
             "s": true,
@@ -47439,7 +47439,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -47564,7 +47564,7 @@
         },
         "level": 8,
         "school": "виклик",
-        "additionalType": "Боевая магия",
+        "additionalType": "Бойова магія",
         "components": {
             "v": true,
             "s": true
@@ -47598,7 +47598,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -47793,7 +47793,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -47828,7 +47828,7 @@
         },
         "level": 8,
         "school": "пророцтво",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true,
@@ -47975,7 +47975,7 @@
         },
         "level": 8,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -48141,7 +48141,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true
@@ -48169,7 +48169,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -48183,7 +48183,7 @@
         },
         "level": 8,
         "school": "виклик",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true,
@@ -48236,7 +48236,7 @@
         },
         "level": 8,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true,
             "s": true
@@ -48287,7 +48287,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -48330,7 +48330,7 @@
         },
         "level": 8,
         "school": "очарування",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true
@@ -48417,7 +48417,7 @@
         },
         "level": 8,
         "school": "перетворення",
-        "additionalType": "Контаминация",
+        "additionalType": "Контамінація",
         "components": {
             "v": true,
             "s": true,
@@ -48603,7 +48603,7 @@
         },
         "level": 8,
         "school": "перетворення",
-        "additionalType": "Магия драконов",
+        "additionalType": "Магія драконів",
         "components": {
             "v": true,
             "s": true,
@@ -48646,7 +48646,7 @@
         },
         "level": 8,
         "school": "перетворення",
-        "additionalType": "Магия колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -48884,7 +48884,7 @@
         },
         "level": 8,
         "school": "некромантія",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -48971,7 +48971,7 @@
         },
         "level": 8,
         "school": "втілення",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -49058,7 +49058,7 @@
         },
         "level": 8,
         "school": "перетворення",
-        "additionalType": "Магия хаоса",
+        "additionalType": "Магія Хаосу",
         "components": {
             "v": true
         },
@@ -49097,7 +49097,7 @@
         },
         "level": 9,
         "school": "втілення",
-        "additionalType": "Магия Лабиринта",
+        "additionalType": "Магія лабіринту",
         "components": {
             "v": true,
             "s": true
@@ -49137,7 +49137,7 @@
         },
         "level": 9,
         "school": "оборони",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true,
@@ -49236,7 +49236,7 @@
         },
         "level": 9,
         "school": "перетворення",
-        "additionalType": "Механомагия",
+        "additionalType": "Механомагія",
         "components": {
             "v": true
         },
@@ -49322,7 +49322,7 @@
         },
         "level": 9,
         "school": "втілення",
-        "additionalType": "Ротхенианская магия",
+        "additionalType": "Ротхеніанська магія",
         "components": {
             "v": true,
             "s": true,
@@ -49527,7 +49527,7 @@
         },
         "level": 9,
         "school": "виклик",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
@@ -49573,7 +49573,7 @@
         },
         "level": 9,
         "school": "перетворення",
-        "additionalType": "Ангельская магия",
+        "additionalType": "Ангельська магія",
         "components": {
             "v": true,
             "s": true
@@ -49665,7 +49665,7 @@
         },
         "level": 9,
         "school": "втілення",
-        "additionalType": "Магия Колец",
+        "additionalType": "Магія Перстня",
         "components": {
             "v": true,
             "s": true
@@ -49707,7 +49707,7 @@
         },
         "level": 9,
         "school": "некромантія",
-        "additionalType": "Высшая эльфийская магия",
+        "additionalType": "Вища ельфійська магія",
         "components": {
             "v": true,
             "s": true,
@@ -49754,7 +49754,7 @@
         },
         "level": 9,
         "school": "перетворення",
-        "additionalType": "Магия иероглифов",
+        "additionalType": "Магія ієрогліфів",
         "components": {
             "v": true,
             "s": true,
@@ -49829,7 +49829,7 @@
         },
         "level": 9,
         "school": "втілення",
-        "additionalType": "Иллюминация",
+        "additionalType": "Ілюмінація",
         "components": {
             "v": true,
             "s": true,
@@ -50023,7 +50023,7 @@
         },
         "level": 9,
         "school": "виклик",
-        "additionalType": "Стихийная магия",
+        "additionalType": "Стихійна магія",
         "components": {
             "v": true,
             "s": true,
@@ -50390,7 +50390,7 @@
         ],
         "subclasses": [
             {
-                "name": "Иллюминация",
+                "name": "Ілюмінація",
                 "url": "/classes/wizard/illumination",
                 "class": "Волшебник"
             }
@@ -50636,7 +50636,7 @@
         },
         "level": 9,
         "school": "перетворення",
-        "additionalType": "Сангромантия",
+        "additionalType": "Сангромантія",
         "components": {
             "v": true,
             "s": true,
@@ -50706,7 +50706,7 @@
         },
         "level": 9,
         "school": "втілення",
-        "additionalType": "Лей-линии",
+        "additionalType": "Лей-лінії",
         "components": {
             "v": true,
             "s": true
