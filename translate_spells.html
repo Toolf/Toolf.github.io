@@ -22,7 +22,7 @@
     </div>
 
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-col gap-4">
       <div>
         <label class="block text-sm font-medium">Назва:</label>
         <div class="flex items-center space-x-">
@@ -36,49 +36,49 @@
       </div>
       <div>
         <label class="block text-sm font-medium">Рівень:</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="level" type="number" class="mt-1 block w-full rounded border-gray-300 pr-8" disabled />
           <span id="check-level" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div>
         <label class="block text-sm font-medium">Школа:</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="school" class="mt-1 block w-full rounded border-gray-300 pr-8" disabled />
           <span id="check-school" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div class="col-span-2">
         <label class="block text-sm font-medium">Тип (додатковий):</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="additional-type" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-additional-type" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div>
         <label class="block text-sm font-medium">Компоненти (матеріальні):</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="components-m" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-components-m" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div>
         <label class="block text-sm font-medium">Дальність:</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="range" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-range" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div>
         <label class="block text-sm font-medium">Час накладання:</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="duration" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-duration" class="text-green-500 hidden">✅</span>
         </div>
       </div>
       <div>
         <label class="block text-sm font-medium">Тривалість:</label>
-        <div class="flex items-center space-x-">
+        <div class="flex items-center">
           <input id="time" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-time" class="text-green-500 hidden">✅</span>
         </div>
@@ -228,6 +228,7 @@
       const current = quill.root.innerHTML;
       const original = spells[index].description || "";
       const changed = current.trim() !== original.trim();
+      console.dir({current, original})
 
       if (!spells[index]._changed) spells[index]._changed = {};
       spells[index]._changed["description"] = changed;
