@@ -28,71 +28,27 @@
         </div>
       </div>
       <div>
-        <label class="block text-sm font-medium">Назва (англ):</label>
-        <input id="name-eng" class="mt-1 block w-full rounded border-gray-300" disabled />
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Рівень:</label>
-        <div class="flex items-center">
-          <input id="level" type="number" class="mt-1 block w-full rounded border-gray-300 pr-8" disabled />
-          <span id="check-level" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Школа:</label>
-        <div class="flex items-center">
-          <input id="school" class="mt-1 block w-full rounded border-gray-300 pr-8" disabled />
-          <span id="check-school" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
-      <div class="col-span-2">
-        <label class="block text-sm font-medium">Тип (додатковий):</label>
-        <div class="flex items-center">
-          <input id="additional-type" class="mt-1 block w-full rounded border-gray-300 pr-8" />
-          <span id="check-additional-type" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
-      <div>
         <label class="block text-sm font-medium">Компоненти (матеріальні):</label>
         <div class="flex items-center">
           <input id="components-m" class="mt-1 block w-full rounded border-gray-300 pr-8" />
           <span id="check-components-m" class="text-green-500 hidden">✅</span>
         </div>
       </div>
-      <div>
-        <label class="block text-sm font-medium">Дальність:</label>
-        <div class="flex items-center">
-          <input id="range" class="mt-1 block w-full rounded border-gray-300 pr-8" />
-          <span id="check-range" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Час накладання:</label>
-        <div class="flex items-center">
-          <input id="duration" class="mt-1 block w-full rounded border-gray-300 pr-8" />
-          <span id="check-duration" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
-      <div>
-        <label class="block text-sm font-medium">Тривалість:</label>
-        <div class="flex items-center">
-          <input id="time" class="mt-1 block w-full rounded border-gray-300 pr-8" />
-          <span id="check-time" class="text-green-500 hidden">✅</span>
-        </div>
-      </div>
     </div>
 
     <div>
-      <label class="block text-sm font-medium mb-2">Опис:</label>
+      <label class="block text-sm font-medium mb-2">Опис: <span id="check-description"
+          class="top-2 right-2 text-green-500 hidden">✅</span>
+      </label>
       <div class="relative">
         <textarea id="description" class="w-full h-48 rounded border border-gray-300 p-2 resize-y"></textarea>
-        <span id="check-description" class="absolute top-2 right-2 text-green-500 hidden">✅</span>
       </div>
     </div>
 
     <div class="flex justify-between items-center mt-4">
       <button id="prev-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">← Назад</button>
-      <button id="save-btn" class="px-6 py-2 bg-green-500 text-white hover:bg-green-600 rounded">💾 Зберегти JSON</button>
+      <button id="save-btn" class="px-6 py-2 bg-green-500 text-white hover:bg-green-600 rounded">💾 Зберегти
+        JSON</button>
       <button id="next-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">Вперед →</button>
     </div>
 
@@ -108,14 +64,7 @@
 
     const fields = {
       nameRus: document.getElementById("name-rus"),
-      nameEng: document.getElementById("name-eng"),
-      level: document.getElementById("level"),
-      school: document.getElementById("school"),
-      additionalType: document.getElementById("additional-type"),
       componentsM: document.getElementById("components-m"),
-      range: document.getElementById("range"),
-      duration: document.getElementById("duration"),
-      time: document.getElementById("time"),
       title: document.getElementById("spell-title")
     };
 
@@ -124,7 +73,7 @@
     function updateCheckmarks(spell) {
       document.querySelectorAll("[id^='check-']").forEach(el => el.classList.add("hidden"));
       for (const field in spell._changed) {
-        if (spell._changed[field]) {
+        if (spell._changed[field] === spell[field]) {
           const el = document.getElementById("check-" + field);
           if (el) el.classList.remove("hidden");
         }
@@ -136,14 +85,7 @@
       if (!spell) return;
 
       fields.nameRus.value = spell.name?.rus || "";
-      fields.nameEng.value = spell.name?.eng || "";
-      fields.level.value = spell.level ?? "";
-      fields.school.value = spell.school || "";
-      fields.additionalType.value = spell.additionalType || "";
       fields.componentsM.value = spell.components?.m || "";
-      fields.range.value = spell.range || "";
-      fields.duration.value = spell.duration || "";
-      fields.time.value = spell.time || "";
       descriptionTextarea.value = spell.description || "";
       fields.title.textContent = spell.name?.eng || "???";
 
@@ -206,29 +148,27 @@
         const current = input.value;
         const original = getOriginal();
         const changed = current !== original;
-
+        
+        console.dir({original, current})
         check.classList.toggle("hidden", !changed);
         if (!spells[index]._changed) spells[index]._changed = {};
-        spells[index]._changed[fieldId] = changed;
+        spells[index]._changed[fieldId] = current;
 
         if (setValue) setValue(current);
       });
     }
 
     function setupTracking() {
-      trackChanges("name-rus", () => spells[index].name?.rus, val => spells[index].name.rus = val);
-      trackChanges("level", () => String(spells[index].level ?? ""), val => spells[index].level = parseInt(val) || 0);
-      trackChanges("school", () => spells[index].school || "", val => spells[index].school = val);
-      trackChanges("additional-type", () => spells[index].additionalType || "", val => spells[index].additionalType = val);
-      trackChanges("components-m", () => spells[index].components?.m || "", val => spells[index].components.m = val);
-      trackChanges("range", () => spells[index].range || "", val => spells[index].range = val);
-      trackChanges("duration", () => spells[index].duration || "", val => spells[index].duration = val);
-      trackChanges("time", () => spells[index].time || "", val => spells[index].time = val);
+      spell_names = spells.map(s => s.name?.rus);
+      spell_components_m = spells.map(s => s.components?.m);
+      trackChanges("name-rus", () => spell_names[index], val => spells[index].name.rus = val);
+      trackChanges("components-m", () => spell_components_m[index] || "", val => spells[index].components.m = val);
 
       // Track description separately
+      spell_descriptions = spells.map(s => s.description)
       descriptionTextarea.addEventListener("input", () => {
         const current = descriptionTextarea.value;
-        const original = spells[index].description || "";
+        const original = spell_descriptions[index] || "";
         const changed = current !== original;
 
         document.getElementById("check-description").classList.toggle("hidden", !changed);
