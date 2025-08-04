@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Переклад заклять</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
-  <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 p-6">
@@ -15,7 +13,6 @@
   <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl p-6 space-y-6">
     <h1 class="text-2xl font-bold">Переклад заклять: <span id="spell-title" class="text-blue-600"></span></h1>
 
-    <!-- Add this dropdown below your <h1> or wherever you want -->
     <div class="mb-4">
       <label for="spell-select" class="block text-sm font-medium mb-1">Оберіть закляття:</label>
       <select id="spell-select" class="w-full rounded border border-gray-300 p-2"></select>
@@ -87,13 +84,15 @@
 
     <div>
       <label class="block text-sm font-medium mb-2">Опис:</label>
-      <textarea id="description" class="hidden"></textarea>
+      <div class="relative">
+        <textarea id="description" class="w-full h-48 rounded border border-gray-300 p-2 resize-y"></textarea>
+        <span id="check-description" class="absolute top-2 right-2 text-green-500 hidden">✅</span>
+      </div>
     </div>
 
     <div class="flex justify-between items-center mt-4">
       <button id="prev-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">← Назад</button>
-      <button id="save-btn" class="px-6 py-2 bg-green-500 text-white hover:bg-green-600 rounded">💾 Зберегти
-        JSON</button>
+      <button id="save-btn" class="px-6 py-2 bg-green-500 text-white hover:bg-green-600 rounded">💾 Зберегти JSON</button>
       <button id="next-btn" class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">Вперед →</button>
     </div>
 
@@ -102,44 +101,10 @@
 
   <script>
     const spellSelect = document.getElementById("spell-select");
-
-    function updateSpellSelect() {
-      // Save current selected index to restore after update
-      const prevIndex = index;
-
-      spellSelect.innerHTML = ""; // Clear
-
-      spells.forEach((spell, i) => {
-        // Check if any _changed field is true
-        let changed = false;
-        if (spell._changed) {
-          changed = Object.values(spell._changed).some(ch => ch === true);
-        }
-
-        const option = document.createElement("option");
-        option.value = i;
-        option.textContent = spell.name?.rus || `Закляття ${i + 1}`;
-        if (changed) option.textContent += " ✅";
-
-        spellSelect.appendChild(option);
-      });
-
-      // Set selected option to current index
-      spellSelect.value = prevIndex;
-    }
-
-    // When user selects from dropdown
-    spellSelect.addEventListener("change", (e) => {
-      const selectedIndex = parseInt(e.target.value);
-      if (!isNaN(selectedIndex)) {
-        index = selectedIndex;
-        loadSpell();
-      }
-    });
+    const descriptionTextarea = document.getElementById("description");
 
     let spells = [];
     let index = 0;
-    let editor;
 
     const fields = {
       nameRus: document.getElementById("name-rus"),
@@ -157,18 +122,14 @@
     const status = document.getElementById("load-status");
 
     function updateCheckmarks(spell) {
-      // Приховати всі
       document.querySelectorAll("[id^='check-']").forEach(el => el.classList.add("hidden"));
-
-      // Показати лише ті, що в _changed
-      for (field in spell._changed) {
+      for (const field in spell._changed) {
         if (spell._changed[field]) {
           const el = document.getElementById("check-" + field);
           if (el) el.classList.remove("hidden");
         }
       }
     }
-
 
     function loadSpell() {
       const spell = spells[index];
@@ -183,21 +144,41 @@
       fields.range.value = spell.range || "";
       fields.duration.value = spell.duration || "";
       fields.time.value = spell.time || "";
-      editor.value(spell.description || "");
+      descriptionTextarea.value = spell.description || "";
       fields.title.textContent = spell.name?.eng || "???";
 
       updateCheckmarks(spell);
       updateSpellSelect();
     }
 
+    function updateSpellSelect() {
+      const prevIndex = index;
+      spellSelect.innerHTML = "";
 
-    function saveToFile() {
-      const blob = new Blob([JSON.stringify(spells, null, 2)], { type: "application/json" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "spells.json";
-      a.click();
+      spells.forEach((spell, i) => {
+        let changed = false;
+        if (spell._changed) {
+          changed = Object.values(spell._changed).some(ch => ch === true);
+        }
+
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = spell.name?.rus || `Закляття ${i + 1}`;
+        if (changed) option.textContent += " ✅";
+
+        spellSelect.appendChild(option);
+      });
+
+      spellSelect.value = prevIndex;
     }
+
+    spellSelect.addEventListener("change", (e) => {
+      const selectedIndex = parseInt(e.target.value);
+      if (!isNaN(selectedIndex)) {
+        index = selectedIndex;
+        loadSpell();
+      }
+    });
 
     document.getElementById("prev-btn").onclick = () => {
       if (index > 0) index--;
@@ -209,32 +190,13 @@
       loadSpell();
     };
 
-    document.getElementById("save-btn").onclick = saveToFile;
-
-    // Markdown editor
-    editor = new EasyMDE({
-      element: document.getElementById("description"),
-      spellChecker: false,  // disable spell checking
-    });
-
-    editor.codemirror.on("change", () => {
-      const current = editor.value();
-      const original = spells[index].description || "";
-      const changed = current !== original;
-
-      if (!spells[index]._changed) spells[index]._changed = {};
-      spells[index]._changed["description"] = changed;
-
-      let icon = document.getElementById("check-description");
-      if (!icon) {
-        icon = document.createElement("span");
-        icon.id = "check-description";
-        icon.className = "ml-2 text-green-500";
-        icon.textContent = "✅";
-        editor.codemirror.getWrapperElement().parentElement.insertAdjacentElement("beforeend", icon);
-      }
-      icon.classList.toggle("hidden", !changed);
-    });
+    document.getElementById("save-btn").onclick = () => {
+      const blob = new Blob([JSON.stringify(spells, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "spells.json";
+      a.click();
+    };
 
     // Track changes
     function trackChanges(fieldId, getOriginal, setValue) {
@@ -246,7 +208,6 @@
         const changed = current !== original;
 
         check.classList.toggle("hidden", !changed);
-
         if (!spells[index]._changed) spells[index]._changed = {};
         spells[index]._changed[fieldId] = changed;
 
@@ -263,9 +224,20 @@
       trackChanges("range", () => spells[index].range || "", val => spells[index].range = val);
       trackChanges("duration", () => spells[index].duration || "", val => spells[index].duration = val);
       trackChanges("time", () => spells[index].time || "", val => spells[index].time = val);
+
+      // Track description separately
+      descriptionTextarea.addEventListener("input", () => {
+        const current = descriptionTextarea.value;
+        const original = spells[index].description || "";
+        const changed = current !== original;
+
+        document.getElementById("check-description").classList.toggle("hidden", !changed);
+        if (!spells[index]._changed) spells[index]._changed = {};
+        spells[index]._changed["description"] = changed;
+        spells[index].description = current;
+      });
     }
 
-    // Load spells.json
     async function loadSpells() {
       try {
         status.textContent = "Завантаження /data/spells.json...";
