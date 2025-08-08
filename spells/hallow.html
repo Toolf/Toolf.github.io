@@ -4,67 +4,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Святилище — Hallow</title>
+    <title>
+    Святилище — Hallow
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Святилище</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Hallow</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 5</p>
-            <p><strong>Школа:</strong> втілення</p>
-            <p><strong>Час накладання:</strong> 24 години</p>
-            <p><strong>Дальність:</strong> Дотик</p>
-            <p><strong>Тривалість:</strong> Поки не розсіється</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    <span title="травы, масла и благовония, стоящие как минимум 1 000 зм, расходуемые заклинанием">М</span>
-                </span>
-            </p>
-            
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
-                
-            </div>
-
-            
-            <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
-            <ul class="list-disc ml-6">
-                
-                <li>Исчадие (Колдун)</li>
-                
-                <li>Домен Энтропии (Жрец)</li>
-                
-                <li>Домен Инквизиции (Жрец)</li>
-                
-            </ul>
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вы касаетесь точки и наполняете область вокруг неё святой (или нечестивой) силой. <span>Область может иметь радиус до 60 футов.</span> Заклинание проваливается, если в этот радиус попадает область, уже находящаяся под действием заклинания святилище.</p><p>Наполненная область подвергается следующим эффектам:</p><ul><li><em><strong>Во-первых</strong>,</em> исчадия, небожители, нежить, феи и элементали не могут войти в эту область, и не могут делать существ, находящихся внутри, <detail-tooltip type="screen"><a href="/screens/charmed">очарованными</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> и одержимыми. Все существа, <detail-tooltip type="screen"><a href="/screens/charmed">очарованные</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганные</a></detail-tooltip> или одержимые такими существами, перестают быть <detail-tooltip type="screen"><a href="/screens/charmed">очарованными</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> и одержимыми, входя в эту область. Вы можете исключить из эффекта один или несколько видов существ.</li><li><em><strong>Во-вторых</strong>,</em> вы можете привязать к области дополнительный эффект. Выберите один эффект из прилагающегося списка, или выберите эффект, предложенный Мастером. Некоторые из этих эффектов применяются к существам, находящимся в области; вы можете указать, будет ли он применяться ко всем существам, существам, служащим определённому божеству или лидеру, или существам определённого вида, например, оркам и троллям.</li></ul><p>Когда существо, попадающее под действие эффекта, входит в область заклинания впервые за ход или начинает там ход, оно может совершить спасбросок <span class="saving_throw">Харизмы</span>. В случае успеха существо игнорирует дополнительный эффект, пока не покинет эту область.</p><ul><li><strong>Вечный покой.</strong> Мёртвые тела, похороненные в области, не могут стать нежитью.</li><li><em><strong>Вмешательство в путешествия между измерениями.&nbsp;</strong></em>Затронутые существа не могут перемещаться и путешествовать, используя телепортацию или перемещение между измерениями и планами.</li><li><strong>Дневной свет.</strong> Область освещается <detail-tooltip type="screen"><a href="/screens/bright_light">ярким светом</a></detail-tooltip>. Магическая тьма, созданная заклинаниями с уровнем меньше уровня ячейки, использованной вами для накладывания этого заклинания, не может затмить свет.</li><li><strong>Защита от энергии.</strong> Затронутые существа в области получают <strong>сопротивление</strong> к одному виду урона на ваш выбор кроме дробящего, колющего и рубящего.</li><li><strong>Страх.</strong> Затронутые существа <detail-tooltip type="screen"><a href="/screens/frightened">испуганы</a></detail-tooltip>, пока находятся в области.</li><li><strong>Темнота.</strong> Область заполняется <detail-tooltip type="screen"><a href="/screens/darkness">темнотой</a></detail-tooltip>. Обычный свет, а также магический свет, созданный заклинаниями, с уровнем меньше уровня ячейки, использованной вами для накладывания этого заклинания, не могут осветить область.</li><li><strong>Тишина.</strong> Звуки не покидают границы области, и не проникают снаружи внутрь.</li><li><strong>Уязвимость энергии.</strong> Затронутые существа в области получают <strong>уязвимость</strong> к одному виду урона на ваш выбор кроме дробящего, колющего и рубящего.</li><li><strong>Храбрость.</strong> Затронутые существа не могут быть <detail-tooltip type="screen"><a href="/screens/frightened">испуганы</a></detail-tooltip>, пока находятся в области.</li><li><strong>Языки.</strong> Затронутые существа могут общаться с любыми другими существами, находящимися в области, даже если у них нет общего языка.</li></ul>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Святилище</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Книга игрока (PHB)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Hallow</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 5</p>
+    <p><strong>Школа:</strong> втілення</p>
+    <p><strong>Час накладання:</strong> 24 години</p>
+    <p><strong>Дальність:</strong> Дотик</p>
+    <p><strong>Тривалість:</strong> Поки не розсіється</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            <span title="травы, масла и благовония, стоящие как минимум 1 000 зм, расходуемые заклинанием">М</span>
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+        
     </div>
+
+    
+    <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
+    <ul class="list-disc ml-6">
+        
+        <li>Исчадие (Колдун)</li>
+        
+        <li>Домен Энтропии (Жрец)</li>
+        
+        <li>Домен Инквизиции (Жрец)</li>
+        
+    </ul>
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вы касаетесь точки и наполняете область вокруг неё святой (или нечестивой) силой. <span>Область может иметь радиус до 60 футов.</span> Заклинание проваливается, если в этот радиус попадает область, уже находящаяся под действием заклинания святилище.</p><p>Наполненная область подвергается следующим эффектам:</p><ul><li><em><strong>Во-первых</strong>,</em> исчадия, небожители, нежить, феи и элементали не могут войти в эту область, и не могут делать существ, находящихся внутри, <detail-tooltip type="screen"><a href="/screens/charmed">очарованными</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> и одержимыми. Все существа, <detail-tooltip type="screen"><a href="/screens/charmed">очарованные</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганные</a></detail-tooltip> или одержимые такими существами, перестают быть <detail-tooltip type="screen"><a href="/screens/charmed">очарованными</a></detail-tooltip>, <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> и одержимыми, входя в эту область. Вы можете исключить из эффекта один или несколько видов существ.</li><li><em><strong>Во-вторых</strong>,</em> вы можете привязать к области дополнительный эффект. Выберите один эффект из прилагающегося списка, или выберите эффект, предложенный Мастером. Некоторые из этих эффектов применяются к существам, находящимся в области; вы можете указать, будет ли он применяться ко всем существам, существам, служащим определённому божеству или лидеру, или существам определённого вида, например, оркам и троллям.</li></ul><p>Когда существо, попадающее под действие эффекта, входит в область заклинания впервые за ход или начинает там ход, оно может совершить спасбросок <span class="saving_throw">Харизмы</span>. В случае успеха существо игнорирует дополнительный эффект, пока не покинет эту область.</p><ul><li><strong>Вечный покой.</strong> Мёртвые тела, похороненные в области, не могут стать нежитью.</li><li><em><strong>Вмешательство в путешествия между измерениями.&nbsp;</strong></em>Затронутые существа не могут перемещаться и путешествовать, используя телепортацию или перемещение между измерениями и планами.</li><li><strong>Дневной свет.</strong> Область освещается <detail-tooltip type="screen"><a href="/screens/bright_light">ярким светом</a></detail-tooltip>. Магическая тьма, созданная заклинаниями с уровнем меньше уровня ячейки, использованной вами для накладывания этого заклинания, не может затмить свет.</li><li><strong>Защита от энергии.</strong> Затронутые существа в области получают <strong>сопротивление</strong> к одному виду урона на ваш выбор кроме дробящего, колющего и рубящего.</li><li><strong>Страх.</strong> Затронутые существа <detail-tooltip type="screen"><a href="/screens/frightened">испуганы</a></detail-tooltip>, пока находятся в области.</li><li><strong>Темнота.</strong> Область заполняется <detail-tooltip type="screen"><a href="/screens/darkness">темнотой</a></detail-tooltip>. Обычный свет, а также магический свет, созданный заклинаниями, с уровнем меньше уровня ячейки, использованной вами для накладывания этого заклинания, не могут осветить область.</li><li><strong>Тишина.</strong> Звуки не покидают границы области, и не проникают снаружи внутрь.</li><li><strong>Уязвимость энергии.</strong> Затронутые существа в области получают <strong>уязвимость</strong> к одному виду урона на ваш выбор кроме дробящего, колющего и рубящего.</li><li><strong>Храбрость.</strong> Затронутые существа не могут быть <detail-tooltip type="screen"><a href="/screens/frightened">испуганы</a></detail-tooltip>, пока находятся в области.</li><li><strong>Языки.</strong> Затронутые существа могут общаться с любыми другими существами, находящимися в области, даже если у них нет общего языка.</li></ul>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Книга игрока (PHB)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

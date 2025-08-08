@@ -4,63 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Хаотичная живучесть — Chaotic Vitality</title>
+    <title>
+    Хаотичная живучесть — Chaotic Vitality
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Хаотичная живучесть</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Chaotic Vitality</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 2</p>
-            <p><strong>Школа:</strong> втілення</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> Дотик</p>
-            <p><strong>Тривалість:</strong> Миттєво</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Хаотичная живучесть</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Chaotic Vitality</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 2</p>
+    <p><strong>Школа:</strong> втілення</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> Дотик</p>
+    <p><strong>Тривалість:</strong> Миттєво</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
+    </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Совершите <em>рукопашную атаку заклинанием</em> по существу, с количеством костей хитов не большим, чем ваш уровень и, по крайней мере, <span class="dice_text">1</span> хитом. При попадании вы призываете пульсирующие волны хаотической энергии внутри существа и себя. Через мгновение, кажущееся вечностью, сумма ваших хитов и хитов существа меняется.</p><p>Бросьте <dice-roller formula="к100">к100</dice-roller> и увеличьте или уменьшите результат на любое число от нуля до вашего уровня заклинателя, затем найдите результат в таблице &laquo;Изменение Хитов&raquo;. Измените свои хиты и хиты цели в соответствии с таблицей. Все хиты, превышающие максимум хитов для каждого существа, становятся временными хитами и исчезают через количество раундов равное вашему уровню.</p><blockquote><p>Например, пусть заклинательница третьего уровня, у которой сейчас <span class="dice_text">17</span> из максимума <span class="dice_text">30</span> хитов, накладывает Хаотическую живучесть на существо с <span class="dice_text">54</span> хитами и бросает 75 по таблице &laquo;Изменение Хитов&raquo;. В сумме у обоих 17 + 54 = <span class="dice_text">71</span> хит. Результат броска 75 означает, что оба существа получат по 50% суммы, так что и у заклинательницы, и у существа становится по <span class="dice_text">35</span> хитов. В случае заклинательницы <span class="dice_text">5</span> из них - временные и продержатся 3 раунда.</p></blockquote><p style="text-align: center;"><strong> Изменение хитов</strong><tbodu></tbodu></p><div class="table-responsive"><table class="dnd5_table"><thead><tr><th>Изменение</th><th>Хиты</th></tr></thead><tbody><tr><td style="text-align: center;">01-09</td><td style="text-align: center;">0</td></tr><tr><td style="text-align: center;">10-39</td><td style="text-align: center;">1</td></tr><tr><td style="text-align: center;">40-69</td><td style="text-align: center;">25% суммы</td></tr><tr><td style="text-align: center;">70-84</td><td style="text-align: center;">50% суммы</td></tr><tr><td style="text-align: center;">85-94</td><td style="text-align: center;">75% суммы</td></tr><tr><td style="text-align: center;">95-99</td><td style="text-align: center;">100% суммы</td></tr><tr><td style="text-align: center;">100</td><td style="text-align: center;">200% суммы и каждое существо получает эффект заклинания ускорение длительностью 1 раунд за уровень заклинания</td></tr></tbody></table></div>
+</div>
+
+
+<div class="mt-4 border-t pt-4">
+    <h4 class="font-bold text-md">На вищих рівнях</h4>
+    <div class="prose prose-sm sm:prose max-w-none">Когда вы накладываете это заклинание, используя ячейку 3 уровня или больше, допустимый максимум костей хитов цели увеличивается на 2 за каждый уровень ячейки выше второго.</div>
+</div>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
             </p>
             
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Совершите <em>рукопашную атаку заклинанием</em> по существу, с количеством костей хитов не большим, чем ваш уровень и, по крайней мере, <span class="dice_text">1</span> хитом. При попадании вы призываете пульсирующие волны хаотической энергии внутри существа и себя. Через мгновение, кажущееся вечностью, сумма ваших хитов и хитов существа меняется.</p><p>Бросьте <dice-roller formula="к100">к100</dice-roller> и увеличьте или уменьшите результат на любое число от нуля до вашего уровня заклинателя, затем найдите результат в таблице &laquo;Изменение Хитов&raquo;. Измените свои хиты и хиты цели в соответствии с таблицей. Все хиты, превышающие максимум хитов для каждого существа, становятся временными хитами и исчезают через количество раундов равное вашему уровню.</p><blockquote><p>Например, пусть заклинательница третьего уровня, у которой сейчас <span class="dice_text">17</span> из максимума <span class="dice_text">30</span> хитов, накладывает Хаотическую живучесть на существо с <span class="dice_text">54</span> хитами и бросает 75 по таблице &laquo;Изменение Хитов&raquo;. В сумме у обоих 17 + 54 = <span class="dice_text">71</span> хит. Результат броска 75 означает, что оба существа получат по 50% суммы, так что и у заклинательницы, и у существа становится по <span class="dice_text">35</span> хитов. В случае заклинательницы <span class="dice_text">5</span> из них - временные и продержатся 3 раунда.</p></blockquote><p style="text-align: center;"><strong> Изменение хитов</strong><tbodu></tbodu></p><div class="table-responsive"><table class="dnd5_table"><thead><tr><th>Изменение</th><th>Хиты</th></tr></thead><tbody><tr><td style="text-align: center;">01-09</td><td style="text-align: center;">0</td></tr><tr><td style="text-align: center;">10-39</td><td style="text-align: center;">1</td></tr><tr><td style="text-align: center;">40-69</td><td style="text-align: center;">25% суммы</td></tr><tr><td style="text-align: center;">70-84</td><td style="text-align: center;">50% суммы</td></tr><tr><td style="text-align: center;">85-94</td><td style="text-align: center;">75% суммы</td></tr><tr><td style="text-align: center;">95-99</td><td style="text-align: center;">100% суммы</td></tr><tr><td style="text-align: center;">100</td><td style="text-align: center;">200% суммы и каждое существо получает эффект заклинания ускорение длительностью 1 раунд за уровень заклинания</td></tr></tbody></table></div>
-        </div>
-
-        
-        <div class="mt-4 border-t pt-4">
-            <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm sm:prose max-w-none">Когда вы накладываете это заклинание, используя ячейку 3 уровня или больше, допустимый максимум костей хитов цели увеличивается на 2 за каждый уровень ячейки выше второго.</div>
         </div>
         
-
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Мидгард Справочник героя (MHH)</p>
-        </div>
     </div>
+
+    
+    
 </body>
 
 </html>

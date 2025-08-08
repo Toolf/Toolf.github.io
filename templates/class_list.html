@@ -1,0 +1,25 @@
+{% extends "base_list.html" %}
+
+{% block title %}Класи{% endblock %}
+{% block heading %}Класи{% endblock %}
+
+{% block list %}
+<div id="list-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {% for item in items %}
+    <a href="{{ item.url }}.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="{{ item.image }}" alt="{{ item.name.rus }}" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">{{ item.name.rus }}</h2>
+                <p class="text-sm text-gray-600">{{ item.name.eng }}</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: {{ item.source.name }} ({{ item.source.shortName }})
+                </p>
+                <p class="text-sm mt-1">Кость хитов: {{ item.dice }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

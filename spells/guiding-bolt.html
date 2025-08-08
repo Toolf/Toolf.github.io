@@ -4,76 +4,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Направленный снаряд — Guiding Bolt</title>
+    <title>
+    Направленный снаряд — Guiding Bolt
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Направленный снаряд</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Guiding Bolt</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 1</p>
-            <p><strong>Школа:</strong> втілення</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 120 футів</p>
-            <p><strong>Тривалість:</strong> 1 раунд</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Направленный снаряд</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Guiding Bolt</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 1</p>
+    <p><strong>Школа:</strong> втілення</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 120 футів</p>
+    <p><strong>Тривалість:</strong> 1 раунд</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+        
+    </div>
+
+    
+    <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
+    <ul class="list-disc ml-6">
+        
+        <li>Небожитель (Колдун)</li>
+        
+        <li>Клятва Славы (Паладин)</li>
+        
+        <li>Круг Звезд (Друид)</li>
+        
+        <li>Клятва Сияния (Паладин)</li>
+        
+        <li>Окетра: Домен Сплочённости (Жрец)</li>
+        
+    </ul>
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вспышка света устремляется к выбранному вами существу в пределах дистанции.</p><p>Совершите <em>дальнобойную атаку заклинанием</em> по цели. При попадании цель получает&nbsp;<dice-roller formula="4к6">4к6</dice-roller> урона излучением, и следующий бросок атаки по цели, совершённый до конца вашего следующего хода, совершается с <span class="advantage">преимуществом</span>, благодаря мистическому <detail-tooltip type="screen"><a href="/screens/dim_light">тусклому свету</a></detail-tooltip>, остающемуся недолго на цели.</p>
+</div>
+
+
+<div class="mt-4 border-t pt-4">
+    <h4 class="font-bold text-md">На вищих рівнях</h4>
+    <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 2 уровня или выше, урон увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше первого.</div>
+</div>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Книга игрока (PHB)
+                , стор. 243
             </p>
             
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
-                
-            </div>
-
-            
-            <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
-            <ul class="list-disc ml-6">
-                
-                <li>Небожитель (Колдун)</li>
-                
-                <li>Клятва Славы (Паладин)</li>
-                
-                <li>Круг Звезд (Друид)</li>
-                
-                <li>Клятва Сияния (Паладин)</li>
-                
-                <li>Окетра: Домен Сплочённости (Жрец)</li>
-                
-            </ul>
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вспышка света устремляется к выбранному вами существу в пределах дистанции.</p><p>Совершите <em>дальнобойную атаку заклинанием</em> по цели. При попадании цель получает&nbsp;<dice-roller formula="4к6">4к6</dice-roller> урона излучением, и следующий бросок атаки по цели, совершённый до конца вашего следующего хода, совершается с <span class="advantage">преимуществом</span>, благодаря мистическому <detail-tooltip type="screen"><a href="/screens/dim_light">тусклому свету</a></detail-tooltip>, остающемуся недолго на цели.</p>
-        </div>
-
-        
-        <div class="mt-4 border-t pt-4">
-            <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 2 уровня или выше, урон увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше первого.</div>
         </div>
         
-
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Книга игрока (PHB), стор. 243</p>
-        </div>
     </div>
+
+    
+    
 </body>
 
 </html>

@@ -4,62 +4,85 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Снежный булыжник — Snow Boulder</title>
+    <title>
+    Снежный булыжник — Snow Boulder
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Снежный булыжник</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Snow Boulder</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 4</p>
-            <p><strong>Школа:</strong> перетворення</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 90 футів</p>
-            <p><strong>Тривалість:</strong> Концентрація, до 4 раундів</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    <span title="горсть снега">М</span>
-                </span>
-            </p>
-            
-            
-            <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
-            </p>
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Следопыт</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Шар снега образуется в 5 футах от вас и начинает катиться в указанном направлении, становясь больше по мере движения.</p><p><em>Бонусным действие</em>м вы можете передвинуть шар на 30 футов. Если вы катите булыжник на существо, то оно должно совершить спасбросок <span class="saving_throw">Ловкости</span> или <detail-tooltip type="screen"><a href="/screens/condition_prone">упасть ничком</a></detail-tooltip> и получить урон, как описано ниже. В каждом раунде булыжник увеличивается в размере и эффективности. Попадание в существо не останавливает шар и не препятствует его увеличению.</p><div claass="table-responsive"><table class="dnd5_table"><thead><tr><th>Раунд</th><th style="text-align: left;">Размер</th><th style="text-align: left;">Урон</th></tr></thead><tbody><tr><td style="text-align: center;">1</td><td>Маленький</td><td><dice-roller formula="1к6">1к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">2</td><td>Средний</td><td><dice-roller formula="2к6">2к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">3</td><td>Большой</td><td><dice-roller formula="3к6">3к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">4</td><td>Огромный</td><td><dice-roller formula="4к6">4к6</dice-roller> дробящий</td></tr></tbody></table></div>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Снежный булыжник</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Мидгард Справочник героя (MHH)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Snow Boulder</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 4</p>
+    <p><strong>Школа:</strong> перетворення</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 90 футів</p>
+    <p><strong>Тривалість:</strong> Концентрація, до 4 раундів</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            <span title="горсть снега">М</span>
+        </span>
+    </p>
+    
+    
+    <p>
+        <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
+    </p>
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Следопыт</span>
+        
     </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Шар снега образуется в 5 футах от вас и начинает катиться в указанном направлении, становясь больше по мере движения.</p><p><em>Бонусным действие</em>м вы можете передвинуть шар на 30 футов. Если вы катите булыжник на существо, то оно должно совершить спасбросок <span class="saving_throw">Ловкости</span> или <detail-tooltip type="screen"><a href="/screens/condition_prone">упасть ничком</a></detail-tooltip> и получить урон, как описано ниже. В каждом раунде булыжник увеличивается в размере и эффективности. Попадание в существо не останавливает шар и не препятствует его увеличению.</p><div claass="table-responsive"><table class="dnd5_table"><thead><tr><th>Раунд</th><th style="text-align: left;">Размер</th><th style="text-align: left;">Урон</th></tr></thead><tbody><tr><td style="text-align: center;">1</td><td>Маленький</td><td><dice-roller formula="1к6">1к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">2</td><td>Средний</td><td><dice-roller formula="2к6">2к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">3</td><td>Большой</td><td><dice-roller formula="3к6">3к6</dice-roller> дробящий</td></tr><tr><td style="text-align: center;">4</td><td>Огромный</td><td><dice-roller formula="4к6">4к6</dice-roller> дробящий</td></tr></tbody></table></div>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

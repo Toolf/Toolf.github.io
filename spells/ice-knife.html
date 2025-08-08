@@ -4,67 +4,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ледяной кинжал — Ice Knife</title>
+    <title>
+    Ледяной кинжал — Ice Knife
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Ледяной кинжал</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Ice Knife</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 1</p>
-            <p><strong>Школа:</strong> виклик</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 60 футів</p>
-            <p><strong>Тривалість:</strong> Миттєво</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    
-                    С 
-                    <span title="капля воды или кусочек льда">М</span>
-                </span>
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Ледяной кинжал</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Ice Knife</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 1</p>
+    <p><strong>Школа:</strong> виклик</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 60 футів</p>
+    <p><strong>Тривалість:</strong> Миттєво</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            
+            С 
+            <span title="капля воды или кусочек льда">М</span>
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Чародей</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Магус</span>
+        
+    </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вы создаёте осколок льда и метаете его в одно существо, находящееся в пределах дистанции заклинания.</p><p>Совершите по цели <em>дальнобойную атаку заклинанием</em>. При попадании цель получает&nbsp;<dice-roller formula="1к10">1к10</dice-roller> колющего урона. После этого, вне зависимости от попадания или промаха, осколок взрывается. Цель и все существа в пределах 5 футов от места взрыва осколка должны преуспеть в спасброске <span class="saving_throw">Ловкости</span>, иначе получат&nbsp;<dice-roller formula="2к6">2к6</dice-roller> урона холодом.</p>
+</div>
+
+
+<div class="mt-4 border-t pt-4">
+    <h4 class="font-bold text-md">На вищих рівнях</h4>
+    <div class="prose prose-sm sm:prose max-w-none">Если вы сотворяете это заклинание, используя ячейку 2 уровня или выше, то урон холодом увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше 1. </div>
+</div>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Руководство Занатара обо всем (XGE)
+                
             </p>
             
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Чародей</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Магус</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вы создаёте осколок льда и метаете его в одно существо, находящееся в пределах дистанции заклинания.</p><p>Совершите по цели <em>дальнобойную атаку заклинанием</em>. При попадании цель получает&nbsp;<dice-roller formula="1к10">1к10</dice-roller> колющего урона. После этого, вне зависимости от попадания или промаха, осколок взрывается. Цель и все существа в пределах 5 футов от места взрыва осколка должны преуспеть в спасброске <span class="saving_throw">Ловкости</span>, иначе получат&nbsp;<dice-roller formula="2к6">2к6</dice-roller> урона холодом.</p>
-        </div>
-
-        
-        <div class="mt-4 border-t pt-4">
-            <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm sm:prose max-w-none">Если вы сотворяете это заклинание, используя ячейку 2 уровня или выше, то урон холодом увеличивается на <dice-roller formula="1к6">1к6</dice-roller> за каждый уровень ячейки выше 1. </div>
         </div>
         
-
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-        </div>
     </div>
+
+    
+    
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+{% extends "base_list.html" %}
+
+{% block title %}Магічні предмети — Список{% endblock %}
+{% block heading %}Магічні предмети{% endblock %}
+
+{% block list %}
+<ul id="list-container" class="space-y-4">
+    {% for item in items %}
+    <li class="p-4 bg-white rounded shadow hover:bg-blue-50 transition">
+        <a href="{{ item.filename }}" class="block">
+            <h2 class="text-lg sm:text-xl font-semibold truncate" title="{{ item.name.rus }}">
+                {{ item.name.rus }}
+                {% if item.rarity %}
+                <span class="text-sm text-gray-500 font-medium">({{ item.rarity.name }})</span>
+                {% endif %}
+            </h2>
+            <p class="text-sm text-gray-600 truncate" title="{{ item.name.eng }}">{{ item.name.eng }}</p>
+            <p class="text-xs text-gray-500 mt-1">
+                Джерело: {{ item.source.shortName }}
+            </p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

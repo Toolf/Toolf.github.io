@@ -4,56 +4,79 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Радужный луч — Prismatic Ray</title>
+    <title>
+    Радужный луч — Prismatic Ray
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Радужный луч</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Prismatic Ray</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 5</p>
-            <p><strong>Школа:</strong> виклик</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 100 футів</p>
-            <p><strong>Тривалість:</strong> Миттєво або 5 раундів</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
-            </p>
-            
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Луч переливающийся всеми цветами радуги вырывается из вашей руки.</p><p>Совершите <em>дальнобойную атаку заклинанием</em> против одной цели. Эффект луча меняется в зависимости от того, какой цвет доминировал в луче, когда тот поразил цель.&nbsp;Совершите бросок <dice-roller formula="к8">к8</dice-roller>.</p><div claass="table-responsive"><table><thead><tr><th><dice-roller formula="к8">к8</dice-roller></th><th style="text-align: left;">Цвет луча</th><th style="text-align: left;">Урон или состояние цели</th><th style="text-align: left;">Спасбросок</th></tr></thead><tbody><tr><td style="text-align: center;">1</td><td>Красный</td><td><dice-roller formula="8к10">8к10</dice-roller> огнём</td><td>Ловкость</td></tr><tr><td style="text-align: center;">2</td><td>Оранжевый</td><td><dice-roller formula="8к10">8к10</dice-roller> ядом</td><td>Ловкость</td></tr><tr><td style="text-align: center;">3</td><td>Жёлтый</td><td><dice-roller formula="8к10">8к10</dice-roller> молнией</td><td>Ловкость</td></tr><tr><td style="text-align: center;">4</td><td>Зелёный</td><td><detail-tooltip type="screen"><a href="/screens/poisoned">Отравленный </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">5</td><td>Синий</td><td><detail-tooltip type="screen"><a href="/screens/deafened">Оглушённый </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">6</td><td>Индиго</td><td><detail-tooltip type="screen"><a href="/screens/frightened">Испуганный </a></detail-tooltip></td><td>Мудрость</td></tr><tr><td style="text-align: center;">7</td><td>Фиолетовый</td><td><detail-tooltip type="screen"><a href="/screens/stunned">Ошеломлённый </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">8</td><td>Переливающийся</td><td><detail-tooltip type="screen"><a href="/screens/blinded">Ослеплённый</a></detail-tooltip></td><td>Телосложение</td></tr></tbody></table></div><p>Успешный спасбросок <span class="saving_throw">Ловкости</span> уменьшает урон наполовину.</p><p>Успешный спасбросок <span class="saving_throw">Телосложения</span> или <span class="saving_throw">Мудрости</span> отменяет эффект заклинания; цель под воздействием заклинания повторяет спасбросок в конце своего хода, оканчивая эффект на себе при успехе.</p><p>При <detail-tooltip type="screen"><a href="/screens/critical_hit">критическом попадании</a></detail-tooltip> заклинание не наносит дополнительного урона, но заклинатель может самостоятельно выбрать тип луча, который поразит цель.</p>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Радужный луч</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Мидгард Справочник героя (MHH)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Prismatic Ray</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 5</p>
+    <p><strong>Школа:</strong> виклик</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 100 футів</p>
+    <p><strong>Тривалість:</strong> Миттєво або 5 раундів</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
     </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Луч переливающийся всеми цветами радуги вырывается из вашей руки.</p><p>Совершите <em>дальнобойную атаку заклинанием</em> против одной цели. Эффект луча меняется в зависимости от того, какой цвет доминировал в луче, когда тот поразил цель.&nbsp;Совершите бросок <dice-roller formula="к8">к8</dice-roller>.</p><div claass="table-responsive"><table><thead><tr><th><dice-roller formula="к8">к8</dice-roller></th><th style="text-align: left;">Цвет луча</th><th style="text-align: left;">Урон или состояние цели</th><th style="text-align: left;">Спасбросок</th></tr></thead><tbody><tr><td style="text-align: center;">1</td><td>Красный</td><td><dice-roller formula="8к10">8к10</dice-roller> огнём</td><td>Ловкость</td></tr><tr><td style="text-align: center;">2</td><td>Оранжевый</td><td><dice-roller formula="8к10">8к10</dice-roller> ядом</td><td>Ловкость</td></tr><tr><td style="text-align: center;">3</td><td>Жёлтый</td><td><dice-roller formula="8к10">8к10</dice-roller> молнией</td><td>Ловкость</td></tr><tr><td style="text-align: center;">4</td><td>Зелёный</td><td><detail-tooltip type="screen"><a href="/screens/poisoned">Отравленный </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">5</td><td>Синий</td><td><detail-tooltip type="screen"><a href="/screens/deafened">Оглушённый </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">6</td><td>Индиго</td><td><detail-tooltip type="screen"><a href="/screens/frightened">Испуганный </a></detail-tooltip></td><td>Мудрость</td></tr><tr><td style="text-align: center;">7</td><td>Фиолетовый</td><td><detail-tooltip type="screen"><a href="/screens/stunned">Ошеломлённый </a></detail-tooltip></td><td>Телосложение</td></tr><tr><td style="text-align: center;">8</td><td>Переливающийся</td><td><detail-tooltip type="screen"><a href="/screens/blinded">Ослеплённый</a></detail-tooltip></td><td>Телосложение</td></tr></tbody></table></div><p>Успешный спасбросок <span class="saving_throw">Ловкости</span> уменьшает урон наполовину.</p><p>Успешный спасбросок <span class="saving_throw">Телосложения</span> или <span class="saving_throw">Мудрости</span> отменяет эффект заклинания; цель под воздействием заклинания повторяет спасбросок в конце своего хода, оканчивая эффект на себе при успехе.</p><p>При <detail-tooltip type="screen"><a href="/screens/critical_hit">критическом попадании</a></detail-tooltip> заклинание не наносит дополнительного урона, но заклинатель может самостоятельно выбрать тип луча, который поразит цель.</p>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

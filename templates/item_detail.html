@@ -1,0 +1,31 @@
+{% extends "base_detail.html" %}
+
+{% block title %}{{ item.name.rus }} — Деталі{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-2">{{ item.name.rus }} ({{ item.name.eng }})</h1>
+
+{% if item.price %}
+<p class="text-gray-700 mb-4"><strong>Ціна:</strong> {{ item.price }}</p>
+{% endif %}
+
+{% if item.weight is defined %}
+<p class="text-gray-700 mb-4"><strong>Вага:</strong> {{ item.weight }} кг</p>
+{% endif %}
+
+{% if item.categories %}
+<p class="text-gray-700 mb-4">
+    <strong>Категорії:</strong> {{ item.categories | join(', ') }}
+</p>
+{% endif %}
+
+{% if item.source %}
+<p class="text-gray-600 mb-6">
+    Джерело: {{ item.source.name }} ({{ item.source.shortName }})
+</p>
+{% endif %}
+
+{% if item.description %}
+    {{ item.description | safe }}
+{% endif %}
+{% endblock %}

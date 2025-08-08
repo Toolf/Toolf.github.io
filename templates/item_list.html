@@ -1,0 +1,25 @@
+{% extends "base_list.html" %}
+
+{% block title %}{{ page_title or "Список" }}{% endblock %}
+{% block heading %}{{ page_heading or "Список" }}{% endblock %}
+
+{% block list %}
+<div id="list-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {% for item in items %}
+    <a href="{{ item.filename }}" class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <h2 class="text-lg sm:text-xl font-semibold">
+            {{ item.name.ukr or item.name.rus or item.name.eng }}
+        </h2>
+        {% if item.name.eng %}
+        <p class="text-sm text-gray-500">{{ item.name.eng }}</p>
+        {% endif %}
+        {% if item.type and item.type.name %}
+        <p class="text-sm text-gray-600 mt-1">{{ item.type.name }}</p>
+        {% endif %}
+        {% if item.source and item.source.shortName %}
+        <p class="text-xs text-gray-400 mt-1">Джерело: {{ item.source.shortName }}</p>
+        {% endif %}
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

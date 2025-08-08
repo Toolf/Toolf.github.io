@@ -2,166 +2,153 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Троллкин</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    Троллкин
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .prose {
-            max-width: 100%;
-            /* max-w-none */
-            margin-bottom: 1.5rem;
-            /* mb-6 */
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
+        
+    /* Include your custom prose styles from your original race_details.html */
+    .prose {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .prose strong {
+        display: block;
+        font-weight: 700;
+        font-size: 1.125rem;
+        margin: 1.5rem 0 0.5rem 0;
+        cursor: pointer;
+        color: #2563eb;
+        transition: color 0.3s;
+        user-select: none;
+    }
+    .prose strong:hover {
+        text-decoration: underline;
+        color: #1d4ed8;
+    }
+    .prose p {
+        text-indent: 1.5rem;
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        opacity: 1;
+    }
+    .prose p.hidden {
+        max-height: 0;
+        opacity: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .prose p[style*="display: none"] {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .prose p:not([style*="display: none"]) {
+        max-height: 1000px;
+        opacity: 1;
+    }
+    .prose strong+p {
+        border-top: 1px solid #e5e7eb;
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
 
-        .prose strong {
-            display: block;
-            font-weight: 700;
-            font-size: 1.125rem;
-            /* трохи більший шрифт */
-            margin: 1.5rem 0 0.5rem 0;
-            cursor: pointer;
-            color: #2563eb;
-            /* синій */
-            transition: color 0.3s;
-            user-select: none;
-        }
-
-        .prose strong:hover {
-            text-decoration: underline;
-            color: #1d4ed8;
-        }
-
-        /* .prose p {
-            margin: 0.5rem 0 1rem 0;
-            transition: max-height 0.3s ease, opacity 0.3s ease;
-            overflow: hidden;
-        } */
-
-        .prose p {
-            text-indent: 1.5rem;
-            max-height: 1000px;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.4s ease;
-            opacity: 1;
-        }
-
-        .prose p.hidden {
-            max-height: 0;
-            opacity: 0;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        /* Приховані параграфи */
-        .prose p[style*="display: none"] {
-            max-height: 0;
-            opacity: 0;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Відкриті параграфи */
-        .prose p:not([style*="display: none"]) {
-            max-height: 1000px;
-            /* достатньо для тексту */
-            opacity: 1;
-        }
-
-        /* Опціонально: роздільник між блоками */
-        .prose strong+p {
-            border-top: 1px solid #e5e7eb;
-            /* світло-сірий роздільник */
-            padding-top: 1rem;
-            margin-top: 1rem;
-        }
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 p-6">
-    <div class="max-w-4xl mx-auto p-8">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
+
+        
         <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">
             Троллкин
         </h1>
-
-        <p class="text-sm text-gray-500 mb-4">Trollkin</p>
+        
 
         
-        <div class="prose max-w-none mb-6">
-            <p>В древние времена огры, тролли и феи заключали браки с людьми. Потомками оказались троллкины. Высокие, долговязые, с грубой внешностью &ndash; троллкины изредка бывают желанными гостями среди более цивилизованных рас Севера, даже когда их нечеловеческое происхождение довольно трудно определимо. Ввиду этого многие троллкины живут племенами в изолированных поселениях и занимаются охотой или набегами.</p>
+        
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Trollkin</h2>
+        
+        
+
+        
+    
+    <div class="prose max-w-none mb-6">
+        <p>В древние времена огры, тролли и феи заключали браки с людьми. Потомками оказались троллкины. Высокие, долговязые, с грубой внешностью &ndash; троллкины изредка бывают желанными гостями среди более цивилизованных рас Севера, даже когда их нечеловеческое происхождение довольно трудно определимо. Ввиду этого многие троллкины живут племенами в изолированных поселениях и занимаются охотой или набегами.</p>
+    </div>
+    
+
+    
+
+    
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
+            </p>
+            
         </div>
         
-
-        
-
-        
-
     </div>
 
+    
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const prose = document.querySelector(".prose");
+        if (!prose) return;
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const prose = document.querySelector(".prose");
-            if (!prose) return;
+        const paragraphs = Array.from(prose.querySelectorAll("p"));
 
-            const paragraphs = Array.from(prose.querySelectorAll("p"));
+        paragraphs.forEach(p => {
+            const strong = p.querySelector("strong");
+            if (strong) {
+                strong.remove();
+                p.parentNode.insertBefore(strong, p);
+            }
+        });
 
-            paragraphs.forEach(p => {
-                const strong = p.querySelector("strong");
-                if (strong) {
-                    // Витягуємо <strong> з <p>
-                    strong.remove();
+        const strongs = Array.from(prose.querySelectorAll("strong"));
 
-                    // Вставляємо <strong> перед <p>
-                    p.parentNode.insertBefore(strong, p);
+        strongs.forEach((strong, index) => {
+            strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+            let nextStrong = strongs[index + 1];
+            let elemsToHide = [];
+            let sibling = strong.nextElementSibling;
+
+            while (sibling && sibling !== nextStrong) {
+                if (sibling.tagName.toLowerCase() !== "strong") {
+                    elemsToHide.push(sibling);
                 }
-            });
+                sibling = sibling.nextElementSibling;
+            }
 
-            // Знайдемо всі strong всередині prose
-            const strongs = Array.from(prose.querySelectorAll("strong"));
+            elemsToHide.forEach(p => p.style.display = "none");
 
-            strongs.forEach((strong, index) => {
-                // Зробимо strong клікабельним стилем
-                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
-
-                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
-                let nextStrong = strongs[index + 1];
-                let elemsToHide = [];
-
-                // Починаємо з наступного елемента після strong
-                let sibling = strong.nextElementSibling;
-
-                while (sibling && sibling !== nextStrong) {
-                    // Перевіряємо чи це <p>
-                    if (sibling.tagName.toLowerCase() !== "strong") {
-                        elemsToHide.push(sibling);
-                    }
-                    sibling = sibling.nextElementSibling;
-                }
-
-                // Ховаємо всі знайдені <p>
-                elemsToHide.forEach(p => p.style.display = "none");
-
-                // Додаємо поведінку клику: переключаємо видимість
-                strong.addEventListener("click", () => {
-                    elemsToHide.forEach(p => {
-                        if (p.style.display === "none") {
-                            p.style.display = "";
-                        } else {
-                            p.style.display = "none";
-                        }
-                    });
+            strong.addEventListener("click", () => {
+                elemsToHide.forEach(p => {
+                    p.style.display = (p.style.display === "none") ? "" : "none";
                 });
             });
         });
-    </script>
+    });
+</script>
+
 </body>
 
 </html>

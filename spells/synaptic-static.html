@@ -4,62 +4,85 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Синаптический разряд — Synaptic Static</title>
+    <title>
+    Синаптический разряд — Synaptic Static
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Синаптический разряд</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Synaptic Static</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 5</p>
-            <p><strong>Школа:</strong> очарування</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 120 футів</p>
-            <p><strong>Тривалість:</strong> Миттєво</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
-            </p>
-            
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Чародей</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вы выбираете точку в пределах дистанции и вызываете в ней взрыв психической энергии. Каждое существо в сфере с радиусом 20 футов с центром в этой точке должно совершить спасбросок <span class="saving_throw">Интеллекта</span>. Существа, у которых <strong>Интеллект</strong> равен 2 или ниже, не попадают под действие этого заклинания.</p><p>Цель получает <dice-roller formula="8к6">8к6</dice-roller> урона психической энергией при провале или половину этого урона при успехе. После неудачного спасброска цель начинает путаться в мыслях на протяжении 1 минуты. В течение этого времени она бросает <dice-roller formula="к6">к6</dice-roller> и вычитает получившееся число из всех его бросков атаки и проверок способности, а также из его спасбросков <span class="saving_throw">Телосложения</span> на сохранение концентрации.</p><p>В конце каждого своего хода цель может совершать спасбросок <span class="saving_throw">Интеллекта</span>. При успехе эффект для него оканчивается.</p>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Синаптический разряд</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Synaptic Static</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 5</p>
+    <p><strong>Школа:</strong> очарування</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 120 футів</p>
+    <p><strong>Тривалість:</strong> Миттєво</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Чародей</span>
+        
     </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вы выбираете точку в пределах дистанции и вызываете в ней взрыв психической энергии. Каждое существо в сфере с радиусом 20 футов с центром в этой точке должно совершить спасбросок <span class="saving_throw">Интеллекта</span>. Существа, у которых <strong>Интеллект</strong> равен 2 или ниже, не попадают под действие этого заклинания.</p><p>Цель получает <dice-roller formula="8к6">8к6</dice-roller> урона психической энергией при провале или половину этого урона при успехе. После неудачного спасброска цель начинает путаться в мыслях на протяжении 1 минуты. В течение этого времени она бросает <dice-roller formula="к6">к6</dice-roller> и вычитает получившееся число из всех его бросков атаки и проверок способности, а также из его спасбросков <span class="saving_throw">Телосложения</span> на сохранение концентрации.</p><p>В конце каждого своего хода цель может совершать спасбросок <span class="saving_throw">Интеллекта</span>. При успехе эффект для него оканчивается.</p>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Руководство Занатара обо всем (XGE)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

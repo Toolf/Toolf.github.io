@@ -4,63 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кара Перуна — Perun's Doom</title>
+    <title>
+    Кара Перуна — Perun's Doom
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Кара Перуна</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Perun's Doom</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 3</p>
-            <p><strong>Школа:</strong> виклик</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> 60 футів</p>
-            <p><strong>Тривалість:</strong> Миттєво</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Кара Перуна</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Perun's Doom</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 3</p>
+    <p><strong>Школа:</strong> виклик</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> 60 футів</p>
+    <p><strong>Тривалість:</strong> Миттєво</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
+        
+    </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вы призываете сильный ветер, исходящий от вашей вытянутой руки, и выбираете точку в пределах дистанции заклинания, где он низвергается на неё с мощным рёвом. Каждое существо, находящееся в цилиндре с радиусом в 20 футов с центром на этой точке должно совершить спасбросок <span class="saving_throw">Силы</span>. В случае провала существо получаете <dice-roller formula="3к8">3к8</dice-roller> дробящего урона, а после его притягивает к центру цилиндра и подбрасывает на 50 футов вверх.</p><p>Если существо врезается в твёрдую поверхность (например, каменный потолок), то оно получает дробящий урон, как от падения с высоты 50 футов минус пройденная дистанция.</p><p>К примеру, если существо врезается в потолок после 10 футов полёта, то она получает урон, как если бы он упал с высоты 50-10 = 40 футов, то есть <dice-roller formula="4к6">4к6</dice-roller> дробящего урона.</p>
+</div>
+
+
+<div class="mt-4 border-t pt-4">
+    <h4 class="font-bold text-md">На вищих рівнях</h4>
+    <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, существо взлетает на дополнительные 10 футов за каждый уровень ячейки выше 3.</div>
+</div>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
             </p>
             
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вы призываете сильный ветер, исходящий от вашей вытянутой руки, и выбираете точку в пределах дистанции заклинания, где он низвергается на неё с мощным рёвом. Каждое существо, находящееся в цилиндре с радиусом в 20 футов с центром на этой точке должно совершить спасбросок <span class="saving_throw">Силы</span>. В случае провала существо получаете <dice-roller formula="3к8">3к8</dice-roller> дробящего урона, а после его притягивает к центру цилиндра и подбрасывает на 50 футов вверх.</p><p>Если существо врезается в твёрдую поверхность (например, каменный потолок), то оно получает дробящий урон, как от падения с высоты 50 футов минус пройденная дистанция.</p><p>К примеру, если существо врезается в потолок после 10 футов полёта, то она получает урон, как если бы он упал с высоты 50-10 = 40 футов, то есть <dice-roller formula="4к6">4к6</dice-roller> дробящего урона.</p>
-        </div>
-
-        
-        <div class="mt-4 border-t pt-4">
-            <h4 class="font-bold text-md">На вищих рівнях</h4>
-            <div class="prose prose-sm sm:prose max-w-none">Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, существо взлетает на дополнительные 10 футов за каждый уровень ячейки выше 3.</div>
         </div>
         
-
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Мидгард Справочник героя (MHH)</p>
-        </div>
     </div>
+
+    
+    
 </body>
 
 </html>

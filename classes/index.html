@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Класи</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="/index.html" class="text-blue-600 hover:underline text-sm">← Головне меню</a>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Класи</h1>
+
+        <input type="text" placeholder="Пошук..." id="search"
+            class="w-full p-2 sm:p-3 mb-6 border border-gray-300 rounded-md" />
+
+        
+<div id="list-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    
+    <a href="/classes/wizard.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-wizard.webp" alt="Волшебник" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Волшебник</h2>
+                <p class="text-sm text-gray-600">Wizard</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к6</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/artificer.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-artificer.webp" alt="Изобретатель" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Изобретатель</h2>
+                <p class="text-sm text-gray-600">Artificer</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Котел Таши со всякой всячиной (TCE)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/spellcaster_sidekick.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-spellcaster-sidekick.webp" alt="Напарник заклинатель" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Напарник заклинатель</h2>
+                <p class="text-sm text-gray-600">Spellcaster Sidekick</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Котел Таши со всякой всячиной (TCE)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к6</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/barbarian.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-barbarian.webp" alt="Варвар" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Варвар</h2>
+                <p class="text-sm text-gray-600">Barbarian</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к12</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/ranger.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-ranger.webp" alt="Следопыт" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Следопыт</h2>
+                <p class="text-sm text-gray-600">Ranger</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/alternate_monk.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-alternate-monk.webp" alt="Альтернативный монах" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Альтернативный монах</h2>
+                <p class="text-sm text-gray-600">Alternate Monk</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Лазерлама (LH)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/expert_sidekick.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-expert-sidekick.webp" alt="Напарник эксперт" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Напарник эксперт</h2>
+                <p class="text-sm text-gray-600">Expert Sidekick</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Котел Таши со всякой всячиной (TCE)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/alternate_fighter.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-alternate-fighter.webp" alt="Альтернативный воин" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Альтернативный воин</h2>
+                <p class="text-sm text-gray-600">Alternate Fighter</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Лазерлама (LH)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/warlock.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-warlock.webp" alt="Колдун" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Колдун</h2>
+                <p class="text-sm text-gray-600">Warlock</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/druid.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-druid.webp" alt="Друид" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Друид</h2>
+                <p class="text-sm text-gray-600">Druid</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/sorcerer.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-sorcerer.webp" alt="Чародей" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Чародей</h2>
+                <p class="text-sm text-gray-600">Sorcerer</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к6</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/paladin.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-paladin.webp" alt="Паладин" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Паладин</h2>
+                <p class="text-sm text-gray-600">Paladin</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/bard.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-bard.webp" alt="Бард" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Бард</h2>
+                <p class="text-sm text-gray-600">Bard</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/mystic.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-mystic.webp" alt="Мистик" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Мистик</h2>
+                <p class="text-sm text-gray-600">Mystic</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Unearthed Arcana: Класс Мистик (UAMC)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/blood_hunter.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-blood-hunter.webp" alt="Кровавый охотник" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Кровавый охотник</h2>
+                <p class="text-sm text-gray-600">Blood Hunter</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Решающая Роль (CR)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/cleric.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-cleric.webp" alt="Жрец" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Жрец</h2>
+                <p class="text-sm text-gray-600">Cleric</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/shaman.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-shaman.webp" alt="Шаман" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Шаман</h2>
+                <p class="text-sm text-gray-600">Shaman</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Лазерлама (LH)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/savant.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-savant.webp" alt="Савант" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Савант</h2>
+                <p class="text-sm text-gray-600">Savant</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Лазерлама (LH)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/alchemist.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-alchemist.webp" alt="Алхимик" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Алхимик</h2>
+                <p class="text-sm text-gray-600">Alchemist</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Шпиль тайн Вальды (VSoS)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к6</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/warrior_sidekick.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-warrior-sidekick.webp" alt="Напарник боец" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Напарник боец</h2>
+                <p class="text-sm text-gray-600">Warrior Sidekick</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Котел Таши со всякой всячиной (TCE)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/rogue.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-rogue.webp" alt="Плут" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Плут</h2>
+                <p class="text-sm text-gray-600">Rogue</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/monk.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-monk.webp" alt="Монах" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Монах</h2>
+                <p class="text-sm text-gray-600">Monk</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к8</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/fighter.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-fighter.webp" alt="Воин" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Воин</h2>
+                <p class="text-sm text-gray-600">Fighter</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Книга игрока (PHB)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/the_lingering_soul.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-the-lingering-soul.webp" alt="Неупокоенная душа" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Неупокоенная душа</h2>
+                <p class="text-sm text-gray-600">The Lingering Soul</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Решающая Роль (CR)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к6</p>
+            </div>
+        </div>
+    </a>
+    
+    <a href="/classes/magus.html" 
+       class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <div class="flex items-center space-x-4">
+            <img src="https://img.ttg.club/classes/background/class-magus.webp" alt="Магус" class="w-16 h-16 rounded-md object-cover flex-shrink-0" />
+            <div class="flex flex-col">
+                <h2 class="text-lg sm:text-xl font-semibold">Магус</h2>
+                <p class="text-sm text-gray-600">Magus</p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Джерело: Лазерлама (LH)
+                </p>
+                <p class="text-sm mt-1">Кость хитов: к10</p>
+            </div>
+        </div>
+    </a>
+    
+</div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const input = document.getElementById("search");
+            const container = document.getElementById("list-container");
+            if (!input || !container) return;
+
+            const items = Array.from(container.children);
+
+            input.addEventListener("input", () => {
+                const q = input.value.toLowerCase();
+                items.forEach(el => {
+                    el.style.display = el.textContent.toLowerCase().includes(q) ? "" : "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

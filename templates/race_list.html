@@ -1,46 +1,17 @@
-<!DOCTYPE html>
-<html lang="uk">
+{% extends "base_list.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Список рас</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+{% block title %}Список рас{% endblock %}
+{% block heading %}Список рас{% endblock %}
 
-<body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
-        <div class="mb-4">
-            <a href="/index.html" class="text-blue-600 hover:underline text-sm">← Головне меню</a>
-        </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Список рас</h1>
-
-        <input type="text" placeholder="Пошук..." id="search"
-            class="w-full p-2 sm:p-3 mb-6 border border-gray-300 rounded-md" />
-
-        <div id="race-list" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {% for race in items %}
-            <a href="{{ race.filename }}" class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
-                <h2 class="text-lg sm:text-xl font-semibold">
-                    {{ race.name.ukr or race.name.rus or race.name.eng }}
-                </h2>
-                <p class="text-sm text-gray-500">{{ race.name.eng }}</p>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-
-    <script>
-        const input = document.getElementById("search");
-        const items = [...document.querySelectorAll("#race-list > a")];
-
-        input.addEventListener("input", () => {
-            const q = input.value.toLowerCase();
-            items.forEach(el => {
-                el.style.display = el.textContent.toLowerCase().includes(q) ? "" : "none";
-            });
-        });
-    </script>
-</body>
-
-</html>
+{% block list %}
+<div id="list-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {% for race in items %}
+    <a href="{{ race.filename }}" class="block p-4 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+        <h2 class="text-lg sm:text-xl font-semibold">
+            {{ race.name.ukr or race.name.rus or race.name.eng }}
+        </h2>
+        <p class="text-sm text-gray-500">{{ race.name.eng }}</p>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

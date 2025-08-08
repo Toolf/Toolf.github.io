@@ -4,60 +4,83 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Антипатия/симпатия — Antipathy or Sympathy</title>
+    <title>
+    Антипатия/симпатия — Antipathy or Sympathy
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Антипатия/симпатия</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Antipathy or Sympathy</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 8</p>
-            <p><strong>Школа:</strong> очарування</p>
-            <p><strong>Час накладання:</strong> 1 година</p>
-            <p><strong>Дальність:</strong> 60 футів</p>
-            <p><strong>Тривалість:</strong> 10 днів</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    <span title="кусок квасцов, пропитанный уксусом для эффекта антипатии или капля мёда для эффекта симпатии">М</span>
-                </span>
-            </p>
-            
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Это заклинание привлекает или отталкивает выбранных вами существ. Вы выбираете цель в пределах дистанции: либо предмет размером не больше Огромного, либо существо, либо область не больше куба с длиной ребра 200 футов. Затем укажите вид разумных существ, такой как красные драконы, гоблины или вампиры.</p><p>Вы наделяете цель аурой, которая в течение длительности либо привлекает, либо отталкивает указанных существ.</p><p>Выберите либо эффект антипатии, либо эффект симпатии:</p><ul><li><strong>Антипатия.</strong> Эти чары вызывают у выбранных вами существ непреодолимое желание покинуть область и избегать цель. Если такое существо видит цель и оказывается в пределах 60 футов от неё, оно должно преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе станет <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>. Существо остаётся <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>, пока видит цель или находится в пределах 60 футов от неё. Будучи <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> целью, существо должно тратить своё перемещение на побег в ближайшее безопасное место, откуда оно уже не увидит цель.&nbsp;Если существо отдалится от цели более чем на 60 футов и не сможет её видеть, оно перестаёт быть <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>, но становится <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> вновь, если увидит цель или окажется в пределах 60 футов от неё.</li><li><strong>Симпатия.</strong> Эти чары вызывают у выбранных вами существ непреодолимое желание приблизиться к цели, если они находятся в пределах 60 футов от неё или видят её. Если такое существо видит цель или оказывается в пределах 60 футов от неё, оно должно преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе оно в каждом своём ходу тратит перемещение на то, чтобы войти в область или прикоснуться к цели. Сделав это, оно уже не может добровольно отойти от цели. Если цель причиняет урон или как-то иначе вредит указанному существу, существо может совершить спасбросок <span class="saving_throw">Мудрости</span> для окончания эффекта, как описано ниже.</li></ul><p><strong>Окончание эффекта.</strong> Если указанное существо окончит ход за пределами 60 футов от цели или не сможет её видеть, оно совершает спасбросок <span class="saving_throw">Мудрости</span>. В случае успеха эффект на существе заканчивается и оно понимает, что тяга или отвращение были вызваны магией. Кроме того, попавшему под эффект заклинания существу позволяется спасбросок <span class="saving_throw">Мудрости</span> каждые 24 часа, пока заклинание активно. Совершившее успешный спасбросок существо получает <strong>иммунитет</strong> к эффекту на 1 минуту, после чего снова попадает под его действие.</p>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Антипатия/симпатия</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Книга игрока (PHB), стор. 212</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Antipathy or Sympathy</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 8</p>
+    <p><strong>Школа:</strong> очарування</p>
+    <p><strong>Час накладання:</strong> 1 година</p>
+    <p><strong>Дальність:</strong> 60 футів</p>
+    <p><strong>Тривалість:</strong> 10 днів</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            <span title="кусок квасцов, пропитанный уксусом для эффекта антипатии или капля мёда для эффекта симпатии">М</span>
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
+        
     </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Это заклинание привлекает или отталкивает выбранных вами существ. Вы выбираете цель в пределах дистанции: либо предмет размером не больше Огромного, либо существо, либо область не больше куба с длиной ребра 200 футов. Затем укажите вид разумных существ, такой как красные драконы, гоблины или вампиры.</p><p>Вы наделяете цель аурой, которая в течение длительности либо привлекает, либо отталкивает указанных существ.</p><p>Выберите либо эффект антипатии, либо эффект симпатии:</p><ul><li><strong>Антипатия.</strong> Эти чары вызывают у выбранных вами существ непреодолимое желание покинуть область и избегать цель. Если такое существо видит цель и оказывается в пределах 60 футов от неё, оно должно преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе станет <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>. Существо остаётся <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>, пока видит цель или находится в пределах 60 футов от неё. Будучи <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> целью, существо должно тратить своё перемещение на побег в ближайшее безопасное место, откуда оно уже не увидит цель.&nbsp;Если существо отдалится от цели более чем на 60 футов и не сможет её видеть, оно перестаёт быть <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip>, но становится <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> вновь, если увидит цель или окажется в пределах 60 футов от неё.</li><li><strong>Симпатия.</strong> Эти чары вызывают у выбранных вами существ непреодолимое желание приблизиться к цели, если они находятся в пределах 60 футов от неё или видят её. Если такое существо видит цель или оказывается в пределах 60 футов от неё, оно должно преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе оно в каждом своём ходу тратит перемещение на то, чтобы войти в область или прикоснуться к цели. Сделав это, оно уже не может добровольно отойти от цели. Если цель причиняет урон или как-то иначе вредит указанному существу, существо может совершить спасбросок <span class="saving_throw">Мудрости</span> для окончания эффекта, как описано ниже.</li></ul><p><strong>Окончание эффекта.</strong> Если указанное существо окончит ход за пределами 60 футов от цели или не сможет её видеть, оно совершает спасбросок <span class="saving_throw">Мудрости</span>. В случае успеха эффект на существе заканчивается и оно понимает, что тяга или отвращение были вызваны магией. Кроме того, попавшему под эффект заклинания существу позволяется спасбросок <span class="saving_throw">Мудрости</span> каждые 24 часа, пока заклинание активно. Совершившее успешный спасбросок существо получает <strong>иммунитет</strong> к эффекту на 1 минуту, после чего снова попадает под его действие.</p>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Книга игрока (PHB)
+                , стор. 212
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

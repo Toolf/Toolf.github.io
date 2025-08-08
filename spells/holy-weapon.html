@@ -4,62 +4,85 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Священное оружие — Holy Weapon</title>
+    <title>
+    Священное оружие — Holy Weapon
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Священное оружие</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Holy Weapon</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 5</p>
-            <p><strong>Школа:</strong> втілення</p>
-            <p><strong>Час накладання:</strong> 1 бонусна дія</p>
-            <p><strong>Дальність:</strong> Дотик</p>
-            <p><strong>Тривалість:</strong> Концентрація, аж до 1 години</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    
-                </span>
-            </p>
-            
-            
-            <p>
-                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
-            </p>
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Паладин</span>
-                
-            </div>
-
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Вы наполняете оружие, которого касаетесь, святой силой. Пока заклинание активно, оружие излучает <detail-tooltip type="screen"><a href="/screens/bright_light">яркий свет</a></detail-tooltip> в радиусе 30 футов и <detail-tooltip type="screen"><a href="/screens/dim_light">тусклый свет</a></detail-tooltip> в пределах еще 30 футов.</p><p>Кроме того, атаки, совершенные этим оружием, наносят дополнительно&nbsp;<dice-roller formula="2к8">2к8</dice-roller> урона излучением при попадании.</p><p>Если оружие ещё не является волшебным, оно становится таковым на время действия заклинания.</p><p><em>Бонусным действием</em> вы можете отменить это заклинание и создать вспышку света, исходящую из оружия. Каждое существо по вашему выбору, которое вы видите в пределах 30 футов от оружия, должно совершить спасбросок <span class="saving_throw">Телосложения</span>. При неудачном спасброске существо получает <dice-roller formula="4к8">4к8</dice-roller> урона излучением, и оно <detail-tooltip type="screen"><a href="/screens/blinded">ослеплено</a></detail-tooltip> на 1 минуту. При успешном спасброске существо получает половину урона и не <detail-tooltip type="screen"><a href="/screens/blinded">ослеплено</a></detail-tooltip>. В конце каждого своего хода <detail-tooltip type="screen"><a href="/screens/blinded">ослеплённое</a></detail-tooltip> существо может повторить спасбросок <span class="saving_throw">Телосложения</span>. В случае успеха заклинание оканчивается.</p>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Священное оружие</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Руководство Занатара обо всем (XGE)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Holy Weapon</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 5</p>
+    <p><strong>Школа:</strong> втілення</p>
+    <p><strong>Час накладання:</strong> 1 бонусна дія</p>
+    <p><strong>Дальність:</strong> Дотик</p>
+    <p><strong>Тривалість:</strong> Концентрація, аж до 1 години</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            
+        </span>
+    </p>
+    
+    
+    <p>
+        <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
+    </p>
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Паладин</span>
+        
     </div>
+
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Вы наполняете оружие, которого касаетесь, святой силой. Пока заклинание активно, оружие излучает <detail-tooltip type="screen"><a href="/screens/bright_light">яркий свет</a></detail-tooltip> в радиусе 30 футов и <detail-tooltip type="screen"><a href="/screens/dim_light">тусклый свет</a></detail-tooltip> в пределах еще 30 футов.</p><p>Кроме того, атаки, совершенные этим оружием, наносят дополнительно&nbsp;<dice-roller formula="2к8">2к8</dice-roller> урона излучением при попадании.</p><p>Если оружие ещё не является волшебным, оно становится таковым на время действия заклинания.</p><p><em>Бонусным действием</em> вы можете отменить это заклинание и создать вспышку света, исходящую из оружия. Каждое существо по вашему выбору, которое вы видите в пределах 30 футов от оружия, должно совершить спасбросок <span class="saving_throw">Телосложения</span>. При неудачном спасброске существо получает <dice-roller formula="4к8">4к8</dice-roller> урона излучением, и оно <detail-tooltip type="screen"><a href="/screens/blinded">ослеплено</a></detail-tooltip> на 1 минуту. При успешном спасброске существо получает половину урона и не <detail-tooltip type="screen"><a href="/screens/blinded">ослеплено</a></detail-tooltip>. В конце каждого своего хода <detail-tooltip type="screen"><a href="/screens/blinded">ослеплённое</a></detail-tooltip> существо может повторить спасбросок <span class="saving_throw">Телосложения</span>. В случае успеха заклинание оканчивается.</p>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Руководство Занатара обо всем (XGE)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

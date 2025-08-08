@@ -2,166 +2,153 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Леонин</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    Леонин
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .prose {
-            max-width: 100%;
-            /* max-w-none */
-            margin-bottom: 1.5rem;
-            /* mb-6 */
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
+        
+    /* Include your custom prose styles from your original race_details.html */
+    .prose {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .prose strong {
+        display: block;
+        font-weight: 700;
+        font-size: 1.125rem;
+        margin: 1.5rem 0 0.5rem 0;
+        cursor: pointer;
+        color: #2563eb;
+        transition: color 0.3s;
+        user-select: none;
+    }
+    .prose strong:hover {
+        text-decoration: underline;
+        color: #1d4ed8;
+    }
+    .prose p {
+        text-indent: 1.5rem;
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        opacity: 1;
+    }
+    .prose p.hidden {
+        max-height: 0;
+        opacity: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .prose p[style*="display: none"] {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .prose p:not([style*="display: none"]) {
+        max-height: 1000px;
+        opacity: 1;
+    }
+    .prose strong+p {
+        border-top: 1px solid #e5e7eb;
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
 
-        .prose strong {
-            display: block;
-            font-weight: 700;
-            font-size: 1.125rem;
-            /* трохи більший шрифт */
-            margin: 1.5rem 0 0.5rem 0;
-            cursor: pointer;
-            color: #2563eb;
-            /* синій */
-            transition: color 0.3s;
-            user-select: none;
-        }
-
-        .prose strong:hover {
-            text-decoration: underline;
-            color: #1d4ed8;
-        }
-
-        /* .prose p {
-            margin: 0.5rem 0 1rem 0;
-            transition: max-height 0.3s ease, opacity 0.3s ease;
-            overflow: hidden;
-        } */
-
-        .prose p {
-            text-indent: 1.5rem;
-            max-height: 1000px;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.4s ease;
-            opacity: 1;
-        }
-
-        .prose p.hidden {
-            max-height: 0;
-            opacity: 0;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        /* Приховані параграфи */
-        .prose p[style*="display: none"] {
-            max-height: 0;
-            opacity: 0;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Відкриті параграфи */
-        .prose p:not([style*="display: none"]) {
-            max-height: 1000px;
-            /* достатньо для тексту */
-            opacity: 1;
-        }
-
-        /* Опціонально: роздільник між блоками */
-        .prose strong+p {
-            border-top: 1px solid #e5e7eb;
-            /* світло-сірий роздільник */
-            padding-top: 1rem;
-            margin-top: 1rem;
-        }
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 p-6">
-    <div class="max-w-4xl mx-auto p-8">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
+
+        
         <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">
             Леонин
         </h1>
-
-        <p class="text-sm text-gray-500 mb-4">Leonin</p>
+        
 
         
-        <div class="prose max-w-none mb-6">
-            <p>Леонины охраняют сияющие земли Ореска, золотую равнину, которую редко посещают даже боги. Прайды этих кочевых, похожих на львов гуманоидов редко взаимодействуют с другими народами, имея все необходимое на своей сияющей родине и зная о предательской натуре чужаков. Несмотря на свою замкнутость некоторые леонины задаются вопросом, что находится за границами гор Орескоса, и стремятся испытать себя во внешнем мире.</p><p><strong>Благородный и жестокий.</strong> Леонин, как правило, выше человеческой расы и все его движения указвают на физическую мощь. Тела леонинов покрыты коричневым мехом, а у некоторых отрастает густая грива от золотого до черного цвета. Руки этих похожих на тигров существ оказываются такими же проворными, как и у других гуманоидов, но у леонинов также есть кошачьи когти, которые они могут мгновенно выпустить. Это, наряду с их способностью издавать потрясающий рык, придает большинству леонинов вид, который легко переключается между царственным и устрашающим.</p><p>Леонин часто действует уверенно, что может показаться наделеным властью. Хотя это может успокоить их союзников, это также может означать неповиновение тем, кого они считают навязанной властью или недостойными экспертами.</p><p><strong>Обидчивые.</strong> Другие народы часто считают леонинов быстро обижающимися, нетерпимыми к критике или воинственными. Правда в том, что многим леонинам просто нравится сражаться, словесно или физически. Они получают удовольствие от споров, борьбы, спаррингов и даже сражений, наслаждаясь возможностью тренировать свой разум и тело.</p><p>Отсюда также следует, что леонины не склонны затаить обиду. Воин может отреагировать на оскорбление внезапной жестокостью, но когда битва окончена (и превосходство леонина доказано), оскорбление забывается - вместе с побежденным противником.</p><p><strong>Гордость и самоуверенность.</strong> Немногие леонины посвящают себя служению богам. Столетия назад леонины поклонялись тем же богам, что и люди, но после того, как многие из их прайдов пострадали от от рук тирана Агномаха, большинство леонинов отвергли богов. Дело не в том, что они отрицают существование божеств; они просто считают богов непостоянными и в конечном итоге недостойными поклонения. Таблица &laquo;Леонин и боги&raquo; предполагает диапазон отношения леонина к богам.</p><p>Леонин полагается на себя и свою гордость. Гордость объединяется опытом совместного вызова и, в частности, священным актом охоты. См. Главу 3 для более подробной информации об Ореске и леонинах, которые называют эту землю своим домом.</p><p style="text-align: center;"><strong>Леонин и боги</strong></p><div class="table-responsive"><table><tbody><tr><th>к6</th><th style="text-align: left;">Отношение</th></tr><tr><td>1</td><td>Меня забавляют выходки богов и их искренние, но в конечном итоге обманутые смертные чемпионы, и я самодовольно чувствую превосходство в своем отряде.</td></tr><tr><td>2</td><td>Вмешательство богов в дела смертных приводит меня в ярость и горечь. Я бы хотел, чтобы они просто оставили нас в покое!</td></tr><tr><td>3</td><td>Я считаю богов достойными противниками - невероятно умными и хорошо подготовленными к долгой игре, но в конечном итоге обреченными на поражение.</td></tr><tr><td>4</td><td>Я уверен, что все плохое, что происходит, в конечном итоге может быть возложено на богов, но я закатываю глаза при каждом новом повороте судьбы и пытаюсь жить дальше.</td></tr><tr><td>5</td><td>Я хотел бы быть таким же наивным, как люди и другие смертные, которые действительно думают, что боги присматривают за ними. Я скучаю по такой невинности.</td></tr><tr><td>6</td><td>Я не говорю об этом среди других леонинов, но на самом деле я почитаю богов и стараюсь доставить им удовольствие своими действиями.</td></tr></tbody></table></div><p><strong>Имена Леонин.</strong> Наряду со своими именами леонины идентифицируют себя по своей гордости. Например, член гордости Кремневого Когтя с личным именем Зиоре, скорее всего, назовет себя Зиоре из Кремневого Когтя.</p>
+        
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Leonin</h2>
+        
+        
+
+        
+    
+    <div class="prose max-w-none mb-6">
+        <p>Леонины охраняют сияющие земли Ореска, золотую равнину, которую редко посещают даже боги. Прайды этих кочевых, похожих на львов гуманоидов редко взаимодействуют с другими народами, имея все необходимое на своей сияющей родине и зная о предательской натуре чужаков. Несмотря на свою замкнутость некоторые леонины задаются вопросом, что находится за границами гор Орескоса, и стремятся испытать себя во внешнем мире.</p><p><strong>Благородный и жестокий.</strong> Леонин, как правило, выше человеческой расы и все его движения указвают на физическую мощь. Тела леонинов покрыты коричневым мехом, а у некоторых отрастает густая грива от золотого до черного цвета. Руки этих похожих на тигров существ оказываются такими же проворными, как и у других гуманоидов, но у леонинов также есть кошачьи когти, которые они могут мгновенно выпустить. Это, наряду с их способностью издавать потрясающий рык, придает большинству леонинов вид, который легко переключается между царственным и устрашающим.</p><p>Леонин часто действует уверенно, что может показаться наделеным властью. Хотя это может успокоить их союзников, это также может означать неповиновение тем, кого они считают навязанной властью или недостойными экспертами.</p><p><strong>Обидчивые.</strong> Другие народы часто считают леонинов быстро обижающимися, нетерпимыми к критике или воинственными. Правда в том, что многим леонинам просто нравится сражаться, словесно или физически. Они получают удовольствие от споров, борьбы, спаррингов и даже сражений, наслаждаясь возможностью тренировать свой разум и тело.</p><p>Отсюда также следует, что леонины не склонны затаить обиду. Воин может отреагировать на оскорбление внезапной жестокостью, но когда битва окончена (и превосходство леонина доказано), оскорбление забывается - вместе с побежденным противником.</p><p><strong>Гордость и самоуверенность.</strong> Немногие леонины посвящают себя служению богам. Столетия назад леонины поклонялись тем же богам, что и люди, но после того, как многие из их прайдов пострадали от от рук тирана Агномаха, большинство леонинов отвергли богов. Дело не в том, что они отрицают существование божеств; они просто считают богов непостоянными и в конечном итоге недостойными поклонения. Таблица &laquo;Леонин и боги&raquo; предполагает диапазон отношения леонина к богам.</p><p>Леонин полагается на себя и свою гордость. Гордость объединяется опытом совместного вызова и, в частности, священным актом охоты. См. Главу 3 для более подробной информации об Ореске и леонинах, которые называют эту землю своим домом.</p><p style="text-align: center;"><strong>Леонин и боги</strong></p><div class="table-responsive"><table><tbody><tr><th>к6</th><th style="text-align: left;">Отношение</th></tr><tr><td>1</td><td>Меня забавляют выходки богов и их искренние, но в конечном итоге обманутые смертные чемпионы, и я самодовольно чувствую превосходство в своем отряде.</td></tr><tr><td>2</td><td>Вмешательство богов в дела смертных приводит меня в ярость и горечь. Я бы хотел, чтобы они просто оставили нас в покое!</td></tr><tr><td>3</td><td>Я считаю богов достойными противниками - невероятно умными и хорошо подготовленными к долгой игре, но в конечном итоге обреченными на поражение.</td></tr><tr><td>4</td><td>Я уверен, что все плохое, что происходит, в конечном итоге может быть возложено на богов, но я закатываю глаза при каждом новом повороте судьбы и пытаюсь жить дальше.</td></tr><tr><td>5</td><td>Я хотел бы быть таким же наивным, как люди и другие смертные, которые действительно думают, что боги присматривают за ними. Я скучаю по такой невинности.</td></tr><tr><td>6</td><td>Я не говорю об этом среди других леонинов, но на самом деле я почитаю богов и стараюсь доставить им удовольствие своими действиями.</td></tr></tbody></table></div><p><strong>Имена Леонин.</strong> Наряду со своими именами леонины идентифицируют себя по своей гордости. Например, член гордости Кремневого Когтя с личным именем Зиоре, скорее всего, назовет себя Зиоре из Кремневого Когтя.</p>
+    </div>
+    
+
+    
+
+    
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мифические одиссеи Тероса (MOT)
+                
+            </p>
+            
         </div>
         
-
-        
-
-        
-
     </div>
 
+    
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const prose = document.querySelector(".prose");
+        if (!prose) return;
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const prose = document.querySelector(".prose");
-            if (!prose) return;
+        const paragraphs = Array.from(prose.querySelectorAll("p"));
 
-            const paragraphs = Array.from(prose.querySelectorAll("p"));
+        paragraphs.forEach(p => {
+            const strong = p.querySelector("strong");
+            if (strong) {
+                strong.remove();
+                p.parentNode.insertBefore(strong, p);
+            }
+        });
 
-            paragraphs.forEach(p => {
-                const strong = p.querySelector("strong");
-                if (strong) {
-                    // Витягуємо <strong> з <p>
-                    strong.remove();
+        const strongs = Array.from(prose.querySelectorAll("strong"));
 
-                    // Вставляємо <strong> перед <p>
-                    p.parentNode.insertBefore(strong, p);
+        strongs.forEach((strong, index) => {
+            strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
+
+            let nextStrong = strongs[index + 1];
+            let elemsToHide = [];
+            let sibling = strong.nextElementSibling;
+
+            while (sibling && sibling !== nextStrong) {
+                if (sibling.tagName.toLowerCase() !== "strong") {
+                    elemsToHide.push(sibling);
                 }
-            });
+                sibling = sibling.nextElementSibling;
+            }
 
-            // Знайдемо всі strong всередині prose
-            const strongs = Array.from(prose.querySelectorAll("strong"));
+            elemsToHide.forEach(p => p.style.display = "none");
 
-            strongs.forEach((strong, index) => {
-                // Зробимо strong клікабельним стилем
-                strong.classList.add("cursor-pointer", "text-blue-600", "hover:underline");
-
-                // Збираємо всі <p> між цим strong і наступним strong (або до кінця)
-                let nextStrong = strongs[index + 1];
-                let elemsToHide = [];
-
-                // Починаємо з наступного елемента після strong
-                let sibling = strong.nextElementSibling;
-
-                while (sibling && sibling !== nextStrong) {
-                    // Перевіряємо чи це <p>
-                    if (sibling.tagName.toLowerCase() !== "strong") {
-                        elemsToHide.push(sibling);
-                    }
-                    sibling = sibling.nextElementSibling;
-                }
-
-                // Ховаємо всі знайдені <p>
-                elemsToHide.forEach(p => p.style.display = "none");
-
-                // Додаємо поведінку клику: переключаємо видимість
-                strong.addEventListener("click", () => {
-                    elemsToHide.forEach(p => {
-                        if (p.style.display === "none") {
-                            p.style.display = "";
-                        } else {
-                            p.style.display = "none";
-                        }
-                    });
+            strong.addEventListener("click", () => {
+                elemsToHide.forEach(p => {
+                    p.style.display = (p.style.display === "none") ? "" : "none";
                 });
             });
         });
-    </script>
+    });
+</script>
+
 </body>
 
 </html>

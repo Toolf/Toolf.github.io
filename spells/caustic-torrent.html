@@ -4,63 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Едкий ливень — Caustic Torrent</title>
+    <title>
+    Едкий ливень — Caustic Torrent
+</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
     <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
         <div class="mb-4">
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Едкий ливень</h1>
-        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Caustic Torrent</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-            <p><strong>Рівень:</strong> 8</p>
-            <p><strong>Школа:</strong> втілення</p>
-            <p><strong>Час накладання:</strong> 1 дія</p>
-            <p><strong>Дальність:</strong> На себе (60-футова лінія)</p>
-            <p><strong>Тривалість:</strong> Миттєво</p>
-            <p><strong>Компоненти:</strong>
-                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-                    В 
-                    С 
-                    <span title="осколок кости, изъеденный кислотой">М</span>
-                </span>
-            </p>
-            
-            
-        </div>
-
-        <div class="mt-6">
-            <h3 class="font-semibold mb-1">Класи</h3>
-            <div class="flex flex-wrap gap-2">
-                
-                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-                
-            </div>
-
-            
-            <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
-            <ul class="list-disc ml-6">
-                
-                <li>Элементалист (Волшебник)</li>
-                
-            </ul>
-            
-        </div>
-
-        <div class="mt-6 prose prose-sm sm:prose max-w-none">
-            <p>Бурлящий поток кислоты исходит от вас в выбранном направлении. Кислота заполняет линию в 60 футов длиной и 5 футов шириной. Все существа в этой области должны совершить спасбросок <span class="saving_throw">Ловкости</span>. При провале существо получает <dice-roller formula="14к6">14к6</dice-roller> урона кислотой, или половину этого урона при успехе.</p><p>Существо, чьи хиты опускаются до 0 от этого заклинания, умирает и его тело растворяется в кислоте. Вдоль линии появляются токсичные испарения, и все существа, кроме вас, в 5 футах от линии становятся <detail-tooltip type="screen"><a href="/screens/Poisoned">отравленными</a></detail-tooltip> на 1 минуту. <detail-tooltip type="screen"><a href="/screens/Poisoned">Отравленное</a></detail-tooltip> существо может совершить спасбросок <span class="saving_throw">Телосложения</span> в конце своего хода, заканчивая эффект на себе при успехе.</p>
-        </div>
 
         
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Едкий ливень</h1>
 
-        <div class="mt-8 text-sm text-gray-500">
-            <p>Джерело: Мидгард Справочник героя (MHH)</p>
-        </div>
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Caustic Torrent</h2>
+
+
+        
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+    <p><strong>Рівень:</strong> 8</p>
+    <p><strong>Школа:</strong> втілення</p>
+    <p><strong>Час накладання:</strong> 1 дія</p>
+    <p><strong>Дальність:</strong> На себе (60-футова лінія)</p>
+    <p><strong>Тривалість:</strong> Миттєво</p>
+    <p><strong>Компоненти:</strong>
+        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+            В 
+            С 
+            <span title="осколок кости, изъеденный кислотой">М</span>
+        </span>
+    </p>
+    
+    
+</div>
+
+<div class="mt-6">
+    <h3 class="font-semibold mb-1">Класи</h3>
+    <div class="flex flex-wrap gap-2">
+        
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        
     </div>
+
+    
+    <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
+    <ul class="list-disc ml-6">
+        
+        <li>Элементалист (Волшебник)</li>
+        
+    </ul>
+    
+</div>
+
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    <p>Бурлящий поток кислоты исходит от вас в выбранном направлении. Кислота заполняет линию в 60 футов длиной и 5 футов шириной. Все существа в этой области должны совершить спасбросок <span class="saving_throw">Ловкости</span>. При провале существо получает <dice-roller formula="14к6">14к6</dice-roller> урона кислотой, или половину этого урона при успехе.</p><p>Существо, чьи хиты опускаются до 0 от этого заклинания, умирает и его тело растворяется в кислоте. Вдоль линии появляются токсичные испарения, и все существа, кроме вас, в 5 футах от линии становятся <detail-tooltip type="screen"><a href="/screens/Poisoned">отравленными</a></detail-tooltip> на 1 минуту. <detail-tooltip type="screen"><a href="/screens/Poisoned">Отравленное</a></detail-tooltip> существо может совершить спасбросок <span class="saving_throw">Телосложения</span> в конце своего хода, заканчивая эффект на себе при успехе.</p>
+</div>
+
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Мидгард Справочник героя (MHH)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
 </body>
 
 </html>

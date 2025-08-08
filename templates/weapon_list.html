@@ -1,50 +1,17 @@
-<!DOCTYPE html>
-<html lang="uk">
+{% extends "base_list.html" %}
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Список зброї</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+{% block title %}Список зброї{% endblock %}
+{% block heading %}Зброя{% endblock %}
 
-<body class="bg-gray-100 text-gray-900 font-sans">
-    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
-        <div class="mb-4">
-            <a href="/index.html" class="text-blue-600 hover:underline text-sm">← Головне меню</a>
-        </div>
-        <h1 class="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6 text-center sm:text-left">Зброя</h1>
-
-        <input id="search" type="search" placeholder="Пошук зброї..."
-            class="w-full p-3 border border-gray-300 rounded mb-6" />
-
-        <ul id="weapon-list" class="space-y-4">
-            {% for weapon in items %}
-            <li>
-                <a href="{{ weapon.filename }}"
-                    class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
-                    <h2 class="text-lg sm:text-xl font-semibold">{{ weapon.name.rus }} ({{ weapon.name.eng }})</h2>
-                    <p class="text-sm text-gray-600 mt-1">{{ weapon.type.name }} — {{ weapon.damage.dice }} {{
-                        weapon.damage.type }}</p>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-
-    <script>
-        const searchInput = document.getElementById('search');
-        const list = document.getElementById('weapon-list');
-        const items = list.getElementsByTagName('li');
-
-        searchInput.addEventListener('input', () => {
-            const query = searchInput.value.toLowerCase();
-            for (const item of items) {
-                const text = item.textContent.toLowerCase();
-                item.style.display = text.includes(query) ? '' : 'none';
-            }
-        });
-    </script>
-</body>
-
-</html>
+{% block list %}
+<ul id="list-container" class="space-y-4">
+    {% for weapon in items %}
+    <li>
+        <a href="{{ weapon.filename }}" class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+            <h2 class="text-lg sm:text-xl font-semibold">{{ weapon.name.rus }} ({{ weapon.name.eng }})</h2>
+            <p class="text-sm text-gray-600 mt-1">{{ weapon.type.name }} — {{ weapon.damage.dice }} {{ weapon.damage.type }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
