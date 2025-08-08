@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Волшебная палочка чудес — Магічний предмет</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Волшебная палочка чудес</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Wand of Wonder</h2>
+
+
+        
+<p class="text-sm text-gray-600 mb-1">
+    Тип: <strong>волшебная палочка</strong>
+    
+    &mdash; Рідкість: <span class="capitalize">редкая</span> (Р)
+    
+</p>
+<p class="text-sm text-gray-600 mb-4">
+    Джерело: Руководство мастера (DMG)
+</p>
+
+<section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Ціна</h2>
+    <ul class="list-disc list-inside">
+        
+        <li><strong>DMG:</strong> 1516 зм.</li>
+        
+        <li><strong>XGE:</strong> 17000 зм.</li>
+        
+    </ul>
+</section>
+
+
+
+<section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Вартість</h2>
+    <ul class="list-disc list-inside">
+        
+        <li><strong>DMG:</strong> от 501 до 5 000 зм</li>
+        
+        <li><strong>XGE:</strong> 2к10 * 1000</li>
+        
+    </ul>
+</section>
+
+
+
+<section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Налаштування</h2>
+    
+    <ul class="list-disc list-inside">
+        
+        <li>заклинателем</li>
+        
+    </ul>
+    
+</section>
+
+
+
+<section class="mb-6 prose prose-sm sm:prose max-w-none">
+    <p>У этой волшебной палочки <strong>7</strong> зарядов.</p><p>Если вы её держите, вы можете <em>Действием</em> потратить 1 заряд и выбрать цель в пределах 120 футов. Цель должна быть существом, предметом или точкой в пространстве.</p><p>Бросьте <dice-roller formula="d100">к100</dice-roller> и определите последствия с помощью таблицы.</p><p>Если эффект накладывает заклинание, Сл спасброска от него равна 15.</p><p>Если обычно у этого заклинания есть дистанция в футах, то эта дистанция становится равной 120 футам.</p><p>Если эффект покрывает площадь, то вы должны сделать центром заклинания цель и включить её в качестве цели заклинания.</p><p>Если эффект может воздействовать на несколько разных субъектов, Мастер случайным образом выбирает, кто станет целью.</p><p>Палочка ежедневно восстанавливает <dice-roller formula="1к6+1">1к6 + 1</dice-roller> заряд на рассвете. Если вы истратили последний заряд в палочке, бросьте <dice-roller formula="d20">к20</dice-roller>. Если выпадет &laquo;1&raquo;, палочка рассыплется в пыль и уничтожится.</p><div class="table-responsive"><table><thead><tr><th><dice-roller formula="к100">к100</dice-roller></th><th style="text-align: left;">Эффект</th></tr></thead><tbody><tr><td style="width: 63px; text-align: center;">01&ndash;05</td><td>Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/slow">замедление [slow]</a></detail-tooltip>.</td></tr><tr><td style="width: 63px; text-align: center;">06&ndash;10&nbsp;</td><td>Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/faerie_fire">огонь фей [faerie fire]</a></detail-tooltip>.</td></tr><tr><td style="height: 36px; width: 63px; text-align: center;">11&ndash;15</td><td>Вы становитесь <detail-tooltip type="screen"><a href="/screens/Stunned">ошеломлённым</a></detail-tooltip> до начала своего следующего хода и считаете, что только что произошло что-то невероятное.</td></tr><tr><td style="height: 18px; width: 63px; text-align: center;">16&ndash;20&nbsp;</td><td>Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/gust_of_wind">порыв ветра [gust of wind]</a></detail-tooltip>.</td></tr><tr><td style="height: 36px; width: 63px; text-align: center;">21&ndash;25</td><td>Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/detect_thoughts">обнаружение мыслей [detect thoughts]</a></detail-tooltip> на выбранную цель. Если вы целились не в существо, то получаете урон психической энергией <dice-roller formula="1к6">1к6</dice-roller>.</td></tr><tr><td style="height: 18px; width: 63px; text-align: center;">26&ndash;30</td><td>Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/stinking_cloud">зловонное облако [stinking cloud]</a></detail-tooltip>.</td></tr><tr><td style="height: 36px; width: 63px; text-align: center;">&nbsp;31&ndash;33</td><td>Область в пределах 60 футов от цели заполнятся сильным ливнем. Эта область становится <detail-tooltip type="screen"><a href="/screens/lightly_obscured">слабо заслонённой</a></detail-tooltip>. Ливень идёт до начала вашего следующего хода.</td></tr><tr style="height: 192px;"><td style="height: 192px; width: 63px; text-align: center;">&nbsp;34&ndash;36</td><td style="height: 192px; width: 608px;">В ближайшем свободном пространстве у цели появляется животное. Животное не находится под вашим контролем и действует так, как уместно.<p>Бросьте <dice-roller formula="к100">к100</dice-roller>, чтобы определить, кто появился.</p><p>При результате 01&ndash;25 появляется <detail-tooltip type="creature"><a href="/bestiary/Rhinoceros">носорог [rhinoceros]</a></detail-tooltip>;</p><p>при результате 26&ndash;50 появляется <detail-tooltip type="creature"><a href="/bestiary/Elephant">слон [elephant]</a></detail-tooltip>;</p><p>при результате 51&ndash;100 появляется <detail-tooltip type="creature"><a href="/bestiary/Rat">крыса [rat]</a></detail-tooltip>.</p></td></tr><tr style="height: 18px;"><td style="height: 18px; width: 63px; text-align: center;">37&ndash;46</td><td style="height: 18px; width: 608px;">Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/Lightning_bolt">молния [lightning bolt]</a></detail-tooltip>.</td></tr><tr style="height: 36px;"><td style="height: 36px; width: 63px; text-align: center;">47&ndash;49&nbsp;</td><td style="height: 36px; width: 608px;">Область в пределах 30 футов заполняют 600 огромных бабочек. Это пространство становится <detail-tooltip type="screen"><a href="/screens/heavily_obscured">сильно заслонённым</a></detail-tooltip>. Бабочки остаются на 10 минут.</td></tr><tr style="height: 54px;"><td style="height: 54px; width: 63px; text-align: center;">50&ndash;53</td><td style="height: 54px; width: 608px;">Вы увеличиваете цель, как если бы наложили заклинание <detail-tooltip type="spell"><a href="/spells/enlarge_or_reduce">увеличение/уменьшение [enlarge/reduce]</a></detail-tooltip>. Если на цель не действует это заклинание, или если вы целились не в существо, то целью становитесь вы.</td></tr><tr style="height: 18px;"><td style="height: 18px; width: 63px; text-align: center;">54&ndash;58</td><td style="height: 18px; width: 608px;">Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/darkness">тьму [darkness]</a></detail-tooltip>.</td></tr><tr style="height: 54px;"><td style="height: 54px; width: 63px; text-align: center;">59&ndash;62</td><td style="height: 54px; width: 608px;">На земле в пределах 60 футов от цели вырастает трава. Если трава там уже была, то она вырастает в десять раз больше своего обычного размера и остаётся такой 1 минуту.</td></tr><tr style="height: 72px;"><td style="height: 72px; width: 63px; text-align: center;">63&ndash;65</td><td style="height: 72px; width: 608px;">Один предмет на выбор Мастера переносится на Эфирный План. Этот предмет никто не должен ни носить, ни нести, он должен находиться в пределах 120 футов от цели, и не должен превышать 10 футов ни по одному из линейных размеров.</td></tr><tr style="height: 18px;"><td style="height: 18px; width: 63px; text-align: center;">66&ndash;69</td><td style="height: 18px; width: 608px;">Вы уменьшаетесь, как если бы наложили на себя заклинание <detail-tooltip type="spell"><a href="/spells/enlarge_or_reduce">увеличение/уменьшение [enlarge/reduce]</a></detail-tooltip>.</td></tr><tr style="height: 18px;"><td style="height: 18px; width: 63px; text-align: center;">70&ndash;79</td><td style="height: 18px; width: 608px;">Вы накладываете заклинание <detail-tooltip type="spell"><a href="/spells/Fireball">огненный шар [fireball]</a></detail-tooltip>.</td></tr><tr style="height: 18px;"><td style="height: 18px; width: 63px; text-align: center;">80&ndash;84</td><td style="height: 18px; width: 608px;">Вы накладываете на себя заклинание <detail-tooltip type="spell"><a href="/spells/Invisibility">невидимость [invisibility]</a></detail-tooltip>.</td></tr><tr style="height: 54px;"><td style="height: 54px; width: 63px; text-align: center;">85&ndash;87</td><td style="height: 54px; width: 608px;">На цели вырастают листья. Если в качестве цели вы выбрали точку в пространстве, то листья вырастают на ближайшем к этой точке существе. Если листья не оборвать, они побуреют и опадут через 24 часа.</td></tr><tr style="height: 72px;"><td style="height: 72px; width: 63px; text-align: center;">88&ndash;90</td><td style="height: 72px; width: 608px;">Из кончика палочки линией длиной 30 футов и шириной 5 футов выстреливают <dice-roller formula="1к4*10">1к4 &times; 10</dice-roller> драгоценных камней, стоящих по 1 зм каждый. Каждый камень причиняет дробящий урон 1, и общий урон от камней поровну делится между всеми существами в этой линии.</td></tr><tr><td style="width: 63px; text-align: center;">91&ndash;95</td><td>От вас исходит 30-футовая вспышка переливающегося света. Вы и все существа в этой области, способные видеть, должны преуспеть в спасброске <span class="saving_throw">Телосложения</span> со Сл 15, иначе <detail-tooltip type="screen"><a href="/screens/blinded">ослепнете</a></detail-tooltip> на 1 минуту. Существа могут повторять спасброски в конце каждого своего хода, оканчивая эффект на себе при успехе.</td></tr><tr style="height: 36px;"><td style="height: 36px; width: 63px; text-align: center;">96&ndash;97</td><td style="height: 36px; width: 608px;">Кожа цели становится ярко-синей на <dice-roller formula="1к10">1к10</dice-roller>&nbsp;дней. Если вы выбрали точку в пространстве, то эффект действует на ближайшее к этой точке существо.</td></tr><tr><td style="width: 63px; text-align: center;">98&ndash;00</td><td>Если вы целились в существо, оно должно совершить спасбросок <span class="saving_throw">Телосложения</span> со Сл 15. Если вы целились не в существо, то сами становитесь целью и должны совершить спасбросок. Если спасбросок провален на 5 или больше единиц, цель мгновенно превращается в камень. При просто проваленном спасброске цель становится <detail-tooltip type="screen"><a href="/screens/restrained">опутанной</a></detail-tooltip> и начинает превращаться в камень. Будучи опутанной этой магией, цель должна повторить спасбросок в конце своего следующего хода, становясь <detail-tooltip type="screen"><a href="/screens/petrified">окаменевшей</a></detail-tooltip> при провале или оканчивая эффект при успехе. <detail-tooltip type="screen"><a href="/screens/petrified">Окаменение</a></detail-tooltip> длится, пока цель не будет освобождена заклинанием высшее восстановление или подобной магией</td></tr></tbody></table></div>
+</section>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Руководство мастера (DMG)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
+</body>
+
+</html>

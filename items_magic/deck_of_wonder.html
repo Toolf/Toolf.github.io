@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Колода чудес — Магічний предмет</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans p-6">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 mt-6 sm:mt-10">
+        <div class="mb-4">
+            <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
+        </div>
+
+        
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Колода чудес</h1>
+
+
+        
+<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Deck of Wonder</h2>
+
+
+        
+<p class="text-sm text-gray-600 mb-1">
+    Тип: <strong>чудесный предмет</strong>
+    
+    &mdash; Рідкість: <span class="capitalize">необычный</span> (Н)
+    
+</p>
+<p class="text-sm text-gray-600 mb-4">
+    Джерело: Книга многих вещей (BMT)
+</p>
+
+<section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Ціна</h2>
+    <ul class="list-disc list-inside">
+        
+        <li><strong>DMG:</strong> 109 зм.</li>
+        
+        <li><strong>XGE:</strong> 400 зм.</li>
+        
+    </ul>
+</section>
+
+
+
+<section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Вартість</h2>
+    <ul class="list-disc list-inside">
+        
+        <li><strong>DMG:</strong> от 101 до 500 зм.</li>
+        
+        <li><strong>XGE:</strong> (1к6) * 100</li>
+        
+    </ul>
+</section>
+
+
+
+
+
+<section class="mb-6 prose prose-sm sm:prose max-w-none">
+    <p>Созданная по образу и подобию &nbsp;<detail-tooltip type="magic-item"><a href="/items/magic/deck_of_many_things/">колоды многих вещей [deck of many things]</a></detail-tooltip>, эта колода карт из слоновой кости или пергамента предоставляет ряд незначительных преимуществ и наказаний тем, кто из нее извлекает. В большинстве (75 процентах) этих колод всего тринадцать карт, но в остальных - двадцать две.</p><p>Перед тем, как тянуть карты, вы должны объявить, сколько собираетесь брать, а затем тяните их по одной (можете использовать модифицированную колоду обычных игральных карт). Карты, взятые сверх названного числа, не будут иметь эффекта. Вы должны тянуть следующую карту не позднее, чем через час после предыдущей. Если вы не вытянули названное число карт, оставшиеся сами вылетают из колоды и вступают в силу одновременно.</p><p>Если это не карта Тайна, её магия мгновенно начинает действовать, исчезая из поля зрения и снова появляясь в колоде, что позволяет вытянуть её повторно.</p><p>Вы можете использовать измененную колоду обычных игральных карт для имитации колоды, как показано в таблице "Колода чудес".</p><p style="text-align: center;"><strong>Колода чудес</strong></p><div class="table-responsive"><table><thead><tr><th style="text-align: left;">Игральная карта</th><th style="text-align: left;">Карта</th></tr></thead><tbody><tr><td>Туз &diams;</td><td>Канцлер*</td></tr><tr><td>Король &diams;</td><td>День</td></tr><tr><td>Дама &diams;</td><td>Ночь</td></tr><tr><td>Валет &diams;</td><td>Рассвет</td></tr><tr><td>2 &diams;</td><td>Сумерки*</td></tr><tr><td>Туз &hearts;</td><td>Судьба*</td></tr><tr><td>Король &hearts;</td><td>Корона</td></tr><tr><td>Дама &hearts;</td><td>Замок</td></tr><tr><td>Валет &hearts;</td><td>Чемпион</td></tr><tr><td>2 &hearts;</td><td>Монета*</td></tr><tr><td>Туз &clubs;</td><td>Стервятник*</td></tr><tr><td>Король &clubs;</td><td>Хаос</td></tr><tr><td>Дама &clubs;</td><td>Порядок</td></tr><tr><td>Валет &clubs;</td><td>Начало</td></tr><tr><td>2 &clubs;</td><td>Тайна</td></tr><tr><td>Туз &spades;</td><td>Изоляция</td></tr><tr><td>Король &spades;</td><td>Конец</td></tr><tr><td>Дама &spades;</td><td>Монстр</td></tr><tr><td>Валет &spades;</td><td>Нож</td></tr><tr><td>2 &spades;</td><td>Справедливость*&nbsp;</td></tr><tr><td>Джокер (со знаком)</td><td>Студент*&nbsp;</td></tr><tr><td>Джокер (без знака)</td><td>Озорство&nbsp;</td></tr></tbody></table></div><p>* Только в колоде из 22 карт</p><p><em><strong>Начало</strong></em><span>. Ваш максимум хитов и текущие хиты увеличиваются на&nbsp;<dice-roller formula="2к10">2к10</dice-roller>. Увеличение максимума хитов действует в течение 8 часов.</span></p><p><strong><em>Чемпион</em></strong><span>. Вы получаете бонус <strong>+1</strong> к броскам атаки оружием и урона. Этот бонус действует в течение 8 часов.</span></p><p><strong><em>Канцлер</em></strong><span>. В течение 8 часов после вытаскивания этой карты вы можете единожды действием наложить заклинание&nbsp;<detail-tooltip type="spell"><a href="/spells/augury/">гадание [augury]</a></detail-tooltip>, не требующего материальных компонентов. В качестве заклинательной характеристики вы используете <strong>Интеллект</strong>, <strong>Мудрость</strong> или <strong>Харизму</strong> (по вашему выбору).</span></p><p><strong><em>Хаос</em></strong>. Вы получаете <strong>сопротивление</strong> одному из следующих типов урона (выбирается Мастером): кислота, холод, огонь, электричество или звук. Это сопротивление действует в течение&nbsp;<dice-roller formula="1к12">1к12</dice-roller> дней.</p><p><strong>Монета.</strong> Пять ювелирных изделий, каждое стоимостью 100&nbsp;зм, или десять драгоценных камней, каждый стоимостью 50&nbsp;зм, появляются у ваших ног.</p><p><em><strong>Корона</strong></em>. Вы изучаете заговор&nbsp;<detail-tooltip type="spell"><a href="/spells/friends/">дружба [friends]</a></detail-tooltip>. В качестве заклинательной характеристики вы используете <strong>Интеллект</strong>, <strong>Мудрость</strong> или <strong>Харизму</strong> (по вашему выбору). Если вы уже знаете этот заговор, карта не действует.</p><p><em><strong>Рассвет</strong></em>. Эта карта придаст вам сил. В течение следующих 8&nbsp;часов вы можете добавлять бонус мастерства к своим броскам инициативы.</p><p><em><strong>День</strong></em>. Вы получаете бонус <strong>+1</strong> к спасброскам. Это преимущество действует до тех пор, пока вы не закончите <a href="/screens/long_rest">продолжительный отдых</a>.</p><p><strong><em>Судьба</em></strong>. Эта карта защищает вас от преждевременной смерти. Впервые после вытаскивания этой карты, когда ваши хиты должны были опуститься до <span class="dice_text">0</span> от получения урона, они вместо этого уменьшаются до <span class="dice_text">1</span> хиты.</p><p><em><strong>Сумерки</strong></em>. Эта карта сверхъестественным образом высасывает вашу энергию. Вы с <span class="disadvantage">помехой</span> совершаете броски инициативы. Этот эффект действует до тех пор, пока вы не закончите <a href="/screens/long_rest">продолжительный отдых</a>, но он может быть окончен раньше с помощью заклинания <detail-tooltip type="spell"><a href="/spells/remove_curse/">снятие проклятия [remove curse]</a></detail-tooltip>&nbsp;или подобной магии.</p><p><strong><em>Конец</em></strong>. Эта карта - предзнаменование смерти. Вы получаете&nbsp;<dice-roller formula="2к10">2к10</dice-roller> урона некротической энергией, и ваш максимум хитов уменьшается на количество, равное полученному урону некротической энергией. Этот эффект не может снизить максимуму ваших хитов ниже <span class="dice_text">10</span>. Уменьшение хитов длится до тех пор, пока цель не окончит <detail-tooltip type="screen"><a href="/screens/long_rest">продолжительный отдых</a></detail-tooltip>, но оно может быть окончено раньше с помощью заклинания <detail-tooltip type="spell"><a href="/spells/remove_curse/">снятие проклятия [remove curse]</a></detail-tooltip>&nbsp;или подобной магии.</p><p><strong><em>Изоляция</em></strong>. Вы исчезаете вместе со всем, что вы несёте или носите, оказываясь в ловушке в безвредном подпространстве на&nbsp;<dice-roller formula="1к4">1к4</dice-roller>&nbsp;минуты. Вы больше не берёте карты. После чего вы возвращается в пространство, из которого исчезли, или ближайшее свободное пространство, если то место занято. Когда вы появитесь снова, вы должны преуспеть в спасброске <span class="saving_throw">Телосложения</span> со Сл 11, иначе станете отравленным&nbsp;в течение 1 часа, так как ваше тело восстанавливается после путешествия в другое измерение.</p><p><em><strong>Справедливос</strong></em><strong><em>ть</em></strong><span>. Вы на мгновение обретаете способность уравновешивать весы судьбы. В течение следующих 8 часов всякий раз, когда вы или существо в пределах 60 футов от вас собираетесь бросить <dice-roller formula="к20">к20</dice-roller> с преимуществом или помехой, вы можете использовать свою <em>реакцию</em>, чтобы&nbsp;</span>аннулировать&nbsp;это <span class="advantage">преимущество</span> или <span class="disadvantage">помеху</span>.</p><p><strong><em>Нож</em></strong>. В ваших руках появляется необычное магическое оружие, которым вы владеете. Мастер определяет оружие.</p><p><em><strong>Замок</strong></em>. Вы получаете возможность наложить заклинание<span>&nbsp;</span><detail-tooltip type="spell"><a href="/spells/knock/">открывание [knock]</a></detail-tooltip>&nbsp;<dice-roller formula="1к3">1к3</dice-roller>&nbsp;раза. В качестве заклинательной характеристики вы используете <strong>Интеллект</strong>, <strong>Мудрость</strong> или <strong>Харизму</strong> (по вашему выбору).</p><p><strong><em>Озорство</em></strong>. Вы получаете необычный чудесный предмет (по выбору Мастера) или можете вытянуть две дополнительные карты сверх заявленных.</p><p><strong><em>Монстр</em></strong>. Чудовищный облик этой карты проклинает вас. Будучи проклятым таким образом, всякий раз, когда вы совершаете спасбросок, вы должны бросить&nbsp;<dice-roller formula="1к4">1к4</dice-roller>&nbsp;и вычесть выпавшее значение из общего результата. Проклятие действует до тех пор, пока вы не закончите <a href="/screens/long_rest">продолжительный отдых</a>, но его можно окончить раньше с помощью заклинания <detail-tooltip type="spell"><a href="/spells/remove_curse/">снятие проклятия [remove curse]</a></detail-tooltip>&nbsp;или подобной магии.</p><p><strong><em>Тайна</em></strong>. Вы с помехой свершаете спасброски <span class="saving_throw">Интеллекта</span> в течении 1 часа. Сбросьте эту карту и возьмите другую карту из колоды; вместе эти два вытягивания&nbsp;считаются как одно из заявленных вами вытягиваний.</p><p><em><strong>Ночь</strong></em>. Вы получаете <a href="/screens/dark_vision">тёмное зрение</a>&nbsp;в радиусе 300&nbsp;футов. Это зрение длится 8&nbsp;часов.</p><p><em><strong>Порядок</strong></em>. Вы получаете <strong>сопротивление</strong> одному из следующих типов урона (определяется Мастером): силовое поле, некротическая энергия, яд, психическая энергия или излучение. Это сопротивление длится&nbsp;<dice-roller formula="1к12">1к12</dice-roller>&nbsp;дней.</p><p><em><strong>Студент</strong></em>. Вы получаете владение спасброском <span class="saving_throw">Мудрости</span>. Если вы уже владеете этим спасброском, вы вместо этого получаете владение спасброском <span class="saving_throw">Интеллекта</span> или <span class="saving_throw">Харизмы</span> (по вашему выбору).</p><p><strong><em>Стервятник</em></strong>. Один немагический предмет или часть снаряжения, находящиеся в вашем распоряжении (определяются Мастером), исчезают. Предмет находится поблизости, но скрывается на короткое время, поэтому его можно найти преуспев в проверке <detail-tooltip type="screen"><a href="/screens/perception"><em>Мудрости (Внимательность)</em></a></detail-tooltip>&nbsp;со&nbsp;Сл&nbsp;15. Если предмет не будет обнаружен в течение 1&nbsp;часа, он исчезает навсегда.</p>
+</section>
+
+
+
+        
+        <div class="mt-8 text-sm text-gray-500">
+            
+            <p>Джерело: Книга многих вещей (BMT)
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    
+    
+</body>
+
+</html>

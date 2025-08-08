@@ -7,8 +7,9 @@ from jinja2 import Environment, FileSystemLoader
 
 def slugify(text):
     text = text.lower()
-    text = re.sub(r"[^a-z0-9]+", "-", text)
+    text = re.sub(r"[^a-z0-9']+", "-", text)
     text = text.strip("-")
+    text = text.replace("-", "_")
     return text or "unknown"
 
 

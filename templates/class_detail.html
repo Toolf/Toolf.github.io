@@ -168,7 +168,7 @@
     <ul class="flex space-x-6 text-sm font-medium text-gray-600">
       {% for tab in item.tabs|sort(attribute='order') %}
       <li>
-        <a href="{{ tab.url }}" class="pb-2 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">
+        <a href="{{ tab.url }}.html" class="pb-2 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">
           {{ tab.name }}
         </a>
       </li>
