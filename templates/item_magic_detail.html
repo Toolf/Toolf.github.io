@@ -62,4 +62,9 @@
     {{ item.description | safe }}
 </section>
 {% endif %}
+{% if item.description_ukr %}
+<section class="mb-6 prose prose-sm sm:prose max-w-none">
+    {{ item.description_ukr | safe }}
+</section>
+{% endif %}
 {% endblock %}
