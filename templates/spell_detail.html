@@ -1,7 +1,7 @@
 {% extends "base_detail.html" %}
 
 {% block title %}
-    {{ item.name.rus }} — {{ item.name.eng }}
+{{ item.name.rus }} — {{ item.name.eng }}
 {% endblock %}
 
 {% block header %}
@@ -56,10 +56,14 @@
     {% endif %}
 </div>
 
+{% if item.description_ukr %}
+<div class="mt-6 prose prose-sm sm:prose max-w-none">
+    {{ item.description_ukr | safe }}
+</div>
+{% endif %}
 <div class="mt-6 prose prose-sm sm:prose max-w-none">
     {{ item.description | safe }}
 </div>
-
 {% if item.upper %}
 <div class="mt-4 border-t pt-4">
     <h4 class="font-bold text-md">На вищих рівнях</h4>

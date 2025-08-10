@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-    Погребальный звон — Toll the Dead
-</title>
+        Погребальный звон — Toll the Dead
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        
+
     </style>
 </head>
 
@@ -20,69 +20,87 @@
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
 
-        
-<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Погребальный звон</h1>
 
-
-        
-<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Toll the Dead</h2>
-
-
-        
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-    <p><strong>Рівень:</strong> 0</p>
-    <p><strong>Школа:</strong> некромантія</p>
-    <p><strong>Час накладання:</strong> 1 дія</p>
-    <p><strong>Дальність:</strong> 60 футів</p>
-    <p><strong>Тривалість:</strong> Миттєво</p>
-    <p><strong>Компоненти:</strong>
-        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-            В 
-            С 
-            
-        </span>
-    </p>
-    
-    
-</div>
-
-<div class="mt-6">
-    <h3 class="font-semibold mb-1">Класи</h3>
-    <div class="flex flex-wrap gap-2">
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Шаман</span>
-        
-    </div>
-
-    
-</div>
-
-<div class="mt-6 prose prose-sm sm:prose max-w-none">
-    <p>Вы указываете на одно существо, которое можете видеть в пределах дистанции, и воздух вокруг него на мгновение наполняется скорбным звучанием колокола. Цель должна преуспеть в спасброске <span class="saving_throw">Мудрости</span> или получает <dice-roller formula="1к8">1к8</dice-roller> урона некротической энергией.</p><p>Если хиты цели были не полные, то вместо <dice-roller formula="1к8">1к8</dice-roller> она получает <dice-roller formula="1к12">1к12</dice-roller> урона некротической энергией.</p><p>Урон заклинания увеличивается на одну кость, когда вы достигаете 5 уровня (<dice-roller formula="2к8">2к8</dice-roller> или <dice-roller formula="2к12">2к12</dice-roller>), 11 уровня (<dice-roller formula="3к8">3к8</dice-roller> или <dice-roller formula="3к12">3к12</dice-roller>) и 17 уровня (<dice-roller formula="4к8">4к8</dice-roller> или <dice-roller formula="4к12">4к12</dice-roller>).</p>
-</div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Погребальный звон</h1>
 
 
 
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Toll the Dead</h2>
 
-        
-        <div class="mt-8 text-sm text-gray-500">
-            
-            <p>Джерело: Руководство Занатара обо всем (XGE)
-                
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+            <p><strong>Рівень:</strong> 0</p>
+            <p><strong>Школа:</strong> некромантія</p>
+            <p><strong>Час накладання:</strong> 1 дія</p>
+            <p><strong>Дальність:</strong> 60 футів</p>
+            <p><strong>Тривалість:</strong> Миттєво</p>
+            <p><strong>Компоненти:</strong>
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+                    В
+                    С
+
+                </span>
             </p>
-            
+
+
         </div>
-        
+
+        <div class="mt-6">
+            <h3 class="font-semibold mb-1">Класи</h3>
+            <div class="flex flex-wrap gap-2">
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Шаман</span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
+            Ви вказуєте на одну істоту, яку ви можете бачити у діапазоні, а звук величного дзвінка на мить наповнює
+            повітря навколо неї. Ціль має бути успішною у відповідь на питання, що мудрість зберігає вкидання або
+            приймає 1d8 некротичних пошкоджень. Якщо у об' єкті не вистачає жодної з точок удару, замість цього вона
+            потребує 1d12 некротичної шкоди. <br /> Збиток заклинання зростатиме, якщо ви досягнете 5- го рівня (2d8 або
+            2d12), 11- й рівень (3d8 або 3d12) і 17- й рівень (4d8 або 4d12). <br />
+        </div>
+
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
+            <p>Вы указываете на одно существо, которое можете видеть в пределах дистанции, и воздух вокруг него на
+                мгновение наполняется скорбным звучанием колокола. Цель должна преуспеть в спасброске <span
+                    class="saving_throw">Мудрости</span> или получает <dice-roller formula="1к8">1к8</dice-roller> урона
+                некротической энергией.</p>
+            <p>Если хиты цели были не полные, то вместо <dice-roller formula="1к8">1к8</dice-roller> она получает
+                <dice-roller formula="1к12">1к12</dice-roller> урона некротической энергией.</p>
+            <p>Урон заклинания увеличивается на одну кость, когда вы достигаете 5 уровня (<dice-roller
+                    formula="2к8">2к8</dice-roller> или <dice-roller formula="2к12">2к12</dice-roller>), 11 уровня
+                (<dice-roller formula="3к8">3к8</dice-roller> или <dice-roller formula="3к12">3к12</dice-roller>) и 17
+                уровня (<dice-roller formula="4к8">4к8</dice-roller> или <dice-roller
+                    formula="4к12">4к12</dice-roller>).</p>
+        </div>
+
+
+
+
+        <div class="mt-8 text-sm text-gray-500">
+
+            <p>Джерело: Руководство Занатара обо всем (XGE)
+
+            </p>
+
+        </div>
+
     </div>
 
-    
-    
+
+
 </body>
 
 </html>

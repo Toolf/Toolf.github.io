@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-    Волшебный камень — Magic Stone
-</title>
+        Волшебный камень — Magic Stone
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        
+
     </style>
 </head>
 
@@ -20,69 +20,88 @@
             <a href="index.html" class="text-blue-600 hover:underline">← Назад до списку</a>
         </div>
 
-        
-<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Волшебный камень</h1>
 
-
-        
-<h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Magic Stone</h2>
-
-
-        
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-    <p><strong>Рівень:</strong> 0</p>
-    <p><strong>Школа:</strong> перетворення</p>
-    <p><strong>Час накладання:</strong> 1 бонусна дія</p>
-    <p><strong>Дальність:</strong> Дотик</p>
-    <p><strong>Тривалість:</strong> 1 хвилина</p>
-    <p><strong>Компоненти:</strong>
-        <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
-            В 
-            С 
-            
-        </span>
-    </p>
-    
-    
-</div>
-
-<div class="mt-6">
-    <h3 class="font-semibold mb-1">Класи</h3>
-    <div class="flex flex-wrap gap-2">
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Изобретатель</span>
-        
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Шаман</span>
-        
-    </div>
-
-    
-</div>
-
-<div class="mt-6 prose prose-sm sm:prose max-w-none">
-    <p>Вы касаетесь от&nbsp;1&nbsp;до&nbsp;3 камней и наделяете их магической силой.</p><p>Вы или кто-либо ещё можете совершить <em>дальнобойную атаку заклинанием</em>, кинув один из этих камней или запустив его при помощи пращи. Дальность броска рукой составляет 60&nbsp;футов. Если кто-либо другой атакует этим камнем, он использует для броска атаки ваш модификатор базовой характеристики вместо своего.</p><p>При попадании цель получает дробящий урон, равный&nbsp;<dice-roller formula="1к6">1к6</dice-roller> + модификатор вашей базовой характеристики.</p><p>Вне зависимости от того, попал камень или нет, это заклинание перестаёт на него действовать. Если вы сотворяете это заклинание ещё раз, его эффект преждевременно заканчивается на тех камнях, что были зачарованы прежде.</p>
-</div>
+        <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Волшебный камень</h1>
 
 
 
+        <h2 class="text-base sm:text-lg text-gray-500 mb-6 text-center sm:text-left">Magic Stone</h2>
 
-        
-        <div class="mt-8 text-sm text-gray-500">
-            
-            <p>Джерело: Руководство Занатара обо всем (XGE)
-                
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+            <p><strong>Рівень:</strong> 0</p>
+            <p><strong>Школа:</strong> перетворення</p>
+            <p><strong>Час накладання:</strong> 1 бонусна дія</p>
+            <p><strong>Дальність:</strong> Дотик</p>
+            <p><strong>Тривалість:</strong> 1 хвилина</p>
+            <p><strong>Компоненти:</strong>
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
+                    В
+                    С
+
+                </span>
             </p>
-            
+
+
         </div>
-        
+
+        <div class="mt-6">
+            <h3 class="font-semibold mb-1">Класи</h3>
+            <div class="flex flex-wrap gap-2">
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Друид</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Изобретатель</span>
+
+                <span class="bg-gray-200 text-sm px-3 py-1 rounded">Шаман</span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
+            Ви доторкнетеся до одного до трьох камінців і змішаєте їх з магією. Ви або хтось інший може зробити напад на
+            закляття за допомогою одного з камінців, кидаючи його або скидаючи його пращею. Якщо викинено, його
+            кількість зросте на 60 футів. Якщо хтось інший атакує камінцем, нападник додасть ваш модифікатор орфографії,
+            а не нападник, а не атакуючий, до бойового кидка. Під час удару мета отримує пошкодження, що дорівнює 1d6 +
+            вашому модифікатору заклинання. Незалежно від того, буде ударний удар або промах, заклинання завершиться на
+            камені. <br> Якщо ви знову кинете це закляття, закляття буде завершено на будь- яку гальку, що було
+            пошкоджено вашим попереднім відкиданням. <br> <br />
+        </div>
+
+        <div class="mt-6 prose prose-sm sm:prose max-w-none">
+            <p>Вы касаетесь от&nbsp;1&nbsp;до&nbsp;3 камней и наделяете их магической силой.</p>
+            <p>Вы или кто-либо ещё можете совершить <em>дальнобойную атаку заклинанием</em>, кинув один из этих камней
+                или запустив его при помощи пращи. Дальность броска рукой составляет 60&nbsp;футов. Если кто-либо другой
+                атакует этим камнем, он использует для броска атаки ваш модификатор базовой характеристики вместо
+                своего.</p>
+            <p>При попадании цель получает дробящий урон, равный&nbsp;<dice-roller formula="1к6">1к6</dice-roller> +
+                модификатор вашей базовой характеристики.</p>
+            <p>Вне зависимости от того, попал камень или нет, это заклинание перестаёт на него действовать. Если вы
+                сотворяете это заклинание ещё раз, его эффект преждевременно заканчивается на тех камнях, что были
+                зачарованы прежде.</p>
+        </div>
+
+
+
+
+        <div class="mt-8 text-sm text-gray-500">
+
+            <p>Джерело: Руководство Занатара обо всем (XGE)
+
+            </p>
+
+        </div>
+
     </div>
 
-    
-    
+
+
 </body>
 
 </html>
