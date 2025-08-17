@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-Тишина — Silence
+Тиша — Silence
 </title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,7 +21,7 @@
         </div>
 
         
-<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Тишина</h1>
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Тиша</h1>
 
 
         
@@ -30,12 +30,12 @@
 
         
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-    <p><strong>Рівень:</strong> 2</p>
-    <p><strong>Школа:</strong> ілюзія</p>
-    <p><strong>Час накладання:</strong> 1 дія</p>
-    <p><strong>Дальність:</strong> 120 футів</p>
-    <p><strong>Тривалість:</strong> Концентрація, до 10 хвилин</p>
-    <p><strong>Компоненти:</strong>
+    <p class="capitalize"><strong>Рівень:</strong> 2</p>
+    <p class="capitalize"><strong>Школа:</strong> ілюзія</p>
+    <p class="capitalize"><strong>Час накладання:</strong> 1 дія</p>
+    <p class="capitalize"><strong>Дальність:</strong> 120 футів</p>
+    <p class="capitalize"><strong>Тривалість:</strong> до 10 хвилин</p>
+    <p class="capitalize"><strong>Компоненти:</strong>
         <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
             В 
             С 
@@ -43,12 +43,8 @@
         </span>
     </p>
     
-    <p>
-        <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full inline-block">🕯️ Ритуал</span>
-    </p>
     
-    
-    <p>
+    <p class="capitalize">
         <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
     </p>
     
@@ -58,41 +54,20 @@
     <h3 class="font-semibold mb-1">Класи</h3>
     <div class="flex flex-wrap gap-2">
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">бард</span>
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Жрец</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">клірик</span>
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Следопыт</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">рейнджер</span>
         
     </div>
 
     
-    <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
-    <ul class="list-disc ml-6">
-        
-        <li>Бессмертный (Колдун)</li>
-        
-        <li>Бездонный (Колдун)</li>
-        
-        <li>Королева Воронов (Колдун)</li>
-        
-        <li>Домен Инквизиции (Жрец)</li>
-        
-        <li>Тенеплёт (Плут)</li>
-        
-        <li>Орден Чароборцев (Магус)</li>
-        
-    </ul>
-    
 </div>
 
 
 <div class="mt-6 prose prose-sm sm:prose max-w-none">
-    Для тривалості не можна створювати звуку всередині або проходити крізь сфери 20- футовий радіус, яка зосереджується на точці, яку ви обираєте у межах діапазону. Будь- яке створіння або об' єкт у межах сфери не захищено від громового пошкодження, а істоти оглухають повністю всередині неї. <\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ >
-</div>
-
-<div class="mt-6 prose prose-sm sm:prose max-w-none">
-    <p>Пока заклинание активно, никакие звуки не могут раздаться в пределах сферы с радиусом 20 футов с центром на точке, выбранной в пределах дистанции, а также не могут проходить сквозь неё. Все существа и предметы, полностью находящиеся в сфере, получают <strong>иммунитет</strong> к урону звуком, и существа считаются <detail-tooltip type="screen"><a href="/screens/deafened">оглохшими</a></detail-tooltip>, когда полностью находятся в ней. В этом радиусе невозможно накладывать заклинания с <detail-tooltip type="screen"><a href="/screens/components">вербальным компонентом</a></detail-tooltip>.</p>
+    <p>Поки діють чари, у сфері радіусом 20 футів із центром у вибраній вами точці в межах відстані неможливо створити жоден звук, і жоден звук не може пройти крізь цю сферу. Будь-яка істота чи предмет, що повністю перебуває всередині сфери, має імунітет до ушкоджень громом, і такі істоти оглушені, поки повністю залишаються у сфері. Тут неможливе створення чарів, які включають вербальну складову.</p>
 </div>
 
 
@@ -100,7 +75,7 @@
         
         <div class="mt-8 text-sm text-gray-500">
             
-            <p>Джерело: Книга игрока (PHB)
+            <p>Джерело: System Reference Document (SRD)
                 
             </p>
             

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-Ужас — Fear
+Страх — Fear
 </title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,7 +21,7 @@
         </div>
 
         
-<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Ужас</h1>
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">Страх</h1>
 
 
         
@@ -30,21 +30,21 @@
 
         
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-    <p><strong>Рівень:</strong> 3</p>
-    <p><strong>Школа:</strong> ілюзія</p>
-    <p><strong>Час накладання:</strong> 1 дія</p>
-    <p><strong>Дальність:</strong> На себе (30-футовий конус)</p>
-    <p><strong>Тривалість:</strong> Концентрація, до 1 хвилини</p>
-    <p><strong>Компоненти:</strong>
+    <p class="capitalize"><strong>Рівень:</strong> 3</p>
+    <p class="capitalize"><strong>Школа:</strong> ілюзія</p>
+    <p class="capitalize"><strong>Час накладання:</strong> 1 дія</p>
+    <p class="capitalize"><strong>Дальність:</strong> На себе (30-футовий конус)</p>
+    <p class="capitalize"><strong>Тривалість:</strong> до 1 хвилини</p>
+    <p class="capitalize"><strong>Компоненти:</strong>
         <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
             В 
             С 
-            <span title="белое перо или сердце курицы">М</span>
+            <span title="М (біле перо або куряче серце)">М</span>
         </span>
     </p>
     
     
-    <p>
+    <p class="capitalize">
         <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
     </p>
     
@@ -54,59 +54,22 @@
     <h3 class="font-semibold mb-1">Класи</h3>
     <div class="flex flex-wrap gap-2">
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Бард</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">бард</span>
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Волшебник</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">заклинач</span>
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Колдун</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">чаклун</span>
         
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">Чародей</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">чарівник</span>
         
     </div>
 
     
-    <h3 class="font-semibold mt-4 mb-1">Підкласи</h3>
-    <ul class="list-disc ml-6">
-        
-        <li>Клятва Покорения (Паладин)</li>
-        
-        <li>Сумрачный Охотник (Следопыт)</li>
-        
-        <li>Домен Разума (Жрец)</li>
-        
-        <li>Домен Апокалипсиса (Жрец)</li>
-        
-        <li>Домен Дракона (Жрец)</li>
-        
-        <li>Домен Правосудия (Жрец)</li>
-        
-        <li>Домен Луны (Жрец)</li>
-        
-        <li>Пожиратель Света (Колдун)</li>
-        
-        <li>Домен Ужаса (Жрец)</li>
-        
-        <li>Клятва Рвения (Паладин)</li>
-        
-        <li>Тенеплёт (Плут)</li>
-        
-        <li>Дикое Сердце (Шаман)</li>
-        
-        <li>Орден Чешуи (Магус)</li>
-        
-        <li>Связанный С Драконом (Шаман)</li>
-        
-    </ul>
-    
 </div>
 
 
 <div class="mt-6 prose prose-sm sm:prose max-w-none">
-    Ви створюєте фантасмальне зображення найгірших страхів створіння. Кожне створіння з 30- футової колбочки має бути успішним на шляху до економії мудрості або падіння всього, що він тримає, і налякатися за цей час. Тоді як створіння злякається цього закляття, воно мусить виконати дію за Дашу і відійти від вас найбезпечнішим шляхом на кожному з його поворотів, якщо його не буде куди рухатися. Якщо створіння завершить свій хід у місці, де воно не має поля зору до вас, створіння може зробити так, щоб мудрість рятувала вас. Після успішного збереження заклинання закінчується для цього створіння. <br >
-</div>
-
-<div class="mt-6 prose prose-sm sm:prose max-w-none">
-    <p>Вы проецируете призрачное изображение худших кошмаров других существ. Все существа в 30-футовом конусе должны преуспеть в спасброске <span class="saving_throw">Мудрости</span>, иначе они бросают всё, что держат в руках, и становятся <detail-tooltip type="screen"><a href="/screens/frightened">испуганными</a></detail-tooltip> на время действия заклинания.</p><p>Будучи <detail-tooltip type="screen"><a href="/screens/frightened">испуганным</a></detail-tooltip> этим заклинанием, существо должно каждый свой ход совершать действие <detail-tooltip type="screen"><a href="/screens/dash">Рывок</a></detail-tooltip>, и перемещаться прочь от вас по самому безопасному маршруту, пока у неё есть куда перемещаться.</p><p>Если существо оканчивает ход в месте, откуда у него нет линии обзора до вас, оно может совершить спасбросок <span class="saving_throw">Мудрости</span>. В случае спасения заклинание перестаёт действовать на это существо.</p>
+    <p>Ви проєктуєте фантастичний образ найгірших страхів істоти. Кожна істота в межах 30-футового конусу повинна зробити рятівний кидок Мудрості, або впустить все, що тримає, і стане наляканою, поки діють чари.</p><p>Поки істота налякана цими чарами, вона у кожен свій хід повинна виконувати дію Ривок і переміщуватися геть від вас найбільш безпечним шляхом, за винятком випадків, коли їй немає куди рухатися. Якщо істота завершує свій хід у розташуванні, де не має прямої лінії огляду до вас, ця істота може зробити рятівний кидок Мудрості. За умови успіху ефект чарів для цієї істоти завершується.</p>
 </div>
 
 
@@ -114,7 +77,7 @@
         
         <div class="mt-8 text-sm text-gray-500">
             
-            <p>Джерело: Книга игрока (PHB)
+            <p>Джерело: System Reference Document (SRD)
                 
             </p>
             

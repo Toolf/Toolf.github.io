@@ -1,11 +1,11 @@
 {% extends "base_detail.html" %}
 
 {% block title %}
-{{ item.name.rus }} — {{ item.name.eng }}
+{{ item.name.ukr }} — {{ item.name.eng }}
 {% endblock %}
 
 {% block header %}
-<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">{{ item.name.rus }}</h1>
+<h1 class="text-2xl sm:text-3xl font-bold mb-2 text-center sm:text-left">{{ item.name.ukr }}</h1>
 {% endblock %}
 
 {% block subtitle %}
@@ -14,12 +14,12 @@
 
 {% block content %}
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-    <p><strong>Рівень:</strong> {{ item.level }}</p>
-    <p><strong>Школа:</strong> {{ item.school }}</p>
-    <p><strong>Час накладання:</strong> {{ item.time }}</p>
-    <p><strong>Дальність:</strong> {{ item.range }}</p>
-    <p><strong>Тривалість:</strong> {{ item.duration }}</p>
-    <p><strong>Компоненти:</strong>
+    <p class="capitalize"><strong>Рівень:</strong> {{ item.level }}</p>
+    <p class="capitalize"><strong>Школа:</strong> {{ item.school }}</p>
+    <p class="capitalize"><strong>Час накладання:</strong> {{ item.time }}</p>
+    <p class="capitalize"><strong>Дальність:</strong> {{ item.range }}</p>
+    <p class="capitalize"><strong>Тривалість:</strong> {{ item.duration }}</p>
+    <p class="capitalize"><strong>Компоненти:</strong>
         <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full inline-block mt-1 sm:mt-0">
             {% if item.components.v %}В {% endif %}
             {% if item.components.s %}С {% endif %}
@@ -27,12 +27,12 @@
         </span>
     </p>
     {% if item.ritual %}
-    <p>
+    <p class="capitalize">
         <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full inline-block">🕯️ Ритуал</span>
     </p>
     {% endif %}
     {% if item.concentration %}
-    <p>
+    <p class="capitalize">
         <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full inline-block">🌀 Концентрація</span>
     </p>
     {% endif %}
@@ -42,7 +42,7 @@
     <h3 class="font-semibold mb-1">Класи</h3>
     <div class="flex flex-wrap gap-2">
         {% for cls in item.classes %}
-        <span class="bg-gray-200 text-sm px-3 py-1 rounded">{{ cls.name }}</span>
+        <span class="bg-gray-200 text-sm px-3 py-1 rounded capitalize">{{ cls.name }}</span>
         {% endfor %}
     </div>
 
