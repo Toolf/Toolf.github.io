@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Список заклинань</title>
-    <script src="js/lodash.min.js"></script>
-    <script defer src="js/tailwindcss.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -240,13 +240,13 @@
                 ]
             }, school: {
                 type: "lookup", label: "Школа", lookups: [
-                    { label: "Ілюзія", value: "ілюзія" },
-                    { label: "Перетворення", value: "перетворення" },
-                    { label: "Віщування", value: "віщування" },
-                    { label: "Втілення", value: "втілення" },
-                    { label: "Перешкоджання", value: "перешкоджання" },
-                    { label: "Зачарування", value: "зачарування" },
-                    { label: "Некромантія", value: "некромантія" },
+                    { label: "ілюзія", value: "ілюзія" },
+                    { label: "перетворення", value: "перетворення" },
+                    { label: "віщування", value: "віщування" },
+                    { label: "втілення", value: "втілення" },
+                    { label: "перешкоджання", value: "перешкоджання" },
+                    { label: "зачарування", value: "зачарування" },
+                    { label: "некромантія", value: "некромантія" },
                 ]
                 // }, components: {
                 //     type: "lookup", label: "Компоненти", multi: true, lookups: [
@@ -256,14 +256,14 @@
                 //     ]
             }, classes: {
                 type: "lookup", label: "Класи", list: true, lookups: [
-                    { label: "Бард", value: "бард" },
-                    { label: "Чаклун", value: "чаклун" },
-                    { label: "Чарівник", value: "чарівник" },
-                    { label: "Клірик", value: "клірик" },
-                    { label: "Заклинач", value: "заклинач" },
-                    { label: "Друїд", value: "друїд" },
-                    { label: "Паладин", value: "паладин" },
-                    { label: "Рейнджер", value: "рейнджер" }
+                    { label: "бард", value: "бард" },
+                    { label: "чаклун", value: "чаклун" },
+                    { label: "чарівник", value: "чарівник" },
+                    { label: "клірик", value: "клірик" },
+                    { label: "заклинач", value: "заклинач" },
+                    { label: "друїд", value: "друїд" },
+                    { label: "паладин", value: "паладин" },
+                    { label: "рейнджер", value: "рейнджер" }
                 ]
             }
         };
@@ -325,7 +325,7 @@
                     classDiv.className = "flex flex-wrap gap-2 mt-2 text-sm";
                     spell.classes.forEach(cls => {
                         const span = document.createElement("span");
-                        span.className = "bg-gray-200 px-2 py-1 rounded capitalize";
+                        span.className = "bg-gray-200 px-2 py-1 rounded";
                         span.textContent = cls;
                         classDiv.appendChild(span);
                     });

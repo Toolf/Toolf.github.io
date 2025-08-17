@@ -1,0 +1,234 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<div id="app" class="space-y-4 max-w-md mx-auto mt-6">
+    <div class="flex items-center gap-2">
+        <input id="quickSearch" placeholder="Quick search..."
+            class="flex-1 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <button id="toggleAdvanced" class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 shadow-sm"
+            title="Advanced filters">⚙️</button>
+    </div>
+
+    <div id="advancedFilters" class="space-y-3 p-4 bg-gray-50 rounded-lg border border-gray-200 hidden"></div>
+
+    <div id="itemsContainer" class="space-y-2"></div>
+</div>
+
+<script>
+    const defaultClasses = {
+        container: "space-y-4 max-w-md mx-auto mt-6",
+        quickInput: "flex-1 rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+        toggleBtn: "p-2 rounded-lg bg-gray-100 hover:bg-gray-200 shadow-sm",
+        advancedContainer: "space-y-3 p-4 bg-gray-50 rounded-lg border border-gray-200",
+        advancedField: "flex flex-col",
+        label: "text-sm font-medium text-gray-700 mb-1",
+        stringInput: "rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+        tag: "px-3 py-1 rounded-full cursor-pointer text-sm border transition-all duration-200",
+        tagSelected: "bg-indigo-600 text-white border-indigo-600",
+        tagUnselected: "bg-white text-gray-700 border-gray-300",
+        item: "p-3 border rounded-lg shadow-sm",
+        lookupWrap: "flex flex-wrap gap-2",
+    };
+
+    window.FilterWidget = class {
+        constructor(config, items, options, style) {
+            this.config = config;
+            this.items = items;
+            this.style = _.merge(defaultClasses, style);
+            this.state = {};
+            this.filteredItems = [...items];
+            this.showAdvanced = false;
+
+            this.quickInput = document.getElementById("quickSearch");
+            this.advancedContainer = document.getElementById("advancedFilters");
+            this.itemsContainer = document.getElementById("itemsContainer");
+            this.toggleBtn = document.getElementById("toggleAdvanced");
+
+            this.renderItem = options.renderItem;
+
+            this.initState();
+            this.renderAdvancedFilters();
+            this.bindEvents();
+            this.applyFilters(); // початкова фільтрація
+        }
+
+        initState() {
+            Object.keys(this.config).forEach(key => {
+                const cfg = this.config[key];
+                if (cfg.type === "lookup") this.state[key] = cfg.multi ? [] : null;
+                else this.state[key] = "";
+            });
+        }
+
+        bindEvents() {
+            this.toggleBtn.addEventListener("click", () => this.toggleAdvanced());
+            this.quickInput.addEventListener("input", (event) => {
+                this.setStringField('quick', event.target.value);
+            });
+
+            // debounced фільтр через lodash
+            this.debouncedApply = _.debounce(() => this.applyFilters(), 300);
+        }
+
+        setStringField(field, value) {
+            this.state[field] = value;
+            this.debouncedApply();
+        }
+
+        toggleAdvanced() {
+            this.showAdvanced = !this.showAdvanced;
+            this.advancedContainer.classList.toggle("hidden", !this.showAdvanced);
+        }
+
+        renderInputString(field) {
+            const input = document.createElement("input");
+            input.placeholder = `${field}`;
+            input.className = this.style.stringInput;
+            input.addEventListener("input", (event) => this.setStringField(field, event.target.value));
+            input.dataset.field = field;
+            return input;
+        }
+
+        renderLookup(field, config) {
+            const wrap = document.createElement("div");
+            wrap.className = this.style.lookupWrap;
+            config.lookups.forEach(opt => {
+                const tag = document.createElement("span");
+                tag.className = `${this.style.tag} ${this.style.tagUnselected}`;
+                tag.textContent = opt.label;
+                tag.dataset.field = field;
+                tag.dataset.value = opt.value;
+
+                tag.addEventListener("click", () => {
+                    this.toggleTag(field, opt.value, config.multi);
+                    this.debouncedApply();
+                    this.updateTagClasses(field);
+                });
+
+                wrap.appendChild(tag);
+            });
+            return wrap;
+        }
+
+        renderAdvancedFilters() {
+            const fields = Object.fromEntries(Object.entries(this.config).filter(([k]) => k !== "quick"));
+            this.advancedContainer.innerHTML = "";
+
+            Object.entries(fields).forEach(([field, config]) => {
+                const fieldDiv = document.createElement("div");
+                fieldDiv.className = "flex flex-col";
+
+                const label = document.createElement("p");
+                label.className = this.style.label;
+                label.textContent = config.label || field;
+                fieldDiv.appendChild(label);
+
+                if (config.type === "string") {
+                    fieldDiv.appendChild(this.renderInputString(field));
+                } else if (config.type === "lookup") {
+                    fieldDiv.appendChild(this.renderLookup(field, config));
+                }
+
+                this.advancedContainer.appendChild(fieldDiv);
+            });
+        }
+
+        toggleTag(field, value, multi) {
+            if (multi) {
+                const idx = this.state[field].indexOf(value);
+                if (idx !== -1) this.state[field].splice(idx, 1);
+                else this.state[field].push(value);
+            } else {
+                this.state[field] = this.state[field] === value ? null : value;
+            }
+        }
+
+        updateTagClasses(field) {
+            const cfg = this.config[field];
+            const tags = this.advancedContainer.querySelectorAll(`[data-field="${field}"]`);
+            tags.forEach(tag => {
+                const val = tag.dataset.value;
+                console.log(val);
+                if (cfg.multi) {
+                    tag.className = val
+                        ? `${this.style.tag} ${this.style.tagSelected}`
+                        : `${this.style.tag} ${this.style.tagUnselected}`;
+                } else {
+                    tag.className = val
+                        ? `${this.style.tag} ${this.style.tagSelected}`
+                        : `${this.style.tag} ${this.style.tagUnselected}`;
+                }
+            });
+        }
+
+        getFieldValue(item, field) {
+            return field.split(".").reduce((acc, k) => acc?.[k], item);
+        }
+
+        applyFilters() {
+            this.filteredItems = this.items.filter(item => {
+                // quick search
+                if (this.state.quick && !item[this.config.quick.field]?.toLowerCase().includes(this.state.quick.toLowerCase()))
+                    return false;
+
+                // advanced
+                for (const [field, value] of Object.entries(this.state)) {
+                    if (!value || _.isEmpty(value) || field === "quick") continue;
+                    const config = this.config[field];
+                    const fieldValue = this.getFieldValue(item, field);
+
+                    if (config.type === "string") {
+                        if (!fieldValue?.toLowerCase().includes(value.toLowerCase())) return false;
+                    } else if (config.type === "lookup") {
+                        if (config.multi) {
+                            if (!value.includes(fieldValue)) return false;
+                        } else {
+                            if (fieldValue !== value) return false;
+                        }
+                    }
+                }
+                return true;
+            });
+
+            this.renderItems();
+        }
+
+        renderItems() {
+            this.itemsContainer.innerHTML = "";
+            this.filteredItems.forEach((item, index) => {
+                const el = this.renderItem(this, item, index);
+                this.itemsContainer.appendChild(el);
+            });
+        }
+    };
+</script>
+<script>
+    const filterConfig = {
+        quick: { field: "title", type: "string" },
+        field1: { type: "string", label: "Field 1" },
+        "field2.innerField1": {
+            type: "lookup", label: "Inner Field", multi: true, lookups: [
+                { label: "ABC", value: "abc" },
+                { label: "XYZ", value: "xyz" }
+            ]
+        }
+    };
+
+    const items = [
+        { title: "🐉 Red dragon", field1: "hello world", field2: { innerField1: "abc" } },
+        { title: "🛡 Blue knight", field1: "example text", field2: { innerField1: "xyz" } },
+        { title: "🌲 Green forest", field1: "other", field2: { innerField1: "abc" } },
+    ];
+
+    window.widget = new FilterWidget(filterConfig, items, {
+        renderItem: ((widget, item, index) => {
+            const div = document.createElement("div");
+            div.className = widget.style.item;
+            div.innerText = item.title;
+            return div;
+        })
+    });
+
+</script>
