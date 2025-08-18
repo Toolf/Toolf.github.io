@@ -18,8 +18,9 @@ def load_json(path):
         return json.load(f)
 
 
-def generate_pages(json_path, detail_tpl_path, list_tpl_path, output_dir):
+def generate_pages(json_path, detail_tpl_path, list_tpl_path, output_dir, filter_config_path):
     raw_data = load_json(json_path)
+    filter_config = load_json(filter_config_path)
 
     # Підтримка формату: list з dict, де є 'data' або без
     entries = []
@@ -60,7 +61,7 @@ def generate_pages(json_path, detail_tpl_path, list_tpl_path, output_dir):
 
     index_path = os.path.join(output_dir, "index.html")
     with open(index_path, "w", encoding="utf-8") as f:
-        f.write(list_tpl.render(items=listing))
+        f.write(list_tpl.render(items=list(enumerate(listing)), items_json=json.dumps(listing), filter_config=json.dumps(filter_config)))
 
 
 def main():
@@ -71,9 +72,10 @@ def main():
     parser.add_argument("detail_tpl", help="Path to Jinja2 detail template")
     parser.add_argument("list_tpl", help="Path to Jinja2 listing template")
     parser.add_argument("output_dir", help="Output directory for generated pages")
+    parser.add_argument("filter_config_path", help="Path to filter config")
     args = parser.parse_args()
 
-    generate_pages(args.json_path, args.detail_tpl, args.list_tpl, args.output_dir)
+    generate_pages(args.json_path, args.detail_tpl, args.list_tpl, args.output_dir, args.filter_config_path)
 
 
 if __name__ == "__main__":

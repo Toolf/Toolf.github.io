@@ -1,0 +1,48 @@
+{% extends "base_list2.html" %}
+
+{% block title %}Список заклинань{% endblock %}
+{% block heading %}Список заклинань{% endblock %}
+
+{% block list %}
+<ul id="list-container" class="space-y-4">
+    {% for index, spell in items %}
+    <li id="item_{{index}}">
+        <a href="{{ spell.filename }}" class="block p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition">
+            <h2
+                class="text-lg sm:text-xl font-semibold flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                {{ spell.name_ukr }}
+                <span class="text-gray-500 text-sm sm:text-base">({{ spell.name.eng }})</span>
+            </h2>
+
+            <p class="text-sm text-gray-600 mt-1">
+                Рівень {{ spell.level }}, {{ spell.school }} • {{ spell.source.shortName }}
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-2 text-sm">
+                {% if spell.concentration %}
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🌀 Концентрація</span>
+                {% endif %}
+                {% if spell.ritual %}
+                <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded-full">🕯️ Ритуал</span>
+                {% endif %}
+                {% if spell.components %}
+                <span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full capitalize">
+                    {% if spell.components.v %}В {% endif %}
+                    {% if spell.components.s %}С {% endif %}
+                    {% if spell.components.m %}<span title="{{ spell.components.m }}">М</span>{% endif %}
+                </span>
+                {% endif %}
+            </div>
+
+            {% if spell.classes and spell.classes|length > 0 %}
+            <div class="flex flex-wrap gap-2 mt-2 text-sm">
+                {% for cls in spell.classes %}
+                <span class="bg-gray-200 px-2 py-1 rounded capitalize">{{ cls }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
